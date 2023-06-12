@@ -1,6 +1,2 @@
-Nosso objetivo é desenvolver um site, o nosso tema escolhido foi: 'notícias'.
-
-Exemplo do Layout do site que buscamos desenvolver:
-
-https://www.figma.com/file/9rN0yqU2oZVLsdNcWNEOCi/Grupo-5---Site-de-Not%C3%ADcias?type=design&node-id=0%3A1&t=JmdR3PkNiAJmKlFy-1
-
+Exemplo de Layout do site que iremos desenvolver:
+https://drive.google.com/drive/folders/1vFflf5ujFuCIDveo5O1MdXSpBlgL4wIi?usp=sharing
