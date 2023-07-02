@@ -5,6 +5,7 @@
     /*font-family: 'Maven Pro', sans-serif;*/
 }
 
+/*inserção da imagem de fundo que cobre todo o conteúdo do site*/
 body {
     /* background-image: url(../img/wallpaper-carrousel-original-ju-apresentation.jpg);*/
     background-image: url(../images/tech-body-background-gradient-blue.jpg);
@@ -49,6 +50,7 @@ body {
 @media (max-width: 975px) {
     .material-symbols-outlined {
         display: block;
+        cursor: pointer;
     }
 }
 
@@ -126,7 +128,7 @@ main {
 }
 
 .tittle-apresentation-initial {
-    margin-top: 4.5rem;
+    margin-top: 3.8rem;
     text-align: center;
     font-family: 'Maven Pro', sans-serif;
     color: white;
@@ -205,9 +207,6 @@ main {
     }
 }
 
-
-
-
 .container_notices {
     display: flex;
     justify-content: center;
@@ -261,10 +260,10 @@ main {
 
 
 .tittle_card {
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     color: #282828;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 .description_card {
