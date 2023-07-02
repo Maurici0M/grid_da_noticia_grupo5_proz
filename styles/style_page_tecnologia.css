@@ -6,7 +6,7 @@
 }
 
 body {
-   /* background-image: url(../img/wallpaper-carrousel-original-ju-apresentation.jpg);*/
+    /* background-image: url(../img/wallpaper-carrousel-original-ju-apresentation.jpg);*/
     background-image: url(../images/tech-body-background-gradient-blue.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,20 +116,7 @@ body {
     }
 }
 
-
-
 /*Fim dos arquivos do NAVBAR*/
-
-
-
-main {
-    /*margin-top: 70px;*/
-    /*background-image: url(img/wallpaper-carrousel-original-ju-apresentation.jpg);
-    background-repeat: no-repeat;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;*/
-    
-}
 
 main {
     display: flex;
