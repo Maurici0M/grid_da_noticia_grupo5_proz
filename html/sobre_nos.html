@@ -3,38 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sobre nós</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="../styles/style_all.css">
+    <title>Grid da Notícia | Sobre nós</title>
   </head>
   <body>
     <header>
-      <span class="logo-img-icon">
-        <a href="#"> <img class="img-logo" src="#" alt="Logo" /></a>
-        <h1>Grid <small>da Notícia</small></h1>
-        <button>Cadastre-se</button>
-      </span>
       <nav class="navbar-header">
-        <ul class="ul-navbar-header">
-          <li class="li-header-navbar">
-            <a class="navbar-link" target="_blank" href=""> Culinária </a>
-          </li>
-          <li class="li-header-navbar">
-            <a class="navbar-link" target="_blank" href=""> Espaço Sideral </a>
-          </li>
-          <li class="li-header-navbar">
-            <a class="navbar-link" target="_blank" href=""> Tecnologia </a>
-          </li>
-          <li class="li-header-navbar">
-            <a class="navbar-link" target="_blank" href=""> Sobre nós</a>
-          </li>
-        </ul>
-        <div>
-          <input
-            type="text"
-            name="pesquisar"
-            id="search"
-            placeholder="Pesquisar"
-          />
-        </div>
+          <span class="material-symbols-outlined">
+              menu
+          </span>
+          <div class="logo">
+              <a href="index.html">GRID <small>da Notícia</small></a>
+          </div>
+          <div class="links">
+              <ul class="nav-itens">
+                  <li> <a class="nav-itens-name" href="culinaria.html">Culinária</a> </li>
+                  <li> <a class="nav-itens-name" href="espaco_sideral.html">Espaço Sideral</a> </li>
+                  <li> <a class="nav-itens-name" href="tecnologia.html">Tecnologia</a> </li>
+                  <li> <a class="nav-itens-name" href="sobre_nos.html">Sobre Nós</a> </li>
+              </ul>
+          </div>
+          <input type="search" name="search" id="search" placeholder="Pesquisar...">
       </nav>
     </header>
     <main>
