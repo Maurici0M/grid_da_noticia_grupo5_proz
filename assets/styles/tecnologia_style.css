@@ -6,12 +6,18 @@
 }
 
 /*inserção da imagem de fundo que cobre todo o conteúdo do site*/
+
 body {
-    /* background-image: url(../img/wallpaper-carrousel-original-ju-apresentation.jpg);*/
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /*-------------------------*/
+
     background-image: url(../images/tech-body-background-gradient-blue.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
     
 }
 
@@ -117,13 +123,15 @@ body {
 }
 
 /*Fim dos arquivos do NAVBAR*/
-
+/*
 main {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+
+} */
 
 .tittle-apresentation-initial {
     margin-top: 3.8rem;
@@ -205,23 +213,51 @@ main {
     }
 }
 
-.container_notices {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+/*Estilos do Carrosel*/
+.container-notices {
+    margin-top: -28px;
     
-   /* background-image: url(img/wallpaper-carrousel-original-ju-apresentation.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center center;*/
-    /*height: 35em;*/
+}
+
+.swiper-navBtn {
+    color: purple;
+    transition: color 0.3s ease-in-out;
+}
+
+.swiper-navBtn:hover {
+    color: rgb(128, 0, 38);
+}
+
+.swiper-pagination-bullet {
+    background-color: #8eb9e9;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: purple;
+}
+
+.slide-container {
+    max-width: 1120px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 0;
+    z-index: 0;
+}
+
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+    background-color: #316b9a;
+    border-radius: 25px;
 }
 
 .link-notices {
     text-decoration: none;
 }
 
-.card {
+.card{
     padding: 10px 11px;
     margin-top: 35px;
     width: 300px;
@@ -230,14 +266,10 @@ main {
     background-color: #dcd9d9e8;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 1rem;
-    
-}
-
-.card {
     font-family: 'Maven Pro', sans-serif;
     cursor: pointer;
     transition: all 0.3s ease-out;
-
+    gap: 1rem;
 }
 
 .card:hover {
@@ -245,20 +277,39 @@ main {
     background-color: #dcdcdc
 }
 
-.img-card {
+/*
+.card {
+    width: 300px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 11px;
+}*/
+
+
+.card-image {
     width: 100%;
     height: 190px;
     border-radius: 15px;
     margin-top: 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    border: solid black 1px;
     
-
+    
 }
 
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
 
 .tittle_card {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: -1px;
     text-align: center;
     color: #282828;
     padding-top: 10px;
@@ -310,6 +361,7 @@ a {
 /*notícias pós parte da publicidade "ads"*/
 
 .container_notices_pos_ads {
+    display: flex;
     margin-top: 3rem;
     display: flex;
     justify-content: center;
@@ -347,7 +399,19 @@ a {
     background-color: #dcdcdc
 }
 
+.img-card {
+    width: 100%;
+    height: 165px;
+    border-radius: 12px;
+}
 
+
+/*Para deixar o botão alinhado no meio*/
+main {
+    text-align: center;
+}
+
+/*Estilos do botão*/
 .btn-ver-mais {
     margin-top: 3rem;
     padding: 15px 20px;
@@ -362,7 +426,6 @@ a {
     cursor: pointer;
     transition: all 0.4s ease-out;
 }
-
 
 .btn-ver-mais:hover {
     transform: translateY(-5px);
