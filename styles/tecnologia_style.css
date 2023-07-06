@@ -13,7 +13,7 @@ body {
     justify-content: center;
     /*-------------------------*/
 
-    background-image: url(../images/tech-body-background-gradient-blue.jpg);
+    background-image: url(../assets/images/tech-body-background-gradient-blue.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -33,7 +33,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url(../images/tech-background-nav-tech-original-apresentation-ju.png);
+    background-image: url(../assets/images/tech-background-nav-tech-original-apresentation-ju.png);
     position: fixed;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
