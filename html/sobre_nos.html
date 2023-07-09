@@ -1,101 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="../styles/style_all.css">
-    <title>Grid da Notícia | Sobre nós</title>
-  </head>
-  <body>
-    <header>
-      <nav class="navbar-header">
-          <span class="material-symbols-outlined">
-              menu
-          </span>
-          <div class="logo">
-              <a href="index.html">GRID <small>da Notícia</small></a>
-          </div>
-          <div class="links">
-              <ul class="nav-itens">
-                  <li> <a class="nav-itens-name" href="culinaria.html">Culinária</a> </li>
-                  <li> <a class="nav-itens-name" href="espaco_sideral.html">Espaço Sideral</a> </li>
-                  <li> <a class="nav-itens-name" href="tecnologia.html">Tecnologia</a> </li>
-                  <li> <a class="nav-itens-name" href="sobre_nos.html">Sobre Nós</a> </li>
-              </ul>
-          </div>
-          <input type="search" name="search" id="search" placeholder="Pesquisar...">
-      </nav>
-    </header>
-    <main>
-      <h2>Sobre nós</h2>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
-        fuga saepe nihil neque officiis! Sit qui ea repellendus quia eveniet,
-        amet omnis rerum at corporis beatae, laboriosam, aliquid vel nostrum.
-      </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:wght@700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <!--Swiper CSS (arquivos do carrosel)-->
+  <link rel="stylesheet" href="../assets/swiper/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
+  <!------------------------------------>
+  <link rel="stylesheet" href="../styles/sobre_nos.css">
+  <!--Swiper Script (arquivos do carrosel)-->
+  <script src="../assets/swiper/unpkg.com_swiper@8.1.6_swiper-bundle.min.js" defer></script>
+  <!------------------------------------>
+  <script src="../javascript/sobre-nos/sobre-nos.js" defer></script>
+  <!--IO Icons JS (logos do LinkedIn e GitHub)-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!------------------------------------>
+  <title>Grid da Notícia | Sobre nós</title>
+</head>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, ad
-        veritatis? Similique ea porro enim consequatur, nulla, quisquam quaerat
-        harum illum voluptatem cumque deleniti a necessitatibus molestiae in vel
-        accusamus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Doloribus tenetur nostrum esse quis, aperiam inventore ut hic et ipsum
-        libero consequuntur tempore quas laboriosam architecto a saepe nihil
-        similique dolorem.
-      </p>
-      <hr />
-    </main>
-    <br />
-    <footer>
-      <section>
-        <div class="conteinernoticia">
-          <div class="noticias">
-            <a href=""><img src="" alt="imgnoticia" /></a>
-            <p>Membro 1</p>
-          </div>
+<body>
+  <header>
+    <nav class="navbar-header">
+      <span class="material-symbols-outlined">
+        menu
+      </span>
+      <div class="logo">
+        <a href="index.html">GRID <small>da Notícia</small></a>
+      </div>
+      <div class="links">
+        <ul class="nav-itens">
+          <li> <a class="nav-itens-name" href="culinaria.html">Culinária</a> </li>
+          <li> <a class="nav-itens-name" href="espaco_sideral.html">Espaço Sideral</a> </li>
+          <li> <a class="nav-itens-name" href="tecnologia.html">Tecnologia</a> </li>
+          <li> <a class="nav-itens-name" href="sobre_nos.html">Sobre Nós</a> </li>
+        </ul>
+      </div>
+      <input type="search" name="search" id="search" placeholder="Pesquisar...">
+    </nav>
+  </header>
+  <br>
+  <main>
+    <!--Componente de Acessibilidade VLibras-->
+    <div vw class="desabled"> <!--enabled ativa-->
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <!--Componente de Acessibilidade VLibras-->
 
-          <div class="noticias">
-            <a href=""><img src="" alt="imgnoticia" /></a>
-            <p>Membro 2</p>
-          </div>
+    <div class="tittle-apresentation-initial">
+      <h1>
+        <h1>
+          Grid da Notícia | Sobre nós
+        </h1>
+      </h1>
+    </div>
 
-          <div class="noticias">
-            <a href=""><img src="" alt="imgnoticia" /></a>
-            <p>Membro 3</p>
-          </div>
+    <section class="sobre-nos">
+      <div class="container-sobre-nos">
+        <div class="texto-sobre-nos">
+          <p>
+            O <a target="_blank" href="index.html"><strong class="nome-jornal-grifado">Grid da Notícia</strong></a> é um
+            site indexador de notícias, desenvolvido por estudantes
+            de tecnologia, que tem o objetivo de trazer as principais informações sobre: <a
+              href="culinaria.html">Culinária</a>, <a href="espaco_sideral.html">Espaço Sideral</a> e <a
+              href="tecnologia.html">Tecnologia</a>.
+          </p>
 
-          <div class="noticias">
-            <a href=""><img src="" alt="imgnoticia" /></a>
-            <p>Membro 4</p>
-          </div>
+          <br>
 
-          <div class="noticias">
-            <a href=""><img src="" alt="imgnoticia" /></a>
-            <p>Membro 5</p>
-          </div>
+          <p>
+            O nosso principal propósito, é o de promover um site que seja adaptável, seguro e acessível,
+            onde vocês possam se informar das principais notícias dos temas que temos disponíveis, sem se
+            preocupar com as "fake news", nós não tratamos nossos apoiadores como produtos, por isso, muito
+            mais vale seriedade e credibilidade do que "clicks".
+          </p>
 
-          <div class="noticias">
-            <a href=""><img src="" alt="imgnoticia" /></a>
-            <p>Membro 6</p>
-          </div>
         </div>
-      </section>
-      <hr />
-      <div class="footer_menu_logo"><img src="" alt="logo" /></div>
-      <section class="fmi_section">
-        <div class="footer_menu_items"><h3>item 1</h3></div>
-        <div class="footer_menu_items"><h3>item 2</h3></div>
-        <div class="footer_menu_items"><h3>item 3</h3></div>
-        <div class="footer_menu_items"><h3>item 4</h3></div>
-        <div class="footer_menu_items"><h3>item 5</h3></div>
-      </section>
-      <p>Copyright 2023</p>
-      <h4>Grid da Notícia</h4>
-    </footer>
-  </body>
+
+        <!--Estrutura do Carrosel-->
+        <div class="slide-container swiper">
+          <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+              <!--Arquivos injetados por JS-->
+            </div>
+          </div>
+          <div class="autoplay-progress"></div>
+    </section>
+
+    <h1 class="tittle-apresentation-initial sobre-nos">Somos</h1>
+
+    <section class="container_notices_pos_ads">
+
+      <div class="card-container-2">
+        <img class="img-card"
+          src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDNya20xYjJ1NzFzcmgzaHM3NHBpa2V2M3JmaXpvdHV2NzY2eGZ0ciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/VDGOdvmp1bpc3PcCry/giphy.gif"
+          alt="not informed">
+
+        <div class="card-info">
+          <h3 class="tittle_card">
+            Adaptáveis:
+          </h3>
+
+          <p class="description_card">
+            Somos <strong>adaptáveis</strong>, pois cada tema tem sua própria personalização e identidade, o
+            que mostra o cuidado que temos com a experiência de navegação em nosso site.
+          </p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card-container-2">
+        <img class="img-card" src="https://l3software.com.br/wp-content/uploads/2018/12/seguranca-digital.jpg"
+          alt="not informed">
+
+        <div class="card-info">
+          <h3 class="tittle_card">
+            Seguro:
+          </h3>
+
+          <p class="description_card">
+            O Grid da Notícia é <strong>seguro</strong>, exatamente por prezar pela seriedade e
+            credibilidade do que por "clicks". <br> <br> Até nossos parceiros publicitários passam por um
+            rigoroso processo de aprovação, para poderem anunciar conosco, assim como, as notícias que são
+            divulgadas em nossas páginas.
+          </p>
+        </div>
+        </a>
+      </div>
+
+      <div class="card-container-2">
+        <img class="img-card" src="https://tribox.com.br/wp-content/uploads/2018/01/capa-ok.jpg" alt="not informed">
+
+        <div class="card-info">
+          <h3 class="tittle_card">
+            Acessivel:
+          </h3>
+
+          <p class="description_card">
+            De nada adianta apoiarmos a causa de mais <strong>acessibilidade</strong>, se não fizermos a
+            nossa parte.
+
+            <br>
+            <br>
+
+            Por isso, sentimos orgulho de contar com o plug-in de acessibilidade <strong> <a
+                href="https://www.gov.br/governodigital/pt-br/vlibras" target="_blank"
+                rel="noopener noreferrer">VLibras</a></strong> em nosso site.
+          </p>
+
+          <br>
+        </div>
+        </a>
+      </div>
+
+    </section>
+
+    <div class="texto-pre-rodape">
+      <p>Vários dias de estudos, testes e linhas de códigos depois, esse é o site resultado de nossos esforços. ;)</p>
+      <p>
+        Projeto desenvolvido com ❤️ por:
+      </p>
+    </div>
+
+    <section class="desenvolvedores">
+      <div>
+        <p class="nomes-desenvolvedores">Mauricio Marques Costa</p>
+        <img class="img-desenvolvedores" src="" alt="">
+        <a href="https://www.linkedin.com/in/mauricio-marques-costa-994b25210/">
+          <img class="logo-redes-sociais" src="../assets/images/logo-linkedin.svg" alt="LinkedIn Mauricio Marques Costa">
+        </a>
+        <a target="_blank" href="https://github.com/Maurici0M">
+          <img class="logo-redes-sociais" src="../assets/images/logo-github.svg" alt="GitHub Mauricio Marques Costa">
+        </a>
+      </div>
+
+      <div>
+        <p class="nomes-desenvolvedores">Michael Paes</p>
+        <img class="img-desenvolvedores" src="" alt="">
+        <a target="_blank" href="">
+          <img class="logo-redes-sociais" src="../assets/images/logo-linkedin.svg" alt="LinkedIn Michael Paes">
+        </a>
+        <a target="_blank" href="https://github.com/Michaelpaes">
+          <img class="logo-redes-sociais" src="../assets/images/logo-github.svg" alt="GitHub Michael Paes">
+        </a>
+        </div>
+    </section>
+
+    <section class="agradecimentos">
+      <p>Esse projeto foi desenvolvido com o apoio de:</p>
+      <img src="https://s3.amazonaws.com/joy-class/production/instances/9f0d4f4265224558b55ff9318dca95b41662057494606.png" alt="">
+    </section>
+
+    <div class="copyright">
+      <p>
+        &copy; MM | <strong>Grid da Notícia 2023 (Provisório - Será substituído pelo footer final)</strong>
+      </p>
+    </div>
+  </main>
+</body>
+
 </html>

@@ -1,0 +1,19 @@
+O <strong>Grid <small>da Notícia</small></strong> é um site indexador de notícias, desenvolvido por estudantes de tecnologia, que tem o objetivo de trazer as principais informações sobre: <a href="culinaria.html">Culinária</a>, <a href="espaco_sideral.html">Espaço Sideral</a> e <a href="tecnologia.html">Tecnologia</a>.
+
+O nosso principal propósito, é o de promover um site que seja adaptável, seguro e acessível, onde vocês possam se informar das principais notícias dos temas que temos disponíveis, sem se preocupar com as "fake news", nós não tratamos nossos apoiadores como produtos, por isso, muito mais vale seriedade e credibilidade do que "clicks".
+
+Somos <strong>adaptáveis</strong>, pois cada tema tem sua própria personalização e identidade, o que mostra o cuidado que temos com a experiência de navegação em nosso site (os mínimos detalhes são os que fazem a diferença).
+
+O Grid da Notícia é <strong>seguro</strong>, exatamente por prezar pela seriedade e credibilidade do que por "clicks". Até nossos parceiros publicitários passam por um rigoroso processo de aprovação, para poderem anunciar conosco, assim como, as notícias que são divulgadas em nossas páginas.
+
+De nada adianta apoiarmos a causa de mais <strong>acessibilidade</strong>, se não fizermos a nossa parte. 
+
+          Por isso, sentimos orgulho de contar com o plug-in de acessibilidade <strong> <a href="https://www.gov.br/governodigital/pt-br/vlibras" target="_blank" rel="noopener noreferrer">VLibras</a></strong>.
+
+          As aplicações da Suíte VLibras permitem que pessoas surdas acessem conteúdo multimídia em sua língua natural de comunicação, o que contribui para com a acessibilidade de computadores, dispositivos móveis e páginas Web.
+
+Vários dias de estudos, testes e linhas de código depois, esse é o site resultado de nossos esforços. ;)
+
+Projeto desenvolvido por:
+
+&copy; Grid da Notícia 2023
