@@ -1,0 +1,336 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /*-------------------------*/
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    height: 70px;
+    align-items: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url(../assets/images/index-nav-background-degrade.png); 
+    /*adicionar imagem da cor do NAVBAR aqui, ou mude para "background-color" e escolha uma cor.*/
+    position: fixed;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+/*deixará o conteúdo do navbar e barra de pesquisa alinhados em telas menores*/
+@media (max-width: 975px) {
+    .navbar-header>#search {
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.material-symbols-outlined {
+    display: none;
+}
+
+/*fará aparecer o menu mobile (hambúrguer) em telas menores*/
+@media (max-width: 975px) {
+    .material-symbols-outlined {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.logo>a {
+    font-weight: 900;
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: -2px 0px 2px rgba(0, 0, 0, 1);
+    color: white;
+
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+    gap: 19px;
+}
+
+/*desativará o menu com os temas a mostra em telas menores, neste caso, será ativado o menu mobile (hambúrguer).*/
+@media (max-width: 975px) {
+    .nav-itens {
+        display: none;
+    }
+}
+
+.nav-itens>li>a {
+    padding: 4px 19px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #000000;
+    background-color: #d9d9d9fd;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    
+}
+
+.nav-itens-name {
+    /*esse é o efeito de acender a luzinha, ao passar o mouse sobre os temas do navbar*/
+    transition: all 0.3s ease-out;
+}
+
+.nav-itens-name:hover {
+    background-image: url(index-nav-background-degrade.png);
+    color: white;
+    transition: 0.5s ease-out;
+    
+}
+
+
+#search {
+    text-align: center;
+    border-radius: 12px;
+    border: none;
+    padding: 4px 25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media (max-width: 540px) {
+    #search {
+        display: none;
+    }
+}
+/**/
+
+.tittle-apresentation-initial {
+    margin-top: 3rem;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    color: #FFFEFE;
+    padding: 16px 16px;
+    text-shadow: -3px -1px 6px rgba(98, 87, 255, 1);
+   /* background-color: #8eb8e97e;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
+    font-size: 15px;
+}
+
+
+
+.sobre-nos {
+    font-family: 'Maven Pro', sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    
+}
+
+.texto-sobre-nos {
+    font-size: 20px;
+    font-family: 'Maven Pro', sans-serif;
+   /* background-color: #8eb9e9;*/
+}
+
+.nome-jornal-grifado {
+    color: blueviolet;
+}
+
+a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+
+.subtitulo-sobre-nos {
+    font-size: 20px;
+    line-height: 2;
+    position: relative;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px; 
+    font-family: 'Maven Pro', sans-serif;
+    text-align: justify;
+    font-weight: 100;
+    letter-spacing: -1.60px;
+}
+
+
+.container-sobre-nos {
+    display: flex;
+    max-width: 1360px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 40px;
+    letter-spacing: -1.60px;
+}
+
+
+.img-sobre-nos>img {
+    width: 40rem;
+    border-radius: 15px;
+}
+
+
+
+
+.slide-container {
+    max-width: 1360px;
+    width: 100%;
+    
+    background-position: center center;
+    background-size: cover;
+    padding: 40px 0;
+    z-index: 0;
+}
+
+.slide-content {
+    margin: 0 40px;
+    overflow: hidden;
+   /* background-color: #316b9a;*/
+    border-radius: 12px;
+    
+}
+
+
+
+
+
+
+/**/
+
+
+.card-image {
+    width: 100%;
+    height: 190px;
+    border-radius: 15px;
+    margin-top: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.tittle_card {
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #282828;
+    padding-top: 10px;
+}
+
+.description_card {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+   /* text-align: center;*/
+   text-align: justify;
+    letter-spacing: 0.5px;
+    padding-top: 10px;
+    letter-spacing: -0.5px;
+}
+
+/*Parte dos Cards texto "Sobre"*/
+
+h1.tittle-apresentation-initial.sobre-nos {
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.27);
+    color: black;
+    border-top: solid blueviolet 2px;
+}
+
+
+/*Cards*/
+
+.container_notices_pos_ads {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: solid blueviolet 2px;
+    
+}
+
+.card-container-2 {
+    padding: 9px 11px;
+    margin-top: 35px;
+    width: 300px;
+    border-radius: 15px;
+    margin: 1rem;
+}
+
+.card-container-2 {
+    font-family: 'Maven Pro', sans-serif;
+    cursor: context-menu;
+    transition: all 0.3s ease-out;
+}
+
+
+.card-container-2:hover {
+    transform: scale(1.03);
+    background-color: #dcdcdc34
+}
+
+.img-card {
+    width: 100%;
+    height: 195px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+
+/*Agradecimentos aos desenvolvedores*/
+.texto-pre-rodape {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    align-items: center;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.desenvolvedores {
+    font-size: 16px;
+    font-family: 'Maven Pro', sans-serif;
+    display: flex;
+    margin-top: 3rem;
+    text-align: center;
+    gap: 15%;
+    justify-content: center;
+}
+
+.img-desenvolvedores {
+    margin-top: 20px;
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+    border: solid blue 0.5px;
+}
+
+.copyright {
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+    margin-top: 5rem;
+}
