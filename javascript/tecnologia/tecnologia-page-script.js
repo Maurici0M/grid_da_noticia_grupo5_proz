@@ -59,7 +59,7 @@
     } */
     
 
-/*Carrosel - Código de funcionamento */
+// Carrosel - Código de funcionamento
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
@@ -87,7 +87,7 @@ var swiper = new Swiper(".slide-content", {
 
 
 
-/*Arquivos de alimentação do carrosel - Notícias que são mostradas*/
+//Arquivos de alimentação do carrosel - Notícias que são mostradas
 
 const arrayCarrossel = [
 
@@ -195,7 +195,7 @@ carrosselScript.className = 'card swiper-slide'
 
 
 
-/*Script original do Swiper "Freemode" (desativado)*/
+// Script original do Swiper "Freemode" (desativado)
 
 /*var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
