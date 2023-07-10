@@ -7,7 +7,9 @@
 
 /*inserção da imagem de fundo que cobre todo o conteúdo do site*/
 body {
-   /* background-image: url();*/
+    
+
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -26,7 +28,7 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-image: url(); /*adicionar imagem da cor do NAVBAR aqui, ou mude para "background-color" e escolha uma cor.*/
+    background-image: url(../assets/images/index-nav-background-degrade.png); /*adicionar imagem da cor do NAVBAR aqui, ou mude para "background-color" e escolha uma cor.*/
     position: fixed;
     z-index: 1;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -91,10 +93,12 @@ body {
 }
 
 .nav-itens-name:hover {
-    background-color: #8eb9e9;
+    background-image: url(../assets/images/index-nav-background-degrade.png);
+    color: white;
     transition: 0.5s ease-out;
     
 }
+
 
 #search {
     text-align: center;
@@ -108,4 +112,26 @@ body {
     #search {
         display: none;
     }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+  /*  justify-content: center;
+    align-items: center;*/
+}
+
+
+.tittle-apresentation-initial {
+    margin-top: 3.8rem;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    color: white;
+    padding: 16px 16px;
+    text-shadow: -2px 0px 2px rgba(0, 0, 0, 1);
+   /* background-color: #8eb8e97e;
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
+    font-size: 15px;
 }
