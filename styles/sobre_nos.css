@@ -125,6 +125,11 @@ body {
     color: blueviolet;
 }
 
+@media (max-width: 745px) {
+    .tittle-apresentation-initial {
+        font-size: 13px;
+    }
+}
 
 
 .sobre-nos {
@@ -137,6 +142,13 @@ body {
 .texto-sobre-nos {
     font-size: 20px;
     font-family: 'Maven Pro', sans-serif;
+}
+
+@media (max-width: 745px){
+    .texto-sobre-nos {
+        font-size: 16px;
+        margin-top: 25px
+    }
 }
 
 .nome-jornal-grifado {
@@ -171,6 +183,17 @@ a {
     margin: 0 auto;
     padding: 0 40px;
     letter-spacing: -1.60px;
+}
+
+@media (max-width: 1290px) {
+    .container-sobre-nos {
+        flex-direction: column;
+    }
+
+    .slide-container{
+        width: 50%
+    }
+
 }
 
 
@@ -221,7 +244,7 @@ h1.tittle-apresentation-initial.sobre-nos {
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.27);
     color: blueviolet;
     border-top: solid blueviolet 2px;
-    background-color: rgb(230, 221, 221);
+    background-color: gainsboro;
 }
 
 
@@ -297,16 +320,36 @@ h1.tittle-apresentation-initial.sobre-nos {
     background-color: whitesmoke;
 }
 
+@media  (max-width: 300px) {
+    .texto-pre-rodape{
+        letter-spacing: -0.65px;
+        text-align: justify;
+    }
+    
+}
+
 .desenvolvedores {
     font-size: 16px;
     font-family: 'Maven Pro', sans-serif;
     display: flex;
-    padding: 3rem;
+   /* padding: 3rem;*/
     text-align: center;
     gap: 15%;
     justify-content: center;
     background-color: ghostwhite;
+    flex-wrap: wrap;
 }
+
+@media (max-width: 745px) {
+    .desenvolvedores {
+        flex-wrap: wrap;
+    }
+    .nomes-desenvolvedores.\32 {
+        margin-top: 75px;
+    }
+}
+
+
 
 .img-desenvolvedores {
     display: flex;
@@ -326,13 +369,33 @@ h1.tittle-apresentation-initial.sobre-nos {
 .agradecimentos {
     font-family:'Maven Pro', sans-serif;
     font-size: 16px;
-    padding-top: 7rem;
+    padding-top: 4rem;
     text-align: center;
 }
 
-.agradecimentos>img {
-    padding: 30px;
+.agradecimentos>p {
+    padding: 0 40px;
 }
+
+@media (max-width: 745px) {
+    .texto-pre-rodape {
+        text-align: justify;
+        letter-spacing: -0.9px;
+    }
+}
+
+.img-apoiadores {
+    padding-top: 45px;
+}
+
+@media (max-width: 745px){
+    .img-apoiadores {
+        width: 100vw;
+        padding: 20px 40px
+    }
+    
+}
+
 
 .copyright {
     font-family: 'Maven Pro', sans-serif;
