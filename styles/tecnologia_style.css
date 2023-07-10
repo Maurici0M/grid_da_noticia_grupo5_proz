@@ -272,6 +272,22 @@ main {
     gap: 1rem;
 }
 
+@media (max-width: 660px) {
+    .card {
+        margin: 0;
+        height: 470px
+    }
+}
+
+@media (max-width: 300px) {
+    .card {
+        height: 700px;
+        text-align: justify;
+        letter-spacing: -1.2px;
+    }
+    
+}
+
 .card:hover {
     transform: scale(1.03);
     background-color: #dcdcdc

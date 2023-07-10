@@ -62,12 +62,12 @@
 // Carrosel - Código de funcionamento
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
-    spaceBetween: 25,
+    spaceBetween: 20,
     centeredSlides: true,
     fade: 'true',
     gragCursor: 'true',
     autoplay: {
-        delay: 6500,
+        delay: 7500,
         disableOnInteraction: false
     },
     pagination: {
@@ -84,9 +84,11 @@ var swiper = new Swiper(".slide-content", {
         0: {
             slidesPerView: 1,
         },
-        520: {
-            slidesPerView: 1,
+        
+        660: {
+            slidesPerView: 2,
         },
+
         950: {
             slidesPerView: 3,
         }
