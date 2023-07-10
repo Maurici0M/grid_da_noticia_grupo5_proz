@@ -189,7 +189,6 @@ main {
 @media (max-width: 395px) {
     .tittle-apresentation-initial {
     line-height: 2.25rem;
-    letter-spacing: -.0625rem;
     font-size:0.60999em;
     
     }
@@ -198,20 +197,13 @@ main {
 @media (max-width: 390px) {
     .tittle-apresentation-initial {
     line-height: 2.25rem;
-    letter-spacing: -.0625rem;
-    font-size: 0.5799em;
+    letter-spacing: -.0525rem;
+    font-size: 10px;
+    font-weight: 900;
     
     }
 }
 
-@media (max-width: 370px) {
-    .tittle-apresentation-initial {
-    line-height: 2.25rem;
-    letter-spacing: -.0625rem;
-    font-size: 0.478799em;
-    
-    }
-}
 
 /*Estilos do Carrosel*/
 .container-notices {
@@ -234,7 +226,7 @@ main {
 }
 
 .swiper-pagination-bullet-active {
-    background-color: purple;
+    background-image: url(https://cdn.dribbble.com/users/1770290/screenshots/6183149/bg_79.gif);
 }
 
 .slide-container {
@@ -249,7 +241,7 @@ main {
 .slide-content {
     margin: 0 40px;
     overflow: hidden;
-    background-color: #316b9a; 
+ /*   background-color: #316b9a; */
     border-radius: 25px;
 }
 
@@ -275,15 +267,29 @@ main {
 @media (max-width: 660px) {
     .card {
         margin: 0;
-        height: 470px
+        height: auto;
     }
+        /*limitará a quantidade de caracteres que o card exibirá em no máximo 5 linhas*/
+    .description_card {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        }
+        .swiper-navBtn {
+            display: none;
+        }
 }
 
 @media (max-width: 300px) {
     .card {
-        height: 700px;
+        height: auto;
         text-align: justify;
         letter-spacing: -1.2px;
+    }
+    .swiper-navBtn {
+        display: none;
     }
     
 }
@@ -292,17 +298,6 @@ main {
     transform: scale(1.03);
     background-color: #dcdcdc
 }
-
-/*
-.card {
-    width: 300px;
-    height: 430px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 10px 11px;
-}*/
 
 
 .card-image {
@@ -342,12 +337,15 @@ main {
 
 /*parte da publicidade*/
 
+.ads-group {
+    padding: 0 20px;
+}
+
 .ads-section {
     /*em mobile, é melhor mudar para flex, lembrar de ajustar tamanho em telas maiores.*/
     /*display: grid;*/
-    display: grid;
+    display: flex;
   /*  grid-template-columns: 33,33% 33,33% 33,33%;*/
-   /* grid-template-columns: 20% 50% 20%;*/
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -360,13 +358,21 @@ main {
     margin-top: 3rem;
     padding: 3px 3px;
     height: 13rem;
-    width: 100%;
+    width: 25rem;
     border-radius: 25px;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    /*background-color: #8eb8e984;*/
+   /* background-color: #8eb8e984; */
     
 }
+
+@media (max-width: 440px) {
+    .img-ads {
+        width: 80%;
+        height: auto;
+    }
+}
+
 
 a {
     text-align: center;
@@ -390,7 +396,7 @@ a {
     width: 300px;
     height: 300px;
     border-radius: 15px;
-    background-color: #dcd9d9e8;
+    background-color: cornsilk;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 1rem;
     

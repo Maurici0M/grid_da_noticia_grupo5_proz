@@ -2,7 +2,7 @@ const arrayAdsTecnologiaPage = [
     {
         imgAds: 'https://gifs.eco.br/wp-content/uploads/2022/11/gifs-microsoft-1.gif' ,
 
-        altImg: 'Publicidade Microsoft',
+        altImg: 'Publicidade',
 
         adsText: '',
     },
@@ -10,18 +10,12 @@ const arrayAdsTecnologiaPage = [
     {
         imgAds: 'https://media.tenor.com/kX17Sjvo5zAAAAAC/nintendo-switch.gif' ,
 
-        altImg: '',
+        altImg: 'Publicidade',
 
         adsText: '',
     },
 
-    {
-        imgAds: 'https://multilaser.vtexassets.com/assets/vtex.file-manager-graphql/images/4e7032c3-94c0-4fc4-9a20-387057c186c6___e0876ae4583279c77b3aaa4d2226f10f.jpg',
-
-        altImg: 'Publicidade Microsoft',
-
-        adsText: '',
-    },
+    
     
     ]
 
