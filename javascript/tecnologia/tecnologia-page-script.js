@@ -80,7 +80,17 @@ var swiper = new Swiper(".slide-content", {
         prevEl: ".swiper-button-prev"
     },
 
-    
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 1,
+        },
+        950: {
+            slidesPerView: 3,
+        }
+    }
 
 });  
 

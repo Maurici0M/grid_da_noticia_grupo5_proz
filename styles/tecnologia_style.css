@@ -249,7 +249,7 @@ main {
 .slide-content {
     margin: 0 40px;
     overflow: hidden;
-    background-color: #316b9a;
+    background-color: #316b9a; 
     border-radius: 25px;
 }
 
@@ -273,7 +273,7 @@ main {
 }
 
 .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     background-color: #dcdcdc
 }
 
