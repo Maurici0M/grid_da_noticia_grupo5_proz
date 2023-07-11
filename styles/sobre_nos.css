@@ -238,7 +238,7 @@ a {
 
 /*Parte dos Cards texto "Sobre"*/
 
-h1.tittle-apresentation-initial.sobre-nos {
+h1.title-apresentation-initial.sobre-nos {
     font-size: 35px;
     text-align: center;
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.27);
@@ -250,7 +250,7 @@ h1.tittle-apresentation-initial.sobre-nos {
 
 /*Cards*/
 
-.container_notices_pos_ads {
+.cards-sobre-nos-somos {
     display: flex;
     display: flex;
     justify-content: center;
@@ -260,7 +260,7 @@ h1.tittle-apresentation-initial.sobre-nos {
     
 }
 
-.card-container-2 {
+.card-somos {
     padding: 9px 11px;
     margin-top: 35px;
     width: 300px;
@@ -268,14 +268,14 @@ h1.tittle-apresentation-initial.sobre-nos {
     margin: 1rem;
 }
 
-.card-container-2 {
+.card-somos {
     font-family: 'Maven Pro', sans-serif;
     cursor: context-menu;
     transition: all 0.3s ease-out;
 }
 
 
-.card-container-2:hover {
+.card-somos:hover {
     transform: scale(1.03);
     background-color: #dcdcdc34
 }
@@ -287,7 +287,7 @@ h1.tittle-apresentation-initial.sobre-nos {
     object-fit: cover;
 }
 
-.tittle_card {
+.title_card {
     font-size: 18px;
     font-weight: 900;
     letter-spacing: -1px;
@@ -343,6 +343,7 @@ h1.tittle-apresentation-initial.sobre-nos {
 @media (max-width: 745px) {
     .desenvolvedores {
         flex-wrap: wrap;
+        padding: 3rem
     }
     .nomes-desenvolvedores.\32 {
         margin-top: 75px;
@@ -356,7 +357,7 @@ h1.tittle-apresentation-initial.sobre-nos {
     margin-top: 20px;
     width: 200px;
     height: 300px;
-    border-radius: 50%;
+    border-radius: 100%;
     border: solid blue 0.5px;
     flex-wrap: wrap;
 }
