@@ -1,6 +1,6 @@
 const arrayAdsTecnologiaPage = [
     {
-        imgAds: 'https://gifs.eco.br/wp-content/uploads/2022/11/gifs-microsoft-1.gif' ,
+        imgAds: 'https://news.microsoft.com/wp-content/uploads/2018/01/MCW_MICRO_GIF-1_v3.gif' ,
 
         altImg: 'Publicidade',
 
@@ -8,7 +8,7 @@ const arrayAdsTecnologiaPage = [
     },
 
     {
-        imgAds: 'https://media.tenor.com/kX17Sjvo5zAAAAAC/nintendo-switch.gif' ,
+        imgAds: 'https://nintendo-switch-br.s3.us-east-2.amazonaws.com/3-MODOS-EM-UM-BANNER.jpg' ,
 
         altImg: 'Publicidade',
 
