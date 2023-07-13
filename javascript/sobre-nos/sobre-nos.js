@@ -110,7 +110,7 @@ selecionarDivTextoSobreNos.appendChild(textoSobreNos)
 
 const arrayCardsSobreNos = [
     {
-        img: 'https://media.tenor.com/p1gzBFA712oAAAAC/totoro-mi-vecino-totoro.gif',
+        img: 'https://bizflyportal.mediacdn.vn/bizflyportal/459/347/2020/06/02/17/37/70515910726734841.jpg',
         altImg: '',
         titleCard: 'Adaptáveis:',
         descriptionCard: 'Somos <strong>adaptáveis</strong>, pois cada tema tem sua própria personalização e identidade, o que mostra o cuidado que temos com a experiência de navegação em nosso site.',

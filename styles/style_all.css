@@ -109,7 +109,7 @@ body {
     height: 0;
    /* background-color: #00000051; */
   /*  background-image: url();*/
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     visibility: hidden;
     transition: 0.5s;

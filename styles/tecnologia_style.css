@@ -108,8 +108,8 @@ body {
     width: 40%;
     height: 0;
    /* background-color: #00000051; */
-    background-image: url(../assets/images/index-nav-background-degrade.png);
-    background-size: contain;
+    background-image: url(../assets/images/tech-background-nav-tech-original-apresentation-ju.png);
+    background-size: cover;
     background-position: center;
     visibility: hidden;
     transition: 0.5s;
