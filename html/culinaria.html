@@ -39,23 +39,38 @@
     <!--Componente de Acessibilidade VLibras-->
 
     <header>
-      <nav class="navbar-header">
-          <span class="material-symbols-outlined">
-              menu
-          </span>
-          <div class="logo">
-              <a href="index.html">GRID <small>da Notícia</small></a>
-          </div>
-          <div class="links">
-              <ul class="nav-itens">
-                  <li> <a class="nav-itens-name" href="culinaria.html">Culinária</a> </li>
-                  <li> <a class="nav-itens-name" href="espaco_sideral.html">Espaço Sideral</a> </li>
-                  <li> <a class="nav-itens-name" href="tecnologia.html">Tecnologia</a> </li>
-                  <li> <a class="nav-itens-name" href="sobre_nos.html">Sobre Nós</a> </li>
-              </ul>
-          </div>
-          <input type="search" name="search" id="search" placeholder="Pesquisar...">
-      </nav>
+        <nav class="navbar-header">
+            <span onclick="animacaoMenu()" id="btn-menu" class="material-symbols-outlined">
+                menu_open
+            </span>
+            <div class="logo">
+                <a href="index.html">GRID <small>da Notícia</small></a>
+            </div>
+            <div class="links">
+                <ul class="nav-itens">
+                    <li> <a class="nav-itens-name" href="culinaria.html">Culinária</a></li>
+                    <li> <a class="nav-itens-name" href="espaco_sideral.html">Espaço Sideral</a> </li>
+                    <li> <a class="nav-itens-name" href="tecnologia.html">Tecnologia</a> </li>
+                    <li> <a class="nav-itens-name" href="sobre_nos.html">Sobre Nós</a> </li>
+                </ul>
+            </div>
+            <input type="search" name="search" id="search" placeholder="Pesquisar...">
+
+            <div class="links-mobile" id="links-mobile">
+                <ul class="nav-itens">
+                    <li> <a class="nav-itens-name" href="index.html"><span class="material-symbols-outlined"> house
+                            </span> Início</a> </li>
+                    <li> <a class="nav-itens-name" href="culinaria.html"> <span class="material-symbols-outlined">
+                                dinner_dining </span> Culinária</a> </li>
+                    <li> <a class="nav-itens-name" href="espaco_sideral.html"> <span class="material-symbols-outlined">
+                                rocket_launch </span> Espaço Sideral</a> </li>
+                    <li> <a class="nav-itens-name" href="tecnologia.html"> <span class="material-symbols-outlined">
+                                desktop_windows </span> Tecnologia</a> </li>
+                    <li> <a class="nav-itens-name" href="sobre_nos.html"> <span class="material-symbols-outlined">
+                                emoji_people </span> Sobre Nós</a> </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <br>
     <main>

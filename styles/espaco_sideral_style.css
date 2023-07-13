@@ -1,43 +1,42 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /*font-family: 'Maven Pro', sans-serif;*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*font-family: 'Maven Pro', sans-serif;*/
 }
 
 /*inserção da imagem de fundo que cobre todo o conteúdo do site*/
 
-
 body {
-    min-height: 100vh;
-    align-items: center;
-    justify-content: center;
-    /*-------------------------*/
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  /*-------------------------*/
 
-    background-image: url(../assets/images/tech-body-background-gradient-blue.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-    
+  background-image: url(../assets/images/tech-body-background-gradient-blue.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  
 }
 
 /*Modificações do cabeçalho (arquivos do NAVBAR)*/
 
 .navbar-header {
-    display: flex;
-    justify-content: space-evenly;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 0px;
-    height: 70px;
-    align-items: center;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-   /* background-image: url();*/
-    position: fixed;
-    z-index: 1;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0px;
+  height: 70px;
+  align-items: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../assets/images/tech-background-nav-tech-original-apresentation-ju.png);
+  position: fixed;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 
@@ -49,20 +48,13 @@ body {
 
 
 .logo>a {
-    font-weight: 900;
-    font-size: 25px;
-    text-decoration: none;
-    text-shadow: -2px 0px 2px rgba(0, 0, 0, 1);
-    /*text-shadow: 3px 3px 2px rgba(128, 128, 128, 1);*/
-    color: white;
-
-.logo > a {
   font-weight: 900;
   font-size: 25px;
   text-decoration: none;
   text-shadow: -2px 0px 2px rgba(0, 0, 0, 1);
   /*text-shadow: 3px 3px 2px rgba(128, 128, 128, 1);*/
   color: white;
+
 }
 
 .nav-itens {
@@ -73,33 +65,28 @@ body {
 
 
 
-.nav-itens > li > a {
+.nav-itens>li>a {
   /*padding-left: 20px;*/
   /*padding-right: 20px;*/
-    /*padding-left: 20px;*/
-    /*padding-right: 20px;*/
   padding: 4px 19px;
   text-decoration: none;
   font-size: 12px;
   color: #000000;
   background-color: #d9d9d9fd;
   border-radius: 13px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px,
-    rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px,
-    rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+  
 }
 
 .nav-itens-name {
-  /*esse é o efeito de acender a luzinha verde verde, ao passar o mouse sobre os temas do navbar*/
+  /*esse é o efeito de acender a luzinha verde, ao passar o mouse sobre os temas do navbar*/
   transition: all 0.3s ease-out;
 }
 
 .nav-itens-name:hover {
-    background-color: #8eb9e9;
-    transition: 0.5s ease-out;
-    
   background-color: #8eb9e9;
   transition: 0.5s ease-out;
+  
 }
 
 
@@ -108,188 +95,182 @@ body {
   border-radius: 12px;
   border: none;
   padding: 4px 25px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 /*Menu mobile*/
 
 .links-mobile {
-    position: absolute;
-    backdrop-filter: blur(10px);
-    top: 69px;
-    left: 0;
-    width: 40%;
-    height: 0;
-   /* background-color: #00000051; */
-    background-image: url(../assets/images/index-nav-background-degrade.png);
-    background-size: contain;
-    background-position: center;
-    visibility: hidden;
-    transition: 0.5s;
-    overflow: hidden;
-    border-radius: 0 25px
+  position: absolute;
+  backdrop-filter: blur(10px);
+  top: 69px;
+  left: 0;
+  width: 40%;
+  height: 0;
+ /* background-color: #00000051; */
+  background-image: url(../assets/images/index-nav-background-degrade.png);
+  background-size: contain;
+  background-position: center;
+  visibility: hidden;
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 0 25px
 }
 
 .links-mobile .nav-itens{
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
-    text-align: center;
-    
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  text-align: center;
+  
 }
 
 .links-mobile .nav-itens-name {
-    display: block;
-    padding: 10px 30px;
-    gap: 45px;
+  display: block;
+  padding: 10px 30px;
+  gap: 45px;
 }
 
 #btn-menu {
-    color: white;
+  color: white;
 }
 
 
 @media screen and (max-width: 1030px) {
-    .links {
-        display: none;
-    }
-   /* #search {
-        display: none;
-    } */
-    .logo {
-        width: 100%;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .material-symbols-outlined{
-        display: block;
-        cursor: pointer;
-    }
+  .links {
+      display: none;
+  }
+ /* #search {
+      display: none;
+  } */
+  .logo {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .material-symbols-outlined{
+      display: block;
+      cursor: pointer;
+  }
 
-    .navbar-header{
-        padding: 30px;
-    }
+  .navbar-header{
+      padding: 30px;
+  }
 
-    .links-mobile.abrir{
-        visibility: visible;
-        height: 100vh;
-    }
+  .links-mobile.abrir{
+      visibility: visible;
+      height: 100vh;
+  }
 
-    #btn-menu.ativo {
-        display: block;
-        color: snow;
-    }
-    
+  #btn-menu.ativo {
+      display: block;
+      color: snow;
+  }
+  
 }
 
 @media screen and (max-width: 565px) {
-    #search {
-        display: none;
-    }
+  #search {
+      display: none;
+  }
 }
 
 
 @media screen and (max-width: 440px) {
-    .links-mobile {
-        width: 70%;
-    }
+  .links-mobile {
+      width: 70%;
+  }
 
-    .logo>a {
-        font-weight: 900;
-        font-size: 20px;
-        text-decoration: none;
-        text-shadow: -2px 0px 2px rgba(0, 0, 0, 1);
-        color: white;
-    
-    }
+  .logo>a {
+      font-weight: 900;
+      font-size: 20px;
+      text-decoration: none;
+      text-shadow: -2px 0px 2px rgba(0, 0, 0, 1);
+      color: white;
+  
+  }
 }
 
 
 /*Fim dos arquivos do NAVBAR*/
 
-main {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-} */
 
 .tittle-apresentation-initial {
   margin-top: 3.8rem;
   text-align: center;
-  font-family: "Maven Pro", sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   color: white;
   padding: 16px 16px;
   text-shadow: -2px 0px 2px rgba(0, 0, 0, 1);
-  /* background-color: #8eb8e97e;
-    width: 100%;
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
+ /* background-color: #8eb8e97e;
+  width: 100%;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px; */
   font-size: 15px;
 }
 
 @media (max-width: 975px) {
   .tittle-apresentation-initial {
-    line-height: 2.25rem;
-    letter-spacing: -0.0625rem;
+  line-height: 2.25rem;
+  letter-spacing: -.0625rem;
   }
 }
 
 @media (max-width: 620px) {
   .tittle-apresentation-initial {
-    line-height: 2.25rem;
-    letter-spacing: -0.0625rem;
-    font-size: 0.8em;
+  line-height: 2.25rem;
+  letter-spacing: -.0625rem;
+  font-size: 0.8em;
   }
 }
 
 @media (max-width: 520px) {
   .tittle-apresentation-initial {
-    line-height: 2.25rem;
-    letter-spacing: -0.0625rem;
-    font-size: 0.7em;
+  line-height: 2.25rem;
+  letter-spacing: -.0625rem;
+  font-size: 0.7em;
   }
 }
 
 @media (max-width: 450px) {
   .tittle-apresentation-initial {
-    line-height: 2.25rem;
-    letter-spacing: -0.0625rem;
-    font-size: 0.649em;
+  line-height: 2.25rem;
+  letter-spacing: -.0625rem;
+  font-size: 0.649em;
   }
 }
 
 @media (max-width: 415px) {
   .tittle-apresentation-initial {
-    line-height: 2.25rem;
-    letter-spacing: -0.0625rem;
-    font-size: 0.6199em;
+  line-height: 2.25rem;
+  letter-spacing: -.0625rem;
+  font-size: 0.6199em;
   }
 }
 
 @media (max-width: 395px) {
   .tittle-apresentation-initial {
-    line-height: 2.25rem;
-    font-size: 0.60999em;
+  line-height: 2.25rem;
+  font-size:0.60999em;
+  
   }
 }
 
 @media (max-width: 390px) {
   .tittle-apresentation-initial {
-    line-height: 2.25rem;
-    letter-spacing: -0.0525rem;
-    font-size: 10px;
-    font-weight: 900;
+  line-height: 2.25rem;
+  letter-spacing: -.0525rem;
+  font-size: 10px;
+  font-weight: 900;
+  
   }
 }
 
 /*Estilos do Carrosel*/
 .container-notices {
   margin-top: -28px;
+  
 }
 
 .swiper-navBtn {
@@ -311,7 +292,7 @@ main {
 }
 
 .slide-container {
-  max-width: 1120px;
+  max-width: 1360px;
   width: 100%;
   background-position: center center;
   background-size: cover;
@@ -330,7 +311,7 @@ main {
   text-decoration: none;
 }
 
-.card {
+.card{
   padding: 10px 11px;
   margin-top: 35px;
   width: 300px;
@@ -339,7 +320,7 @@ main {
   background-color: #dcd9d9e8;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin: 1rem;
-  font-family: "Maven Pro", sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease-out;
   gap: 1rem;
@@ -348,37 +329,39 @@ main {
 
 @media (max-width: 660px) {
   .card {
-    margin: 0;
-    height: auto;
+      margin: 0;
+      height: auto;
   }
-  /*limitará a quantidade de caracteres que o card exibirá em no máximo 5 linhas*/
+      /*limitará a quantidade de caracteres que o card exibirá em no máximo 5 linhas*/
   .description_card {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-  }
-  .swiper-navBtn {
-    display: none;
-  }
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      }
+      .swiper-navBtn {
+          display: none;
+      }
 }
 
 @media (max-width: 300px) {
   .card {
-    height: auto;
-    text-align: justify;
-    letter-spacing: -1.2px;
+      height: auto;
+      text-align: justify;
+      letter-spacing: -1.2px;
   }
   .swiper-navBtn {
-    display: none;
+      display: none;
   }
+  
 }
 
 .card:hover {
   transform: scale(1.03);
-  background-color: #dcdcdc;
+  background-color: #dcdcdc
 }
+
 
 .card-image {
   width: 100%;
@@ -387,6 +370,7 @@ main {
   margin-top: 0;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border: solid gainsboro 2px;
+  
 }
 
 .card-image .card-img {
@@ -424,7 +408,7 @@ main {
   /*em mobile, é melhor mudar para flex, lembrar de ajustar tamanho em telas maiores.*/
   /*display: grid;*/
   display: flex;
-  /*  grid-template-columns: 33,33% 33,33% 33,33%;*/
+/*  grid-template-columns: 33,33% 33,33% 33,33%;*/
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
@@ -432,29 +416,33 @@ main {
   padding: 55px;
   margin-top: 99px;
   background-color: #316b9a24;
+ 
 }
 
 .img-ads {
-  /*  margin-top: 3rem;*/
+/*  margin-top: 3rem;*/
   padding: 3px 3px;
   height: 13rem;
   width: 25rem;
   border-radius: 25px;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  /* background-color: #8eb8e984; */
+ /* background-color: #8eb8e984; */
+  
 }
 
 @media (max-width: 440px) {
   .img-ads {
-    width: 80%;
-    height: auto;
+      width: 80%;
+      height: auto;
   }
 }
+
 
 a {
   text-align: center;
   text-decoration: none;
+  
 }
 
 /*notícias pós parte da publicidade "ads"*/
@@ -482,20 +470,22 @@ a {
 }
 
 .card-container-2 {
-  font-family: "Maven Pro", sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease-out;
+
 }
 
 .card-container-2 {
-  font-family: "Maven Pro", sans-serif;
+  font-family: 'Maven Pro', sans-serif;
   cursor: pointer;
   transition: all 0.3s ease-out;
+
 }
 
 .card-container-2:hover {
   transform: translateY(-9px);
-  background-color: #dcdcdc;
+  background-color: #dcdcdc
 }
 
 .img-card {
@@ -504,6 +494,7 @@ a {
   border-radius: 12px;
   border: solid gainsboro 2px;
 }
+
 
 /*Para deixar o botão alinhado no meio*/
 main {
@@ -521,7 +512,7 @@ main {
   border: none;
   border-radius: 15px;
   color: rgb(10, 10, 10);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   transition: all 0.4s ease-out;
 }
