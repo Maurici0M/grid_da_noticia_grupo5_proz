@@ -26,6 +26,8 @@
   width: 25%;
   padding: 0 15px;
 }
+
+
 .footer-col h4 {
   font-size: 18px;
   color: #ffffff;
@@ -33,6 +35,8 @@
   margin-bottom: 30px;
   font-weight: 500;
   position: relative;
+  /*adição extra*/
+  transition: all 0.5s ease-out;
 }
 .footer-col h4::before {
   content: "";
@@ -43,7 +47,22 @@
   height: 2px;
   box-sizing: border-box;
   width: 50px;
+  /*adição extra*/
+  transition: all 1s ease-out;
 }
+
+/*Criação de efeito ao passar o mouse em cima da linha ou título 'footer-col', ela irá duplicar levemente o tamanho*/
+
+.footer-col h4:hover::before {
+  transition: all 1s ease-out;
+  transform: translateX(1.5);
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 110px;
+}
+
+
 .footer-col .footer-ul li:not(:last-child) {
   margin-bottom: 10px;
 }
