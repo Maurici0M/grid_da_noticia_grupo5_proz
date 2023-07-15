@@ -1,4 +1,4 @@
-// Carrosel - Código de funcionamento (adaptado para a página 'Sobre nós')
+// Carrossel - Código de funcionamento (adaptado para a página 'Sobre nós')
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 1,
     spaceBetween: 1,
@@ -22,7 +22,7 @@ var swiper = new Swiper(".slide-content", {
 });  
 
 
-//Arquivos de alimentação do mini carrosel lateral - Sobre Nós
+//Arquivos de alimentação do mini carrossel lateral - Sobre Nós
 
 const arrayMiniCarrossel = [
 
