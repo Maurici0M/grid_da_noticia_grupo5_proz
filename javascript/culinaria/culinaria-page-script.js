@@ -8,28 +8,27 @@ var swiper = new Swiper(".slide-content", {
     dynamicBullets: true,
   },
   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   autoplay: {
-      delay: 7500,
-      disableOnInteraction: false
+    delay: 7500,
+    disableOnInteraction: false,
   },
 
   breakpoints: {
-      0: {
-          slidesPerView: 1,
-      },
-      
-      660: {
-          slidesPerView: 'auto',
-      },
+    0: {
+      slidesPerView: 1,
+    },
 
-      950: {
-          slidesPerView: 'auto',
-      }
-  }
+    660: {
+      slidesPerView: "auto",
+    },
 
+    950: {
+      slidesPerView: "auto",
+    },
+  },
 });
 
 //Arquivos de alimentação do carrosel - Notícias que são mostradas
@@ -37,85 +36,81 @@ var swiper = new Swiper(".slide-content", {
 const arrayCarrossel = [
   {
     linkNotices:
-      "https://www.estadao.com.br/link/discord-o-que-e-e-como-funciona-o-app-para-gamers-que-virou-foco-de-abusos-contra-jovens/",
+      "https://metropolitanafm.com.br/televisao/chef-erick-jacquin-fala-o-que-nao-devia-e-expoe-preferencia-por-outro-programa-muito-melhor",
     cardImg:
-      "https://t.ctcdn.com.br/OBqzxQ888c3zUJEzGrxu4jjioOo=/512x288/smart/filters:format(webp)/i525670.png",
-    altImgCard: "Logo do aplicativo Discord",
+      "https://metropolitanafm.com.br/wp-content/uploads/2023/05/img_chef_jacquin_2023-600x338.jpg",
+    altImgCard: "Foto de Erick Jacquin",
     tittleCard:
-      "Discord: O que é e como funciona o app para gamers que virou foco de abusos contra jovens.",
+      "Chef Erick Jacquin fala o que não devia e expõe preferência por outro programa: “Muito melhor”",
     descriptionCard:
-      "Plataforma ganhou popularidade entre os jovens por transmissões ao vivo de vídeos das partidas, mas virou mecanismo da ação de criminosos para subornar menores.",
+      "Erick Jacquin, um dos jurados do MasterChef Brasil, revelou quais são seus programas favoritos na televisão. Em entrevista, o cozinheiro disse que sente falta de ter um espaço próprio na telinha.",
   },
 
   {
     linkNotices:
-      "https://g1.globo.com/tecnologia/noticia/2023/07/05/instagram-threads-rival-twitter.ghtml",
+      "https://metropolitanafm.com.br/televisao/realities/masterchef/masterchef-brasil-2023-confira-o-que-rolou-no-episodio-de-estreia",
     cardImg:
-      "https://s2-g1.glbimg.com/XvJgv46mktFspeaOXTWubWa87Mg=/0x0:6000x3375/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/y/6/jynisCQqywFngyjBH5Jg/aplicativo-threads.png",
-    altImgCard: 'Imagens da nova rede social: "Threads"',
+      "https://metropolitanafm.com.br/wp-content/uploads/2023/05/IMG-Estreia-MasterChef-Brasil-2023-600x338.jpg",
+    altImgCard: "Imagem dos jurados do Master Chef",
     tittleCard:
-      "Instagram lança Threads, rede social para rivalizar com o Twitter.",
+      "MasterChef Brasil 2023: Confira o que rolou no episódio de estreia!",
     descriptionCard:
-      "Rede social foi revelada dias após o Twitter anunciar um limite para leitura de posts. Usuários poderão fazer login e encontrar amigos por meio de suas contas no Instagram.",
+      "O primeiro episódio desta temporada revisitou o primeiro episódio do reality show culinário, há 10 anos. E, trouxe 90 candidatos para participar da primeira etapa seletiva, que definiu quem entra oficialmente na disputa culinária.",
   },
 
   {
     linkNotices:
-      "https://www.hardware.com.br/noticias/2023-06/marvel-e-criticada-por-usar-inteligencia-artificial-para-criar-abertura-de-serie.html",
+      "https://receitas.globo.com/blog/alimentacao-e-saude/tapioca-engorda-conheca-mitos-e-verdades-do-alimento.ghtml",
     cardImg:
-      "https://www.hardware.com.br/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-22-at-11.11.20.jpeg",
-    altImgCard: "Imagem da nova série Marvel: Invasão Secreta",
-    tittleCard:
-      "Marvel é criticada por usar inteligência artificial para criar abertura de série.",
+      "https://s2-receitas.glbimg.com/LNr5zJu-Fo1pY5TZjk2iCEOS2PE=/0x0:5184x3456/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/B/J/TwmuA3QfaNQTXLzLwETQ/rapioca-recheada-com-morango.jpg",
+    altImgCard: "Imagem de uma tapioca",
+    tittleCard: "Tapioca engorda? Conheça mitos e verdades do alimento",
     descriptionCard:
-      "A controvérsia surgiu após a revelação de que a Marvel usou IA para criar a sequência de abertura de sua nova série, “Invasão Secreta”.",
+      "A tapioca ganhou destaque em muitas receitas e virou parte do cardápio de quem busca uma alimentação mais saudável. Feita da massa da mandioca, ela também é consumida por quem pratica exercícios físicos, já que funciona como pré e pós-treino.",
   },
 
   {
     linkNotices:
-      "https://www.oficinadanet.com.br/playstation/45086-playstation-2-fatos-curiosidades",
+      "https://receitas.globo.com/tipos-de-prato/bolos/bolo-de-cenoura-de-liquidificador-4e80cb6a8811965be7003c43.ghtml",
     cardImg:
-      "https://www.oficinadanet.com.br/media/post/45086/750/playstation-2.jpg",
-    altImgCard: "Imagem do console PlayStation 2",
-    tittleCard:
-      "PlayStation 2 completa 23 anos: relembre fatos e curiosidades.",
+      "https://s2-receitas.glbimg.com/CfHtIpRubb2sm1XzO65Vwp711HA=/0x0:1280x800/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2021/9/N/bmnJNgR5G0K2QmEYFkPQ/bolo-de-cenoura-receita.jpg",
+    altImgCard: "Imagem de um bolo de cenoura",
+    tittleCard: "Bolo de cenoura de liquidificador",
     descriptionCard:
-      "Com um design icônico e jogos inesquecíveis, como GTA San Andreas, Final Fantasy X e Metal Gear Solid 2, o PlayStation 2 tornou-se um dos consoles mais populares de todos os tempos.",
-  },
-
-  {
-    linkNotices: "https://www.gov.br/governodigital/pt-br/vlibras/",
-    cardImg:
-      "https://www.gov.br/governodigital/pt-br/vlibras/imagens/avatar.png",
-    altImgCard: "Avatares do VLibras: Guga, Ícaro e Hozana",
-    tittleCard:
-      "VLibras - Tradução automática para tornar a Web mais acessível.",
-    descriptionCard:
-      "As aplicações da Suíte VLibras permitem que pessoas surdas acessem conteúdo multimídia em sua língua natural de comunicação, o que contribui para com a acessibilidade de computadores, dispositivos móveis e páginas Web.",
+      "O bolo de cenoura é uma opção simples e prática para o café da manhã, lanche da tarde ou para uma ocasião especial com famílias e amigos. Essa receita é feita no liquidificador e fica pronta em menos de 1 hora.",
   },
 
   {
     linkNotices:
-      "https://olhardigital.com.br/2020/11/03/noticias/pesquisadores-dizem-que-o-google-usa-recaptcha-para-captar-dados/",
+      "https://receitas.globo.com/receitas-da-tv/mais-voce/pudim-de-leite-condensado-4d514bb052e0b252bc00e85a.ghtml",
     cardImg:
-      "https://proxy.olhardigital.com.br/wp-content/uploads/2020/11/20201103064551.jpg",
-    altImgCard: 'Imagem da verificação: "Não sou um robô"',
-    tittleCard:
-      "Pesquisadores dizem que o Google usa reCAPTCHA para coletar dados.",
+      "https://s2-receitas.glbimg.com/z2JiB6nwO_XITDhQksL2uiAhic0=/0x0:984x765/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2020/D/m/r8XAmWTcuRAzTRMBJZ1A/pudim-de-leite-condensado.jpg",
+    altImgCard: "Imagem de um pudim de leite condensado",
+    tittleCard: "Pudim de leite condensado",
     descriptionCard:
-      "Segundo analistas, ferramenta anti-spam tem sido usada para criar rastros de navegação e direcionar anúncio aos usuários.",
+      "Veja como fazer o pudim de leite condensado tradicional, que leva apenas 4 ingredientes: açúcar, leite condensado, leite e ovos. Ana Maria Braga ensina o passo a passo desta sobremesa tipicamente brasileira que vai encantar sua família.",
+  },
+
+  {
+    linkNotices: "https://panelaterapia.com/2023/07/chocolate-quente-2.html",
+    cardImg:
+      "https://panelaterapia.com/wp-content/uploads/2023/07/chocolate2.png",
+    altImgCard: "Imagem de um chocolate quente",
+    tittleCard: "Receitas de Chocolate Quente",
+    descriptionCard:
+      "Se você nunca fez um chocolate quente caprichado, vamos começar pela receita básica que é bastante simples e requer apenas alguns poucos ingredientes, mas que fica muito boa.",
   },
 
   {
     linkNotices:
-      "https://tecnoblog.net/noticias/2023/06/22/para-ficar-com-activision-microsoft-admite-que-xbox-perdeu-guerra-dos-consoles/",
+      "https://guia.folha.uol.com.br/restaurantes/2023/07/inspirada-em-barbie-doceria-pikurruchas-em-sp-anuncia-doces-e-drinques-cor-de-rosa.shtml",
     cardImg:
-      "https://files.tecnoblog.net/wp-content/uploads/2022/04/xbox-x_capa-2_tb-1060x596.png",
-    altImgCard: "Imagem do console Microsoft Xbox",
+      "https://f.i.uol.com.br/fotografia/2023/07/14/168935808464b18f049419d_1689358084_3x2_lg.jpg",
+    altImgCard: "Imagem da doceria Pikurrucha's",
     tittleCard:
-      "Para ficar com Activision, Microsoft admite que Xbox perdeu guerra dos consoles.",
+      "Inspirada em 'Barbie', doceria Pikurrucha's, em SP, anuncia doces e drinques cor-de-rosa",
     descriptionCard:
-      "Em um documento enviado à corte, a Microsoft revela que, desde que foi lançado, em 2001, “o console Xbox ficou consistentemente com a terceira posição entre as três concorrentes, atrás de PlayStation e Nintendo nas vendas”.",
+      "Pioneira no conceito do espaço instagramável, a confeitaria decidiu ampliar o ambiente cor-de-rosa que dialoga com a boneca para seu cardápio, oferecendo opções como um café rosa com brigadeiro branco e pipoca doce.",
   },
 ];
 
