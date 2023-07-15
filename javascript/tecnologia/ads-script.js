@@ -4,7 +4,7 @@ const arrayAdsTecnologiaPage = [
 
         altImg: 'Publicidade',
 
-        adsText: '',
+        adsText: 'Publicidade',
     },
 
     {
@@ -12,7 +12,7 @@ const arrayAdsTecnologiaPage = [
 
         altImg: 'Publicidade',
 
-        adsText: '',
+        adsText: 'Publicidade',
     },
 
     
