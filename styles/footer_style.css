@@ -27,7 +27,6 @@
   padding: 0 15px;
 }
 
-
 .footer-col h4 {
   font-size: 18px;
   color: #ffffff;
@@ -92,18 +91,14 @@ li:hover {
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: rgba (255, 255, 255, 0.2);
+  background: #fff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease;
+  color: #060606;
 }
-/* .footer-col .social-links a :hover {
-  color: #24262b;
-  background-color: #ffffff;
-} */
 
 /* responsive */
 
