@@ -1,37 +1,35 @@
 // Carrosel - Código de funcionamento
 var swiper = new Swiper(".slide-content", {
-  slidesPerView: 3,
-  spaceBetween: 20,
-  centeredSlides: true,
-  fade: "true",
-  gragCursor: "true",
-  autoplay: {
-    delay: 7500,
-    disableOnInteraction: false,
-  },
+  slidesPerView: "auto",
+  spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
     dynamicBullets: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+  },
+  autoplay: {
+      delay: 7500,
+      disableOnInteraction: false
   },
 
   breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
+      0: {
+          slidesPerView: 1,
+      },
+      
+      660: {
+          slidesPerView: 'auto',
+      },
 
-    660: {
-      slidesPerView: 2,
-    },
+      950: {
+          slidesPerView: 'auto',
+      }
+  }
 
-    950: {
-      slidesPerView: 3,
-    },
-  },
 });
 
 //Arquivos de alimentação do carrosel - Notícias que são mostradas
