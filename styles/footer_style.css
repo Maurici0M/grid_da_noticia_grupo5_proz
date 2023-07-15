@@ -77,11 +77,11 @@
 
 
 /*efeito dos links do footer se moverem para direita*/
-li {
+.footer-li {
   transition: all 1s ease-out;
 }
 
-li:hover {
+.footer-li:hover {
   transition: all 1s ease-out;
   color: #ffffff;
   padding-left: 16px;
