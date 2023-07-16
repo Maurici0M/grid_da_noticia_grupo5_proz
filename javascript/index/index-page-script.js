@@ -94,15 +94,16 @@ const arrayCarrossel = [
   },
 
   {
-    linkNotices:
-      "https://olhardigital.com.br/2020/11/03/noticias/pesquisadores-dizem-que-o-google-usa-recaptcha-para-captar-dados/",
-    cardImg:
-      "https://proxy.olhardigital.com.br/wp-content/uploads/2020/11/20201103064551.jpg",
-    altImgCard: 'Imagem da verificação: "Não sou um robô"',
-    tittleCard:
-      "Pesquisadores dizem que o Google usa reCAPTCHA para coletar dados.",
-    descriptionCard:
-      "Segundo analistas, ferramenta anti-spam tem sido usada para criar rastros de navegação e direcionar anúncio aos usuários.",
+      linkNotices: 
+      'https://g1.globo.com/tecnologia/noticia/2023/07/05/instagram-threads-rival-twitter.ghtml',
+        cardImg: 
+        'https://s2-g1.glbimg.com/XvJgv46mktFspeaOXTWubWa87Mg=/0x0:6000x3375/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/y/6/jynisCQqywFngyjBH5Jg/aplicativo-threads.png',
+        altImgCard: 
+        'Imagens da nova rede social: "Threads"',
+        tittleCard: 
+        'Instagram lança Threads, rede social para rivalizar com o Twitter.',
+        descriptionCard: 
+        'Rede social foi revelada dias após o Twitter anunciar um limite para leitura de posts. Usuários poderão fazer login e encontrar amigos por meio de suas contas no Instagram.'
   },
 
   {
