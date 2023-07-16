@@ -113,3 +113,13 @@
     width: 100%;
   }
 }
+
+.social-links>.name-dev-footer{
+    text-align: start;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.social-links.\32 {
+  margin-top: 12px;
+}

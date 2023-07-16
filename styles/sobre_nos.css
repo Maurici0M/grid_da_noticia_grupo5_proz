@@ -474,3 +474,20 @@ h1.title-apresentation-initial.sobre-nos {
     margin-top: 5rem;
     background-color: #dcdcdc;
 }
+
+
+.social-links-page a {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #060606;
+    font-size: 35px;
+    padding: 10px;
+    border: solid blueviolet 1px;
+  }
