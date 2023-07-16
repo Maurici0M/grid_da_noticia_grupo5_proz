@@ -8,28 +8,27 @@ var swiper = new Swiper(".slide-content", {
     dynamicBullets: true,
   },
   navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   autoplay: {
-      delay: 7500,
-      disableOnInteraction: false
+    delay: 7500,
+    disableOnInteraction: false,
   },
 
   breakpoints: {
-      0: {
-          slidesPerView: 1,
-      },
-      
-      660: {
-          slidesPerView: 'auto',
-      },
+    0: {
+      slidesPerView: 1,
+    },
 
-      950: {
-          slidesPerView: 'auto',
-      }
-  }
+    660: {
+      slidesPerView: "auto",
+    },
 
+    950: {
+      slidesPerView: "auto",
+    },
+  },
 });
 
 //Arquivos de alimentação do carrosel - Notícias que são mostradas
@@ -49,14 +48,14 @@ const arrayCarrossel = [
 
   {
     linkNotices:
-      "https://g1.globo.com/tecnologia/noticia/2023/07/05/instagram-threads-rival-twitter.ghtml",
+      "https://revistagalileu.globo.com/ciencia/espaco/noticia/2023/07/nasa-divulga-foto-deslumbrante-de-lagoa-no-rs-diretamente-do-espaco.ghtml/",
     cardImg:
-      "https://s2-g1.glbimg.com/XvJgv46mktFspeaOXTWubWa87Mg=/0x0:6000x3375/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/y/6/jynisCQqywFngyjBH5Jg/aplicativo-threads.png",
-    altImgCard: 'Imagens da nova rede social: "Threads"',
+      "https://s2-galileu.glbimg.com/RclyAxzTmJyrstSzCizMTSSTfJs=/0x0:1600x1064/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2023/h/V/4RIemKTaqKU1LBkV3fOw/whatsapp-image-2023-07-14-at-10.18.36.jpeg",
+    altImgCard: "Imagem da lagoa no RS",
     tittleCard:
-      "Instagram lança Threads, rede social para rivalizar com o Twitter.",
+      "Nasa divulga foto deslumbrante de lagoa no RS diretamente do espaço",
     descriptionCard:
-      "Rede social foi revelada dias após o Twitter anunciar um limite para leitura de posts. Usuários poderão fazer login e encontrar amigos por meio de suas contas no Instagram.",
+      "Imagem feita pelo ex-astronauta Jack Fischer a partir da Estação Espacial Internacional (ISS) mostra a beleza da Lagoa dos Barros, no litoral gaúcho.",
   },
 
   {
@@ -73,25 +72,25 @@ const arrayCarrossel = [
 
   {
     linkNotices:
-      "https://www.oficinadanet.com.br/playstation/45086-playstation-2-fatos-curiosidades",
+      "https://receitas.globo.com/receitas-da-tv/mais-voce/pudim-de-leite-condensado-4d514bb052e0b252bc00e85a.ghtml",
     cardImg:
-      "https://www.oficinadanet.com.br/media/post/45086/750/playstation-2.jpg",
-    altImgCard: "Imagem do console PlayStation 2",
-    tittleCard:
-      "PlayStation 2 completa 23 anos: relembre fatos e curiosidades.",
+      "https://s2-receitas.glbimg.com/z2JiB6nwO_XITDhQksL2uiAhic0=/0x0:984x765/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2020/D/m/r8XAmWTcuRAzTRMBJZ1A/pudim-de-leite-condensado.jpg",
+    altImgCard: "Imagem de um pudim de leite condensado",
+    tittleCard: "Pudim de leite condensado",
     descriptionCard:
-      "Com um design icônico e jogos inesquecíveis, como GTA San Andreas, Final Fantasy X e Metal Gear Solid 2, o PlayStation 2 tornou-se um dos consoles mais populares de todos os tempos.",
+      "Veja como fazer o pudim de leite condensado tradicional, que leva apenas 4 ingredientes: açúcar, leite condensado, leite e ovos. Ana Maria Braga ensina o passo a passo desta sobremesa tipicamente brasileira que vai encantar sua família.",
   },
 
   {
-    linkNotices: "https://www.gov.br/governodigital/pt-br/vlibras/",
+    linkNotices:
+      "https://guia.folha.uol.com.br/restaurantes/2023/07/inspirada-em-barbie-doceria-pikurruchas-em-sp-anuncia-doces-e-drinques-cor-de-rosa.shtml",
     cardImg:
-      "https://www.gov.br/governodigital/pt-br/vlibras/imagens/avatar.png",
-    altImgCard: "Avatares do VLibras: Guga, Ícaro e Hozana",
+      "https://f.i.uol.com.br/fotografia/2023/07/14/168935808464b18f049419d_1689358084_3x2_lg.jpg",
+    altImgCard: "Imagem da doceria Pikurrucha's",
     tittleCard:
-      "VLibras - Tradução automática para tornar a Web mais acessível.",
+      "Inspirada em 'Barbie', doceria Pikurrucha's, em SP, anuncia doces e drinques cor-de-rosa",
     descriptionCard:
-      "As aplicações da Suíte VLibras permitem que pessoas surdas acessem conteúdo multimídia em sua língua natural de comunicação, o que contribui para com a acessibilidade de computadores, dispositivos móveis e páginas Web.",
+      "Pioneira no conceito do espaço instagramável, a confeitaria decidiu ampliar o ambiente cor-de-rosa que dialoga com a boneca para seu cardápio, oferecendo opções como um café rosa com brigadeiro branco e pipoca doce.",
   },
 
   {
@@ -108,14 +107,13 @@ const arrayCarrossel = [
 
   {
     linkNotices:
-      "https://tecnoblog.net/noticias/2023/06/22/para-ficar-com-activision-microsoft-admite-que-xbox-perdeu-guerra-dos-consoles/",
+      "https://spacetoday.com.br/o-legado-do-helicoptero-ingenuity-em-marte/",
     cardImg:
-      "https://files.tecnoblog.net/wp-content/uploads/2022/04/xbox-x_capa-2_tb-1060x596.png",
-    altImgCard: "Imagem do console Microsoft Xbox",
-    tittleCard:
-      "Para ficar com Activision, Microsoft admite que Xbox perdeu guerra dos consoles.",
+      "https://spacetoday.com.br/wp-content/uploads/2023/05/ingenuity.jpg",
+    altImgCard: "Imagem do Helicóptero Ingenuity",
+    tittleCard: "O Legado do Helicóptero Ingenuity Em Marte",
     descriptionCard:
-      "Em um documento enviado à corte, a Microsoft revela que, desde que foi lançado, em 2001, “o console Xbox ficou consistentemente com a terceira posição entre as três concorrentes, atrás de PlayStation e Nintendo nas vendas”.",
+      "Em 19 de abril de 2021, um pequeno helicóptero chamado Ingenuity fez história ao realizar o primeiro voo motorizado e controlado em outro planeta.",
   },
 ];
 
