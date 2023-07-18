@@ -1,7 +1,6 @@
 const arrayAdsTecnologiaPage = [
   {
-    imgAds:
-      "https://img.freepik.com/vetores-premium/conceito-de-ilustracao-de-marketing-de-outdoor-uma-ilustracao-plana-isolada-no-fundo-branco_701961-1632.jpg?w=740",
+    imgAds: "https://i.gifer.com/4734.gif",
 
     altImg: "Publicidade",
 
@@ -10,7 +9,7 @@ const arrayAdsTecnologiaPage = [
 
   {
     imgAds:
-      "https://img.freepik.com/vetores-premium/conceito-de-ilustracao-de-marketing-de-outdoor-uma-ilustracao-plana-isolada-no-fundo-branco_701961-1632.jpg?w=740",
+      "https://1.bp.blogspot.com/-944c0Wboqh0/T3ssHYzMVuI/AAAAAAAAAFY/8tUtuE1j37g/s1600/gatocosmico.gif",
 
     altImg: "Publicidade",
 
