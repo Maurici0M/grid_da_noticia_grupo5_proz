@@ -1,20 +1,20 @@
 const arrayAdsTecnologiaPage = [
   {
     imgAds:
-      "https://news.microsoft.com/wp-content/uploads/2018/01/MCW_MICRO_GIF-1_v3.gif",
+      "https://img.freepik.com/vetores-premium/conceito-de-ilustracao-de-marketing-de-outdoor-uma-ilustracao-plana-isolada-no-fundo-branco_701961-1632.jpg?w=740",
 
     altImg: "Publicidade",
 
-    adsText: "",
+    adsText: "Publicidade",
   },
 
   {
     imgAds:
-      "https://nintendo-switch-br.s3.us-east-2.amazonaws.com/3-MODOS-EM-UM-BANNER.jpg",
+      "https://img.freepik.com/vetores-premium/conceito-de-ilustracao-de-marketing-de-outdoor-uma-ilustracao-plana-isolada-no-fundo-branco_701961-1632.jpg?w=740",
 
     altImg: "Publicidade",
 
-    adsText: "",
+    adsText: "Publicidade",
   },
 ];
 

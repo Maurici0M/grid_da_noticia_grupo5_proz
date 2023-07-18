@@ -167,6 +167,16 @@ body {
         transition: all 0.5s ease-in-out;
     }
 
+/*ícones do menu na lateral */
+.links-mobile .nav-itens-name {
+    display: flex;
+  }
+  
+  .nav-itens-name {
+    align-items: center;
+  }
+  /**/
+
     .mobile-menu {
         display: block;
     }
@@ -191,12 +201,27 @@ body {
         color: #fff;
         transition: all 0.5s ease-in-out;
     }
+
+    .links-mobile {
+        width: 25%;
+    }
     
 }
+
+@media (max-width: 980px) {
+    .links-mobile {
+        width: 46%;
+    }
+}
+
 
 @media screen and (max-width: 565px) {
     #search {
         display: none;
+    }
+
+    .links-mobile {
+        width: 50%;
     }
 }
 
@@ -213,6 +238,12 @@ body {
         text-shadow: -2px 0px 2px rgba(0, 0, 0, 1);
         color: white;
     
+    }
+}
+
+@media screen and (max-width: 300px){
+    .links-mobile {
+        width: 90%;
     }
 }
 

@@ -86,6 +86,7 @@ body {
 
 .nav-itens-name:hover {
     background-color: #8eb9e9;
+    color: #fff;
     transition: 0.5s ease-out;
     
 }
@@ -166,6 +167,16 @@ body {
         transition: all 0.5s ease-in-out;
     }
 
+/*ícones do menu na lateral */
+.links-mobile .nav-itens-name {
+    display: flex;
+  }
+  
+  .nav-itens-name {
+    align-items: center;
+  }
+  /**/
+
     .mobile-menu {
         display: block;
     }
@@ -190,7 +201,17 @@ body {
         color: #fff;
         transition: all 0.5s ease-in-out;
     }
+
+    .links-mobile {
+        width: 25%;
+      }
     
+}
+
+@media (max-width: 980px) {
+    .links-mobile {
+        width: 46%;
+    }
 }
 
 @media screen and (max-width: 565px) {
@@ -204,6 +225,12 @@ body {
     .links-mobile {
         width: 70%;
     }
+
+@media screen and (max-width: 300px){
+    .links-mobile {
+        width: 90%;
+    }
+}
 
     .logo>a {
         font-weight: 900;
@@ -483,6 +510,13 @@ p.ads-text {
     font-family: 'Maven Pro', sans-serif;
 }
 
+@media (max-width: 560px) {
+    .img-ads {
+        width: 450px;
+        height: auto;
+    }
+}
+
 @media (max-width: 440px) {
     .img-ads {
         width: 300px;
@@ -540,6 +574,7 @@ iframe {
     padding: 2px 2px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
     width: 400px;
+    transition: all 0.3s ease-out;
 }
 
 @media (max-width: 1280px) {
@@ -599,6 +634,17 @@ iframe {
         margin-top: 65px;
     }
 }
+
+iframe:hover{
+    transition: all 0.3s ease-out;
+    transform: scale(1.03);
+}
+
+.audio-spotify:hover {
+    transition: all 0.3s ease-in-out;
+    transform: none;
+}
+
 /*Spotify*/
 /*
 .audio-spotify-section {
@@ -679,7 +725,6 @@ iframe {
     width: 100%;
     height: 165px;
     border-radius: 12px 12px 0px 0px;
-    border: solid gainsboro 2px;
     object-fit: cover;
 }
 
