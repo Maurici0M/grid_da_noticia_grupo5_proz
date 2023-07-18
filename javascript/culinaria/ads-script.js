@@ -1,20 +1,20 @@
 const arrayAdsTecnologiaPage = [
   {
     imgAds:
-      "https://news.microsoft.com/wp-content/uploads/2018/01/MCW_MICRO_GIF-1_v3.gif",
+      "https://pa1.aminoapps.com/8578/e8c47ca39e064d02c318fe7beeeca7ac32afa596r1-640-360_hq.gif",
 
     altImg: "Publicidade",
 
-    adsText: "",
+    adsText: "Publicidade",
   },
 
   {
     imgAds:
-      "https://nintendo-switch-br.s3.us-east-2.amazonaws.com/3-MODOS-EM-UM-BANNER.jpg",
+      "https://i.pinimg.com/originals/c7/94/be/c794be5349bc93ec47a2a17daab1b279.gif",
 
     altImg: "Publicidade",
 
-    adsText: "",
+    adsText: "Publicidade",
   },
 ];
 

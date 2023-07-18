@@ -136,14 +136,24 @@ body {
     color: white;
 }
 
+#btn-menu-close{
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.ativo{
+    display: block;
+    transform: rotate(90deg);
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
 
 @media screen and (max-width: 1030px) {
     .links {
         display: none;
     }
-   /* #search {
-        display: none;
-    } */
+
     .logo {
         width: 100%;
         padding: 20px;
@@ -153,6 +163,11 @@ body {
     .material-symbols-outlined{
         display: block;
         cursor: pointer;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mobile-menu {
+        display: block;
     }
 
     .navbar-header{
@@ -165,8 +180,15 @@ body {
     }
 
     #btn-menu.ativo {
-        display: block;
+        display: none;
         color: snow;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #btn-menu-close.ativo{
+        display: block;
+        color: #fff;
+        transition: all 0.5s ease-in-out;
     }
     
 }
@@ -422,7 +444,7 @@ body {
     overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 7;
+        -webkit-line-clamp: 6;
         -webkit-box-orient: vertical;
 }
 
@@ -463,11 +485,17 @@ p.ads-text {
 
 @media (max-width: 440px) {
     .img-ads {
-        width: 250px;
+        width: 300px;
         height: auto;
     }
 }
 
+@media (max-width: 300px) {
+    .img-ads {
+        width: 250px;
+        height: auto;
+    }
+}
 
 a {
     text-align: center;
@@ -482,7 +510,7 @@ a {
     display: flex;
     align-items: center;
     gap: 25px;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -495,7 +523,7 @@ a {
     font-size: 24px;
     border: none;
     padding: 35px;
-    background-color: rgb(70 91 180 / 19%);
+    background-color: rgb(70 91 180 / 49%);
 }
 
 .videos-section {
@@ -511,14 +539,89 @@ iframe {
     background-color: #5d8ee9;
     padding: 2px 2px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    width: 400px;
+}
+
+@media (max-width: 1280px) {
+    iframe {
+        width: 300px;
+    }
+    .audio-spotify {
+        width: 300px;
+    }
+}
+
+@media (max-width: 790px) {
+    iframe {
+        width: 200px;
+    }
+    .audio-spotify {
+        margin-top: 25px;
+        width: 205px;
+    }
 }
 
 
+@media (max-width: 850px) {
+    iframe {
+        width: 350px;
+    }
+    .audio-spotify {
+        margin-top: 25px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 785px) {
+    iframe {
+        width: 250px;
+    }
+    .audio-spotify {
+        margin-top: 25px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 605px) {
+    iframe {
+        width: 85%;
+    }
+    .audio-spotify {
+        margin-top: 25px;
+        width: 85%;
+        height: 235px;
+    }
+    .videos-section{
+        padding: 12px;
+    }
+
+    .card-container-2 {
+        margin-top: 65px;
+    }
+}
+/*Spotify*/
+/*
+.audio-spotify-section {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}*/
+
+.audio-spotify {
+    margin-top: 35px;
+    background-color: inherit;
+    padding: 0;
+    box-sizing: border-box;
+    box-shadow: none;
+    gap: 15px;
+
+}
 
 /*notícias pós parte dos videos*/
 
 .container_notices_pos_ads {
-    display: flex;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -526,7 +629,6 @@ iframe {
 }
 
 .card-container-2 {
-    padding: 9px 11px;
     margin-top: 35px;
     width: 300px;
     height: 300px;
@@ -534,7 +636,7 @@ iframe {
     background-color: rgba(220, 217, 217, 0.91);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 1rem;
-    border: solid #9d9d9d 2px;
+    border: 1px solid rgb(157, 157, 157);
 }
 
 .card-container-2 {
@@ -556,11 +658,29 @@ iframe {
     background-color: #dcdcdc
 }
 
+@media (max-width:500px) {
+    .container_notices_pos_ads{
+        padding: 2rem;
+        margin-top: 65px;
+    }
+    .card-container-2 {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width:300px) {
+    .container_notices_pos_ads{
+        padding: 0.3rem;
+    }
+    
+}
+
 .img-card {
     width: 100%;
     height: 165px;
-    border-radius: 12px;
+    border-radius: 12px 12px 0px 0px;
     border: solid gainsboro 2px;
+    object-fit: cover;
 }
 
 
@@ -571,8 +691,8 @@ main {
 
 /*Estilos do botão*/
 .btn-ver-mais {
-    margin-top: 3rem;
-    padding: 15px 20px;
+    margin-top: 1rem;
+    padding: 15px 20px ;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 50px;
     font-size: 15px;
@@ -583,6 +703,7 @@ main {
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
     transition: all 0.4s ease-out;
+    margin-bottom: 45px
 }
 
 .btn-ver-mais:hover {

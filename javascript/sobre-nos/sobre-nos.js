@@ -37,7 +37,7 @@ const arrayMiniCarrossel = [
     },
     {
         href: 'tecnologia.html',
-        cardImg: 'https://www.10wallpaper.com/wallpaper/1366x768/1805/Creative_integrated_circuit_high_tech_earth_1366x768.jpg',
+        cardImg: 'https://images7.alphacoders.com/865/865098.jpg',
     },
 ]
 
@@ -110,7 +110,7 @@ selecionarDivTextoSobreNos.appendChild(textoSobreNos)
 
 const arrayCardsSobreNos = [
     {
-        img: 'https://bizflyportal.mediacdn.vn/bizflyportal/459/347/2020/06/02/17/37/70515910726734841.jpg',
+        img: '',
         altImg: '',
         titleCard: 'Adaptáveis:',
         descriptionCard: 'Somos <strong>adaptáveis</strong>, pois cada tema tem sua própria personalização e identidade, o que mostra o cuidado que temos com a experiência de navegação em nosso site.',
@@ -142,7 +142,7 @@ for (let index = 0; index < arrayCardsSobreNos.length; index++) {
 
 // Manipular elemento:
     cardsSobreNos.innerHTML = `
-        <img class="img-card" src=${arrayCardsSobreNos[index].img}" alt="${arrayCardsSobreNos[index].altImg}">
+        <img class="img-card" src="${arrayCardsSobreNos[index].img}" alt="${arrayCardsSobreNos[index].altImg}">
 
         <div class="card-info">
             <h3 class="title_card">

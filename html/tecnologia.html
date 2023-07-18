@@ -15,11 +15,7 @@
     <!------------------------------------>
     <link rel="stylesheet" href="../styles/tecnologia_style.css">
     <!--Swiper Script (arquivos do carrosel)-->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <!-- link do estilo dos botões do footer (redes sociais) -->
     <link rel="stylesheet" href="../styles/footer_style.css" />
     <!-- link do footer -->
@@ -46,11 +42,15 @@
     </script>
     <!--Componente de Acessibilidade VLibras-->
 
+
     <header>
         <nav class="navbar-header">
             <span onclick="animacaoMenu()" id="btn-menu" class="material-symbols-outlined">
                 menu_open
             </span>
+            <span onclick="animacaoMenu()" class="material-symbols-outlined" id="btn-menu-close">
+                cancel
+                </span>
             <div class="logo">
                 <a href="index.html">GRID <small>da Notícia</small></a>
             </div>
@@ -109,7 +109,7 @@
         </section>
 
         <div class="tittle-apresentation-initial videos">
-            <h3>(Beta) - Vídeos que podem te interessar:</h3>
+            <h3>(Versão Testes-Beta) - Conteúdos que podem te interessar:</h3>
         </div>
         <section class="videos-section">
             <iframe width="400" height="215" src="https://www.youtube.com/embed/nj22l1gIll8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -117,14 +117,19 @@
             <iframe width="400" height="215" src="https://www.youtube.com/embed/pyC_qiW_4ZY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
             <iframe width="400" height="215" src="https://www.youtube.com/embed/OInv_HGQlZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            <iframe class="audio-spotify" style="border-radius:12px" src="https://open.spotify.com/embed/show/2Id2Jat8aamHRVUUzhOGRD?utm_source=generator" width="300" height="215" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <iframe class="audio-spotify" style="border-radius:12px" src="https://open.spotify.com/embed/show/2ibU1kkoyIDIfCjkUC2Qxk?utm_source=generator" width="300" height="215" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <iframe class="audio-spotify" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0gf7K6pUjof4QaH7IgKEkO?utm_source=generator" width="300" height="215" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             
         </section>
 
         <!--Notícias que vem depois das publicidades-->
         <section class="container_notices_pos_ads">
 
-            <a class="link-notices" target="_blank"
-                href="https://www.tecmundo.com.br/internet/265777-youtube-impede-reproducao-videos-bloqueadores-de-anuncio.htm">
+            <a class="link-notices" target="_blank" href="https://www.tecmundo.com.br/internet/265777-youtube-impede-reproducao-videos-bloqueadores-de-anuncio.htm">
                 <div class="card-container-2">
                     <img class="img-card" src="https://tm.ibxk.com.br/2023/06/29/29105714966076.jpg?ims=1120x420" alt="not informed">
                     <div class="card-info">
@@ -132,9 +137,7 @@
                             YouTube impede reprodução de vídeos de quem usa bloqueadores de anúncio.
                         </h3>
                         <br>
-                        <p class="description_card">
-
-                        </p>
+                        <p class="description_card"></p>
                     </div>
             </a>
             </div>
@@ -143,17 +146,13 @@
             <a class="link-notices" target="_blank"
                 href="https://g1.globo.com/tecnologia/noticia/2023/06/28/microsoft-teams-apresenta-instabilidade-na-manha-desta-quarta.ghtml">
                 <div class="card-container-2">
-                    <img class="img-card"
-                        src="https://s2-g1.glbimg.com/DvpNTogu6Ig8p4oLhJP7u57iDIo=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/9/n/wNYyRtRiCzgB5gyjaSVQ/17da9a60-a709-11ed-96fd-454d269ebe8d.jfif" alt="not informed">
-
+                    <img class="img-card" src="https://s2-g1.glbimg.com/DvpNTogu6Ig8p4oLhJP7u57iDIo=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/9/n/wNYyRtRiCzgB5gyjaSVQ/17da9a60-a709-11ed-96fd-454d269ebe8d.jfif" alt="not informed">
                     <div class="card-info">
                         <h3 class="tittle_card">
                             Microsoft Teams apresenta instabilidade global na manhã desta quarta (28/06).
                         </h3>
                         <br>
-                        <p class="description_card">
-
-                        </p>
+                        <p class="description_card"></p>
                     </div>
             </a>
             </div>
@@ -161,15 +160,12 @@
             <a class="link-notices" target="_blank"
                 href="https://g1.globo.com/tecnologia/noticia/2023/03/08/hackers-causaram-prejuizos-a-cerca-de-25-das-empresas-brasileiras-em-2022-diz-pesquisa.ghtml">
                 <div class="card-container-2">
-                    <img class="img-card"
-                        src="https://s2-g1.glbimg.com/Vo9n1UdeaUVfSISB0rZN7l59bLA=/0x0:5568x3712/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/s/8/3lGjCjSm2rfee1HJXBfA/age20230119042.jpg" alt="not informed">
+                    <img class="img-card" src="https://s2-g1.glbimg.com/Vo9n1UdeaUVfSISB0rZN7l59bLA=/0x0:5568x3712/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/s/8/3lGjCjSm2rfee1HJXBfA/age20230119042.jpg" alt="not informed">
                     <div class="card-info">
                         <h3 class="tittle_card">
                             Hackers causaram prejuízos a cerca de 25% das empresas brasileiras em 2022, diz pesquisa.
                         </h3>
-                        <p class="description_card">
-
-                        </p>
+                        <p class="description_card"></p>
                     </div>
             </a>
             </div>
@@ -244,5 +240,4 @@
         </div>
     </footer>
 </body>
-
 </html>
