@@ -99,6 +99,11 @@
   color: #060606;
 }
 
+.footer-col .social-links :hover {
+  background-color: #bbbbbb;
+  transition: all 0.5s;
+}
+
 /* responsive */
 
 @media (max-width: 767px) {
@@ -114,10 +119,10 @@
   }
 }
 
-.social-links>.name-dev-footer{
-    text-align: start;
-    color: white;
-    margin-bottom: 12px;
+.social-links > .name-dev-footer {
+  text-align: start;
+  color: white;
+  margin-bottom: 12px;
 }
 
 .social-links.\32 {
