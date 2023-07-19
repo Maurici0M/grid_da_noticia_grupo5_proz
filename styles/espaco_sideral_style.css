@@ -587,7 +587,7 @@ main {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #737373;
+  background-color: #282828;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -598,36 +598,28 @@ main {
   text-decoration: none;
   font-size: 1.5em;
   font-family: "Maven pro", sans-serif;
-  color: #282828;
+  color: #fff;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  background-color: #656565;
+  background-color: #505050;
 }
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 15px;
-  font-size: 36px;
-  margin-left: 50px;
+  font-size: 1em;
+  margin-left: 1em;
 }
 
 .side_nav_btn {
   color: #fff;
 }
 
-/* @media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-} */
-.side_nav_btn{
+.side_nav_btn {
   display: none;
 }
 span.material-symbols-outlined.\32 {
@@ -638,21 +630,20 @@ span.material-symbols-outlined.\32 {
   transition: all 0.5s ease-in-out;
 }
 
-span.material-symbols-outlined.\32:hover{
+span.material-symbols-outlined.\32:hover {
   display: block;
   transform: rotate(-180deg);
   color: #fff;
   transition: all 0.5s ease-in-out;
 }
 
-
 @media (max-width: 1030px) {
   .side_nav_btn {
     display: none;
-}
-span.material-symbols-outlined.\32 {
-  display: none;
-}
+  }
+  span.material-symbols-outlined.\32 {
+    display: none;
+  }
 }
 
 #navbar-icons {
