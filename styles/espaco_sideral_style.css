@@ -633,11 +633,32 @@ main {
     font-size: 18px;
   }
 } */
+.side_nav_btn{
+  display: none;
+}
+span.material-symbols-outlined.\32 {
+  display: block;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
 
-@media (max-width: 768px) {
-  .sidenav {
+span.material-symbols-outlined.\32:hover{
+  display: block;
+  transform: rotate(-180deg);
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+
+@media (max-width: 1030px) {
+  .side_nav_btn {
     display: none;
-  }
+}
+span.material-symbols-outlined.\32 {
+  display: none;
+}
 }
 
 #navbar-icons {
