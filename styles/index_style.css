@@ -411,13 +411,13 @@ body {
 }
 
 .tittle_card {
-  padding: 10px 11px;
   font-size: 18px;
   font-weight: 900;
-  letter-spacing: -1px;
-  text-align: center;
+  letter-spacing: -1.3px;
+  text-align: justify;
   color: #282828;
-  padding-top: 10px;
+/*  padding-top: 10px;*/
+  padding: 10px 11px;
 }
 
 .description_card {
@@ -425,9 +425,15 @@ body {
   color: black;
   font-size: 15px;
   font-weight: 500;
-  text-align: center;
-  letter-spacing: 0.5px;
+  text-align: justify;
+  letter-spacing: -1.5px;
   padding-top: 10px;
+  /*limitar o texto que parece no card*/
+  overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
 }
 
 /*parte da publicidade*/
@@ -532,7 +538,7 @@ a {
 }
 
 .container_notices_pos_ads > .card-container-2 .card-info> .tittle_card {
-  padding: 10px 11px;
+  padding: 10px 5px;
 }
 
 @media (max-width:500px) {
