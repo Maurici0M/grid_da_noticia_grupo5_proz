@@ -170,7 +170,7 @@ for (let index = 0; index < arrayCarrossel.length; index++) {
   }); */
 
 function openNav() {
-  document.getElementById("side_nav").style.width = "250px";
+  document.getElementById("side_nav").style.width = "300px";
 }
 function closeNav() {
   document.getElementById("side_nav").style.width = "0";
