@@ -168,3 +168,10 @@ for (let index = 0; index < arrayCarrossel.length; index++) {
       prevEl: ".swiper-button-prev",
     },
   }); */
+
+function openNav() {
+  document.getElementById("side_nav").style.width = "250px";
+}
+function closeNav() {
+  document.getElementById("side_nav").style.width = "0";
+}

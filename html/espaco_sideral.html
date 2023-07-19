@@ -48,6 +48,18 @@
 
     <header>
         <nav class="navbar-header">
+            <div id="side_nav" class="sidenav"> 
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="#">Login/Cadastro</a>
+                <hr>
+                <a href="../html/index.html">Últimas notícias</a>
+                <a href="../html/culinaria.html">Culinaria</a>
+                <a href="../html/espaco_sideral.html">Espaço Sideral</a>
+                <a href="../html/tecnologia.html">Tecbologia</a>
+                <a href="../html/sobre_nos.html">Sobre nós</a>
+
+            </div>
+            <span class="side_nav_btn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
             <span onclick="animacaoMenu()" id="btn-menu" class="material-symbols-outlined">
                 menu_open
             </span>
@@ -59,10 +71,10 @@
             </div>
             <div class="links">
                 <ul class="nav-itens">
-                    <li> <a class="nav-itens-name" href="culinaria.html">Culinária</a></li>
-                    <li> <a class="nav-itens-name" href="espaco_sideral.html">Espaço Sideral</a> </li>
-                    <li> <a class="nav-itens-name" href="tecnologia.html">Tecnologia</a> </li>
-                    <li> <a class="nav-itens-name" href="sobre_nos.html">Sobre Nós</a> </li>
+                    <li> <a class="nav-itens-name" href="culinaria.html"><i id="navbar-icons" class="fab fa-pagelines"></i>Culinária</a></li>
+                    <li> <a class="nav-itens-name" href="espaco_sideral.html"><i id="navbar-icons" class="fab fa-space-awesome"></i>Espaço Sideral</a> </li>
+                    <li> <a class="nav-itens-name" href="tecnologia.html"><i id="navbar-icons" class="fab fa-android"></i>Tecnologia</a> </li>
+                    <li> <a class="nav-itens-name" href="sobre_nos.html"><i id="navbar-icons" class="fab fa-github-alt"></i>Sobre Nós</a> </li>
                 </ul>
             </div>
             <input type="search" name="search" id="search" placeholder="Pesquisar...">
