@@ -94,16 +94,15 @@ const arrayCarrossel = [
   },
 
   {
-      linkNotices: 
-      'https://g1.globo.com/tecnologia/noticia/2023/07/05/instagram-threads-rival-twitter.ghtml',
-        cardImg: 
-        'https://s2-g1.glbimg.com/XvJgv46mktFspeaOXTWubWa87Mg=/0x0:6000x3375/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/y/6/jynisCQqywFngyjBH5Jg/aplicativo-threads.png',
-        altImgCard: 
-        'Imagens da nova rede social: "Threads"',
-        tittleCard: 
-        'Instagram lança Threads, rede social para rivalizar com o Twitter.',
-        descriptionCard: 
-        'Rede social foi revelada dias após o Twitter anunciar um limite para leitura de posts. Usuários poderão fazer login e encontrar amigos por meio de suas contas no Instagram.'
+    linkNotices:
+      "https://g1.globo.com/tecnologia/noticia/2023/07/05/instagram-threads-rival-twitter.ghtml",
+    cardImg:
+      "https://s2-g1.glbimg.com/XvJgv46mktFspeaOXTWubWa87Mg=/0x0:6000x3375/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/y/6/jynisCQqywFngyjBH5Jg/aplicativo-threads.png",
+    altImgCard: 'Imagens da nova rede social: "Threads"',
+    tittleCard:
+      "Instagram lança Threads, rede social para rivalizar com o Twitter.",
+    descriptionCard:
+      "Rede social foi revelada dias após o Twitter anunciar um limite para leitura de posts. Usuários poderão fazer login e encontrar amigos por meio de suas contas no Instagram.",
   },
 
   {
@@ -171,3 +170,10 @@ for (let index = 0; index < arrayCarrossel.length; index++) {
       prevEl: ".swiper-button-prev",
     },
   }); */
+
+function openNav() {
+  document.getElementById("side_nav").style.width = "25%";
+}
+function closeNav() {
+  document.getElementById("side_nav").style.width = "0";
+}

@@ -48,6 +48,17 @@
 
     <header>
         <nav class="navbar-header">
+            <div id="side_nav" class="sidenav"> 
+                <a class="closebtn" onclick="closeNav()"><i class="fa fa-xmark"></i></a>
+                <a href="#"><i id="sidebar_icons" class="fa-solid fa-user"></i>Login/Cadastro</a>
+                <hr>
+                <a href="../html/index.html"><i id="sidebar_icons" class="fa-solid fa-house"></i>Últimas notícias</a>
+                <a href="../html/culinaria.html"><i id="sidebar_icons" class="fa fa-bowl-rice"></i>Culinaria</a>
+                <a href="../html/espaco_sideral.html"><i id="sidebar_icons" class="fa fa-meteor"></i>Espaço Sideral</a>
+                <a href="../html/tecnologia.html"><i id="sidebar_icons" class="fa fa-laptop-code"></i>Tecnologia</a>
+                <a href="../html/sobre_nos.html"><i id="sidebar_icons" class="fa fa-users"></i>Sobre nós</a>
+            </div>
+            <span class="material-symbols-outlined 2" onclick="openNav()">menu_open </span>
             <span onclick="animacaoMenu()" id="btn-menu" class="material-symbols-outlined">
                 menu_open
             </span>
