@@ -171,7 +171,9 @@ for (let index = 0; index < arrayCarrossel.length; index++) {
 
 function openNav() {
   document.getElementById("side_nav").style.width = "25%";
+  // document.getElementById("#").style.marginLeft = "#";
 }
 function closeNav() {
   document.getElementById("side_nav").style.width = "0";
+  // document.getElementById("#").style.marginLeft = "#";
 }
