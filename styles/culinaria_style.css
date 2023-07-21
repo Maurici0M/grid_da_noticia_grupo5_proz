@@ -589,24 +589,30 @@ main {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(106, 174, 106);
+  background: rgb(0, 151, 178);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 151, 178, 1) 0%,
+    rgba(126, 217, 87, 1) 100%
+  );
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
 
 .sidenav a {
-  padding: 1em 1em 1em 1em;
+  padding: 1em 1em 1em 3em;
   text-decoration: none;
   font-size: 1.5em;
   font-family: "Maven pro", sans-serif;
   color: #fff;
   display: block;
   transition: 0.3s;
+  display: flex;
 }
 
 .sidenav a:hover {
-  background-color: #505050;
+  background-color: #282828;
 }
 
 .sidenav .closebtn {
