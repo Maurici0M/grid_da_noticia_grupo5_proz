@@ -570,7 +570,7 @@ h1.title-apresentation-initial.sobre-nos {
   display: flex;
 }
 
-.sidenav a:hover {
+.sidenav .side_nav_a:hover {
   background-color: #505050;
 }
 
