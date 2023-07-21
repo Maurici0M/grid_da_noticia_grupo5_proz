@@ -9,10 +9,10 @@ function animacaoMenu() {
   btnAnimacao.classList.toggle("ativo");
   btnClose.classList.toggle("ativo");
 }
-
+/*
 function openNav() {
   document.getElementById("side_nav").style.width = "25%";
 }
 function closeNav() {
   document.getElementById("side_nav").style.width = "0";
-}
+}*/

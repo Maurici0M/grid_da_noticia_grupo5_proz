@@ -139,6 +139,8 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+
+
 @media screen and (max-width: 1030px) {
   .links {
     display: none;
@@ -596,7 +598,7 @@ main {
     rgba(40, 40, 40, 1) 100%
   );
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   padding-top: 60px;
 }
 
@@ -638,12 +640,15 @@ span.material-symbols-outlined.\32 {
   transition: all 0.5s ease-in-out;
 }
 
+
 span.material-symbols-outlined.\32:hover {
   display: block;
   transform: rotate(-180deg);
   color: #fff;
   transition: all 0.5s ease-in-out;
 }
+
+
 
 @media (max-width: 1030px) {
   .side_nav_btn {

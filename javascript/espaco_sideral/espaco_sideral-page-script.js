@@ -151,29 +151,34 @@ for (let index = 0; index < arrayCarrossel.length; index++) {
   selecionarClasseCarrossel.appendChild(carrosselScript);
 }
 
-// Script original do Swiper "Freemode" (desativado)
 
-/*var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  }); */
 
 function openNav() {
   document.getElementById("side_nav").style.width = "25%";
   // document.getElementById("#").style.marginLeft = "#";
+
+  const navbar = document.querySelector('.navbar-header')
+  navbar.style.transition = 'all 0.9s ease'
+
+  const body = document.querySelector('body')
+  body.style.marginLeft = '21rem'
+  body.style.transition = 'all 0.5s ease-in-out'
+
+  const menuDesktop1 = document.querySelector('#menu-desktop')
+  menuDesktop1.style.display = 'none'
 }
 function closeNav() {
   document.getElementById("side_nav").style.width = "0";
   // document.getElementById("#").style.marginLeft = "#";
+  
+  const body = document.querySelector('body')
+  body.style.marginLeft = '0'
+  body.style.transition = 'all 0.5s ease-in-out'
+
+
+  const navbar = document.querySelector('.navbar-header')
+  navbar.style.transition = 'all 0.5s ease'
+
+  const menuDesktop1 = document.querySelector('#menu-desktop')
+  menuDesktop1.style.display = 'block'
 }

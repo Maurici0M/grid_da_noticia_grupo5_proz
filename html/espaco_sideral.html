@@ -47,21 +47,20 @@
     <!--Componente de Acessibilidade VLibras-->
 
     <header>
-        <nav class="navbar-header">
-            <div id="side_nav" class="sidenav"> 
-                <a class="closebtn" onclick="closeNav()"><i class="fa fa-xmark"></i></a>
-                <a class="side_nav_a" href="#"><i id="sidebar_icons" class="fa-solid fa-user"></i>Login/Cadastro</a>
-                <hr>
-                <a class="side_nav_a" href="../html/index.html"><i id="sidebar_icons" class="fa-solid fa-house"></i>Últimas notícias</a>
-                <a class="side_nav_a" href="../html/culinaria.html"><i id="sidebar_icons" class="fa fa-bowl-rice"></i>Culinaria</a>
-                <a class="side_nav_a" href="../html/espaco_sideral.html"><i id="sidebar_icons" class="fa fa-meteor"></i>Espaço Sideral</a>
-                <a class="side_nav_a" href="../html/tecnologia.html"><i id="sidebar_icons" class="fa fa-laptop-code"></i>Tecnologia</a>
-                <a class="side_nav_a" href="../html/sobre_nos.html"><i id="sidebar_icons" class="fa fa-users"></i>Sobre nós</a>
-            </div>
-           <!-- <span class="side_nav_btn" style="font-size:30px;cursor:pointer" onclick="openNav()"></span> -->
-            <!--ícone Menu desktop modificado e com efeito :hover-->
-            <span class="material-symbols-outlined 2" onclick="openNav()">menu_open </span>
+        <div id="side_nav" class="sidenav"> 
+            <a class="closebtn" onclick="closeNav()"><i class="fa fa-xmark"></i></a>
+            <a class="side_nav_a" href="#"><i id="sidebar_icons" class="fa-solid fa-user"></i>Login/Cadastro</a>
+            <hr>
+            <a class="side_nav_a" href="../html/index.html"><i id="sidebar_icons" class="fa-solid fa-house"></i>Últimas notícias</a>
+            <a class="side_nav_a" href="../html/culinaria.html"><i id="sidebar_icons" class="fa fa-bowl-rice"></i>Culinaria</a>
+            <a class="side_nav_a" href="../html/espaco_sideral.html"><i id="sidebar_icons" class="fa fa-meteor"></i>Espaço Sideral</a>
+            <a class="side_nav_a" href="../html/tecnologia.html"><i id="sidebar_icons" class="fa fa-laptop-code"></i>Tecnologia</a>
+            <a class="side_nav_a" href="../html/sobre_nos.html"><i id="sidebar_icons" class="fa fa-users"></i>Sobre nós</a>
+        </div>
 
+        <nav class="navbar-header">
+            <span class="material-symbols-outlined 2" id="menu-desktop" onclick="openNav()">menu_open </span>
+            
             <span onclick="animacaoMenu()" id="btn-menu" class="material-symbols-outlined">
                 menu_open
             </span>
