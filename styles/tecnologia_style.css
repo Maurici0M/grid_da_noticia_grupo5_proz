@@ -14,10 +14,14 @@ body {
   /*-------------------------*/
 
   /*background-image: url(../assets/images/tech-body-background-gradient-blue.jpg);*/
-  background-image: url(https://c4.wallpaperflare.com/wallpaper/631/332/8/gradient-minimalism-simple-blue-background-wallpaper-preview.jpg);
+  /*background-image: url(https://c4.wallpaperflare.com/wallpaper/631/332/8/gradient-minimalism-simple-blue-background-wallpaper-preview.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center;*/
+
+  background: rgb(0,94,159);
+background: linear-gradient(90deg, rgba(0,94,159,1) 0%, rgba(96,147,182,1) 35%, rgba(1,101,169,1) 100%);
+
 }
 
 /*Modificações do cabeçalho (arquivos do NAVBAR)*/
