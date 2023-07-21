@@ -47,10 +47,10 @@ var swiper = new Swiper(".slide-content", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
     },
-    autoplay: {
+    /*autoplay: {
         delay: 7530,
         disableOnInteraction: false
-    },
+    }, */
 
     breakpoints: {
         0: {
@@ -173,6 +173,7 @@ for (let index = 0; index < arrayCarrossel.length; index++) {
 // Atribuir uma classe ao elemento (caso necessário)
 carrosselScript.className = 'card swiper-slide'
 
+
 // Manipular elemento
     carrosselScript.innerHTML = `
         <a class="link-notices" target="_blank" href="${arrayCarrossel[index].linkNotices}">
@@ -201,3 +202,28 @@ carrosselScript.className = 'card swiper-slide'
     selecionarClasseCarrossel.appendChild(carrosselScript)
     /*console.log(selecionarClasseCarrossel.innerText)*/
 }
+
+
+let x = document.getElementsByClassName('card swiper-slide');
+    console.log(x)
+// Barra de pesquisa
+function pesquisar() {
+    let input = document.getElementById('search').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('card swiper-slide');
+    console.log(x)
+    
+
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+            
+        }
+        else {
+            x[i].style.display="list-item";
+            
+        }
+    }
+}
+
+
