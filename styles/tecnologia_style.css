@@ -19,8 +19,8 @@ body {
   background-size: cover;
   background-position: center;*/
 
-  background: rgb(0,94,159);
-background: linear-gradient(90deg, rgba(0,94,159,1) 0%, rgba(96,147,182,1) 35%, rgba(1,101,169,1) 100%);
+  background: rgb(30,128,195);
+  background: linear-gradient(90deg, rgba(30,128,195,1) 0%, rgba(96,147,182,1) 35%, rgba(1,101,169,1) 100%);
 
 }
 
@@ -737,26 +737,20 @@ main {
   z-index: 1;
   top: 0;
   left: 0;
-  background: rgb(96, 147, 182);
-  background: linear-gradient(
-    90deg,
-    rgba(96, 147, 182, 1) 0%,
-    rgba(110, 112, 158, 1) 100%
-  );
+  background-color: #3f6ea3;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
 
 .sidenav a {
-  padding: 1em 1em 1em 3em;
+  padding: 1em 1em 1em 1em;
   text-decoration: none;
   font-size: 1.5em;
   font-family: "Maven pro", sans-serif;
   color: #fff;
   display: block;
   transition: 0.3s;
-  display: flex;
 }
 
 .sidenav a:hover {
@@ -807,4 +801,19 @@ span.material-symbols-outlined.\32:hover {
 }
 #sidebar_icons {
   padding-right: 10px;
+}
+
+
+.search-results {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.search-result {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.search-result h3 {
+  margin: 0;
 }
