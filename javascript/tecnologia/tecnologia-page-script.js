@@ -254,11 +254,11 @@ function pesquisar(query) {
     // Adiciona o objeto à array de resultados
     results.push(arrayCarrossel[i]);
     }
-    }
+    }/*
     // Ordena os resultados em ordem alfabética pelo nome
     results.sort(function(a, b) {
     return a.name.localeCompare(b.name);
-    });
+    });*/
     // Retorna a array de resultados
     return results;
     }
@@ -281,36 +281,35 @@ function showResults(results) {
     var resultName = document.createElement('div')
     resultName.classList.add('card')
 
+    var resultadosMostradosNaTela = document.querySelector('.search-results')
+        resultadosMostradosNaTela.style.display = 'flex'
+        resultadosMostradosNaTela.style.justifyContent = 'center'
+        //Continuar aqui!
+
+
     resultName.innerHTML = `
-    <a class="link-notices" target="_blank" href="${results.arrayCarrossel[i].linkNotices}">
+    <a class="link-notices" target="_blank" href="${results[i].linkNotices}">
         <div class="image-content">
             <span class="overlay">
                 <div class="card-image">
-                    <img class="card-img" src="${results.arrayCarrossel[i].cardImg}" alt="${arrayCarrossel[i].altImgCard}">
+                    <img class="card-img" src="${results[i].cardImg}" alt="${results[i].altImgCard}">
                 </div>
             </span>
         </div>
         <div class="card-content">
             <h3 class="tittle_card">
-                ${arrayCarrossel[i].tittleCard}
+                ${results[i].tittleCard}
             </h3>
             <p class="description_card">
-                ${arrayCarrossel[i].descriptionCard}
+                ${results[i].descriptionCard}
             </p>
         </div>
     </a>
 
 `
-
-    // Cria um elemento h3 para o nome do resultado
-    /*var resultName = document.createElement("h3");
-    resultName.textContent = results[i].tittle;
-    // Cria um elemento p para a descrição do resultado
-    var resultDescription = document.createElement("p");
-    resultDescription.textContent = results[i].description;*/
     // Adiciona os elementos ao div do resultado
     resultDiv.appendChild(resultName);
-   /* resultDiv.appendChild(resultDescription);*/
+
     // Adiciona o div do resultado ao div dos resultados
     resultsDiv.appendChild(resultDiv);
     }
