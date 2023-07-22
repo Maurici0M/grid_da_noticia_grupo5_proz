@@ -58,6 +58,7 @@
         <nav class="navbar-header">
             
             <span class="material-symbols-outlined 2" onclick="openNav()">menu_open </span>
+
             <span onclick="animacaoMenu()" id="btn-menu" class="material-symbols-outlined">
                 menu_open
             </span>
@@ -75,7 +76,7 @@
                     <li> <a class="nav-itens-name" href="sobre_nos.html"><i id="navbar-icons" class="fa fa-users"></i>Sobre Nós</a> </li>
                 </ul>
             </div>
-            
+            <input type="search" name="search" id="search" placeholder="Pesquisar..." onkeyup="pesquisar()">
             <div class="search-box">
                 <input type="text" id="search-input" class="search-input" placeholder="Digite uma palavra...">
                 <button id="search-button" class="search-button">🔍</button>

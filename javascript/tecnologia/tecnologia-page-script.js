@@ -203,11 +203,11 @@ carrosselScript.className = 'card swiper-slide'
     /*console.log(selecionarClasseCarrossel.innerText)*/
 }
 
-
+/*
 let x = document.getElementsByClassName('card swiper-slide');
     console.log(x)
 // Barra de pesquisa
-/*function pesquisar() {
+function pesquisar() {
     let input = document.getElementById('search').value
     input=input.toLowerCase();
     let x = document.getElementsByClassName('card swiper-slide');
@@ -217,14 +217,20 @@ let x = document.getElementsByClassName('card swiper-slide');
     for (i = 0; i < x.length; i++) { 
         if (!x[i].innerHTML.toLowerCase().includes(input)) {
             x[i].style.display="none";
-            
+
         }
+        
         else {
             x[i].style.display="list-item";
-            
+
         }
     }
+    
 }*/
+
+
+
+
 
 //data = arraycarrossel
 
@@ -271,15 +277,40 @@ function showResults(results) {
     // Cria um elemento div para cada resultado
     var resultDiv = document.createElement("div");
     resultDiv.className = "search-result";
+
+    var resultName = document.createElement('div')
+    resultName.classList.add('card')
+
+    resultName.innerHTML = `
+    <a class="link-notices" target="_blank" href="${results.arrayCarrossel[i].linkNotices}">
+        <div class="image-content">
+            <span class="overlay">
+                <div class="card-image">
+                    <img class="card-img" src="${results.arrayCarrossel[i].cardImg}" alt="${arrayCarrossel[i].altImgCard}">
+                </div>
+            </span>
+        </div>
+        <div class="card-content">
+            <h3 class="tittle_card">
+                ${arrayCarrossel[i].tittleCard}
+            </h3>
+            <p class="description_card">
+                ${arrayCarrossel[i].descriptionCard}
+            </p>
+        </div>
+    </a>
+
+`
+
     // Cria um elemento h3 para o nome do resultado
-   /* var resultName = document.createElement("h3");
+    /*var resultName = document.createElement("h3");
     resultName.textContent = results[i].tittle;
     // Cria um elemento p para a descrição do resultado
     var resultDescription = document.createElement("p");
     resultDescription.textContent = results[i].description;*/
     // Adiciona os elementos ao div do resultado
     resultDiv.appendChild(resultName);
-    resultDiv.appendChild(resultDescription);
+   /* resultDiv.appendChild(resultDescription);*/
     // Adiciona o div do resultado ao div dos resultados
     resultsDiv.appendChild(resultDiv);
     }
