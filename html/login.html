@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="../javascript/login.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" id="login">
+        <h1 class="form_title">login</h1>
+        <div class="form_message form_message_error">
+          <!-- Usuário ou senha incorretos -->
+        </div>
+        <div class="form_input_group">
+          <input
+            type="text"
+            class="form_input"
+            autofocus
+            placeholder="Nome de usuário ou e-mail"
+          />
+          <div class="form_input-error-message">
+            <!-- Essa é uma mensagem de erro -->
+          </div>
+        </div>
+        <div class="form_input_group">
+          <input
+            type="password"
+            class="form_input"
+            autofocus
+            placeholder="Senha"
+          />
+          <div class="form_input-error-message"></div>
+          <button class="form_button" type="submit">Continue</button>
+          <p class="form_text">
+            <a href="#" class="form_link">Esqueceu sua senha?</a>
+          </p>
+          <p class="form_text">
+            <a href="#" class="form_link" id="linkCreateAccount"
+              >Possui uma conta? Crie sua conta.</a
+            >
+          </p>
+        </div>
+      </form>
+      <form class="form form_hidden" id="createAccount">
+        <h1 class="form_title">Criar conta</h1>
+        <div class="form_message form_message_error">
+          <!-- Usuário ou senha incorretos -->
+        </div>
+         <div class="form_input_group">
+          <input
+            type="text"
+            class="form_input"
+            autofocus
+            placeholder="Nome de usuário"
+          />
+          <div class="form_input-error-message">
+            <!-- Essa é uma mensagem de erro -->
+          </div>
+          </div>  
+         <div class="form_input_group">
+            <input
+              type="text"
+              class="form_input"
+              autofocus
+              placeholder="Endereço de e-mail"
+            />
+            <div class="form_input-error-message">
+              <!-- Essa é uma mensagem de erro -->
+            </div>
+          </div>
+          <div class="form_input_group">
+            <input
+              type="password"
+              class="form_input"
+              autofocus
+              placeholder="Senha"
+            />
+            <div class="form_input-error-message"></div>
+          </div>
+          <div class="form_input_group">
+            <input
+              type="password"
+              class="form_input"
+              autofocus
+              placeholder="Confirmar senha"
+            />
+            <div class="form_input-error-message"></div>
+          </div>
+          <button class="form_button" type="submit">Continue</button>
+          <p class="form_text">
+            <a href="#" class="form_link" id="linkLogin"
+              >Já possui uma conta? Conecte-se.</a
+            >
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
