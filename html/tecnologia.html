@@ -24,6 +24,7 @@
     <script src="../javascript/tecnologia/tecnologia-page-script.js" defer></script>
     <script src="../javascript/tecnologia/ads-script.js" defer></script>
     <script src="../javascript/script-menu-mobile.js" defer></script>
+    <script src="../javascript/script-search-bar.js"></script>
     <title>Grid da Notícia | Tecnologia</title>
 
 </head>
@@ -76,11 +77,15 @@
                     <li> <a class="nav-itens-name" href="sobre_nos.html"><i id="navbar-icons" class="fa fa-users"></i>Sobre Nós</a> </li>
                 </ul>
             </div>
-            <input type="search" name="search" id="search" placeholder="Pesquisar..." onkeyup="pesquisar()">
-            <div class="search-box">
+                <div class="search-box">
+                    <input type="search" name="search" id="search" placeholder="Pesquisar...">
+                    <button id="search-button" class="search-button">🔍</button>
+                </div>
+           
+          <!--  <div class="search-box">
                 <input type="text" id="search-input" class="search-input" placeholder="Digite uma palavra...">
                 <button id="search-button" class="search-button">🔍</button>
-                </div>
+                </div>-->
 
             <div class="links-mobile" id="links-mobile">
                 <ul class="nav-itens">

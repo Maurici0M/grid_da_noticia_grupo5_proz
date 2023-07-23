@@ -95,6 +95,37 @@ body {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+/**/
+/*
+.search-box {
+  position: relative;
+  width: 300px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-button i {
+  font-size: 20px;
+  color: #999;
+}*/
+/**/
 
 /*Menu mobile*/
 
@@ -816,4 +847,34 @@ span.material-symbols-outlined.\32:hover {
 
 .search-result h3 {
   margin: 0;
+}
+
+/**/
+.search-box {
+  position: relative;
+  
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-button {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  height: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.search-button i {
+  font-size: 20px;
+  color: #999;
 }

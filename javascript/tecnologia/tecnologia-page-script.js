@@ -205,13 +205,13 @@ carrosselScript.className = 'card swiper-slide'
 
 /*
 let x = document.getElementsByClassName('card swiper-slide');
-    console.log(x)
+    
 // Barra de pesquisa
 function pesquisar() {
     let input = document.getElementById('search').value
     input=input.toLowerCase();
     let x = document.getElementsByClassName('card swiper-slide');
-    console.log(x)
+    
     
 
     for (i = 0; i < x.length; i++) { 
@@ -229,19 +229,11 @@ function pesquisar() {
 }*/
 
 
-
-
-
-//data = arraycarrossel
-
-//name = tittle
-
-// description = descriptionCard
-
 // Função para buscar os resultados na array
 function pesquisar(query) {
     // Converte a palavra digitada para letras minúsculas
     query = query.toLowerCase();
+    
     // Cria uma array vazia para armazenar os resultados
     var results = [];
     // Percorre a array de dados
@@ -281,11 +273,13 @@ function showResults(results) {
     var resultName = document.createElement('div')
     resultName.classList.add('card')
 
+    //Selecionando a div que mostrará os resultados na tela, e adicionando estilos para os conteúdos se ajustarem perfeitamente na tela.
     var resultadosMostradosNaTela = document.querySelector('.search-results')
-        resultadosMostradosNaTela.style.display = 'flex'
-        resultadosMostradosNaTela.style.justifyContent = 'center'
-        //Continuar aqui!
-
+    resultadosMostradosNaTela.style.display = 'flex'
+    resultadosMostradosNaTela.style.width = 'auto'
+    resultadosMostradosNaTela.style.justifyContent = 'center'
+    resultadosMostradosNaTela.style.flexWrap = 'wrap'
+    resultadosMostradosNaTela.style.marginBottom = '10%'
 
     resultName.innerHTML = `
     <a class="link-notices" target="_blank" href="${results[i].linkNotices}">
@@ -321,10 +315,9 @@ function showResults(results) {
     resultsDiv.appendChild(noResults);
     }
     }
-    
 
-    // Seleciona o elemento da barra de pesquisa
-var searchInput = document.getElementById("search-input");
+// Seleciona o elemento da barra de pesquisa
+var searchInput = document.getElementById("search");
 // Seleciona o elemento do botão de busca
 var searchButton = document.getElementById("search-button");
 // Adiciona um evento de clique ao botão de busca
