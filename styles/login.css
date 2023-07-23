@@ -88,7 +88,7 @@ body {
   background: #fff;
 }
 
-.form_input-error {
+.form_input_error {
   color: var(--color-error);
   border-color: var(--color-error);
 }
@@ -97,6 +97,10 @@ body {
   margin-top: 0.5rem;
   font-size: 0.85rem;
   color: var(--color-error);
+}
+
+#login_form_button {
+  margin-top: 0.5rem;
 }
 
 .form_button {
