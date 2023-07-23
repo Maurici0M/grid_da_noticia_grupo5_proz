@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ) {
         setInputError(
           inputElement,
-          "O nome de usuário deve possuir ao menos 7 caracteres"
+          "O nome de usuário deve possuir ao menos 7 caracteres."
         );
       }
     });
