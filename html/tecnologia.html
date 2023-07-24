@@ -25,6 +25,7 @@
     <script src="../javascript/tecnologia/ads-script.js" defer></script>
     <script src="../javascript/script-menu-mobile.js" defer></script>
     <script src="../javascript/script-search-bar.js"></script>
+    <script src="../javascript/script-menu-desktop.js"></script>
     <title>Grid da Notícia | Tecnologia</title>
 
 </head>
@@ -58,7 +59,7 @@
 
         <nav class="navbar-header">
             
-            <span class="material-symbols-outlined 2" onclick="openNav()">menu_open </span>
+            <span class="material-symbols-outlined 2" id="menu-desktop" onclick="openNav()">menu_open </span>
 
             <span onclick="animacaoMenu()" id="btn-menu" class="material-symbols-outlined">
                 menu_open
@@ -78,8 +79,8 @@
                 </ul>
             </div>
                 <div class="search-box">
-                    <input type="search" name="search" id="search" placeholder="Pesquisar...">
-                    <button id="search-button" class="search-button">🔍</button>
+                    <input type="text" name="search" id="search" placeholder="Pesquisar..." >
+                   <!-- <button id="search-button" class="search-button">🔍</button> -->
                 </div>
            
           <!--  <div class="search-box">
@@ -107,11 +108,11 @@
     <main>
         <div class="tittle-apresentation-initial">
             <h1>
-                Tecnologia: <small>Veja as principais notícias sobre IA, Jogos Eletrônicos, Informática, e tudo do mundo
-                    tech.</small>
+                Tecnologia: <small>Veja as principais notícias sobre IA, Jogos Eletrônicos, Informática, e tudo do mundotech.</small>
             </h1>
         </div>
         <div id="search-results" class="search-results">
+            
             <!-- Aqui vão aparecer os resultados da busca -->
             </div>
         <!--Estrutura do Carrossel-->

@@ -63,8 +63,6 @@ body {
 }
 
 .nav-itens > li > a {
-  /*padding-left: 20px;*/
-  /*padding-right: 20px;*/
   padding: 4px 19px;
   text-decoration: none;
   font-size: 12px;
@@ -87,19 +85,21 @@ body {
   transition: 0.5s ease-out;
 }
 
+/*barra de pesquisa*/
+
+.search-box {
+  position: relative;
+}
+
 #search {
   text-align: center;
-  border-radius: 12px;
+  border-radius: 12px 0px 0px 12px;
   border: none;
   padding: 4px 25px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-/**/
-/*
-.search-box {
-  position: relative;
-  width: 300px;
+    padding: 0px 12px;
+    height: 20px;
 }
 
 .search-input {
@@ -113,19 +113,62 @@ body {
 .search-button {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0.99px;
   height: 100%;
   border: none;
-  background: transparent;
+  
   cursor: pointer;
   outline: none;
+  background-image: url(../assets/images/tech-background-nav-tech-original-apresentation-ju.png);
 }
 
 .search-button i {
   font-size: 20px;
   color: #999;
-}*/
-/**/
+}
+
+/*Caso a pesquisa não retorne resultados*/
+.no-results-messenger-group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 45px;
+}
+
+img.no-results-img {
+  background-color: steelblue;
+  border-radius: 10%;
+  border: solid darkblue 1px;
+}
+
+.text-no-results {
+  width: 400px;
+  text-align: justify;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.26);
+}
+
+
+/*Caso a pesquisa tenha resultados*/
+
+.search-results {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.search-result {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.search-result h3 {
+  margin: 0;
+}
+
 
 /*Menu mobile*/
 
@@ -761,6 +804,7 @@ main {
   background-color: #fffffff0;
 }
 
+/*Menu Desktop*/
 .sidenav {
   height: 100%;
   width: 0;
@@ -770,18 +814,19 @@ main {
   left: 0;
   background-color: #3f6ea3;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
   padding-top: 60px;
 }
 
 .sidenav a {
-  padding: 1em 1em 1em 1em;
+  padding: 1em 1em 1em 3em;
   text-decoration: none;
   font-size: 1.5em;
   font-family: "Maven pro", sans-serif;
   color: #fff;
   display: block;
   transition: 0.3s;
+  display: flex;
 }
 
 .sidenav .side_nav_a:hover {
@@ -811,21 +856,7 @@ span.material-symbols-outlined.\32 {
   transition: all 0.5s ease-in-out;
 }
 
-span.material-symbols-outlined.\32:hover {
-  display: block;
-  transform: rotate(-180deg);
-  color: #fff;
-  transition: all 0.5s ease-in-out;
-}
 
-@media (max-width: 1030px) {
-  .side_nav_btn {
-    display: none;
-  }
-  span.material-symbols-outlined.\32 {
-    display: none;
-  }
-}
 
 #navbar-icons {
   padding-right: 10px;
@@ -849,32 +880,6 @@ span.material-symbols-outlined.\32:hover {
   margin: 0;
 }
 
-/**/
-.search-box {
-  position: relative;
-  
-}
-
-.search-input {
-  width: 100%;
-  padding: 10px 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.search-button {
-  position: absolute;
-  top: 0;
-  right: 5px;
-  height: 100%;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  outline: none;
-}
-
-.search-button i {
-  font-size: 20px;
-  color: #999;
+.desativado {
+  display: none;
 }
