@@ -26,6 +26,7 @@
     <script src="../assets/swiper/unpkg.com_swiper@8.1.6_swiper-bundle.min.js" defer></script>
     <!------------------------------------>
     <script src="../javascript/script-menu-mobile.js" defer></script>
+    <script src="../javascript/script-menu-desktop.js" defer></script>
     <script src="../javascript/culinaria/culinaria-page-script.js" defer></script>
     <script src="../javascript/culinaria/ads-script.js" defer></script>
     <title>Grid da Notícia | Culinária</title>
@@ -58,7 +59,7 @@
                 <a class="side_nav_a" href="../html/tecnologia.html"><i id="sidebar_icons" class="fa fa-laptop-code"></i>Tecnologia</a>
                 <a class="side_nav_a" href="../html/sobre_nos.html"><i id="sidebar_icons" class="fa fa-users"></i>Sobre nós</a>
             </div>
-            <span class="material-symbols-outlined 2" onclick="openNav()">menu_open </span>
+            <span class="material-symbols-outlined 2" id="menu-desktop" onclick="openNav()">menu_open </span>
             <span onclick="animacaoMenu()" id="btn-menu" class="material-symbols-outlined">
                 menu_open
             </span>
@@ -76,7 +77,11 @@
                     <li> <a class="nav-itens-name" href="sobre_nos.html"><i id="navbar-icons" class="fa fa-users"></i>Sobre Nós</a> </li>
                 </ul>
             </div>
-            <input type="search" name="search" id="search" placeholder="Pesquisar...">
+
+            <div class="search-box">
+                <input type="text" name="search" id="search" placeholder="Pesquisar..." >
+               <!-- <button id="search-button" class="search-button">🔍</button> -->
+            </div>
 
             <div class="links-mobile" id="links-mobile">
                 <ul class="nav-itens">
@@ -101,6 +106,11 @@
                 Culinária: <small>Veja as principais notícias sobre a cozinha, receitas, chefs e tudo do mundo gastronômico.</small>
             </h1>
         </div>
+
+        <div id="search-results" class="search-results">
+            <!-- Aqui vão aparecer os resultados da busca -->
+        </div>
+        
         <!--Estrutura do Carrosel-->
         <section class="container-notices">
             <div class="slide-container swiper">

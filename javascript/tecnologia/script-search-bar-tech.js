@@ -1,6 +1,4 @@
-// Barra de Pesquisa
-
-//  TROCAR O NOME 'arrayCarrossel' PELO CONJUNTO DE ARRAYS QUE A BARRA DE PESQUISA IRÁ BUSCAR RESULTADOS
+var allNoticesTecnologia = arrayCarrossel.concat(arrayMiniNotices);
 
 // Função para buscar os resultados na array
 function pesquisar(query) {
@@ -10,14 +8,14 @@ function pesquisar(query) {
     // Cria uma array vazia para armazenar os resultados
     var results = [];
     // Percorre a array de dados
-    for (var i = 0; i < arrayCarrossel.length; i++) {
+    for (var i = 0; i < allNoticesTecnologia.length; i++) {
     // Converte o nome e a descrição do objeto para letras minúsculas
-    var tittle = arrayCarrossel[i].tittleCard.toLowerCase();
-    var description = arrayCarrossel[i].descriptionCard.toLowerCase();
+    var tittle = allNoticesTecnologia[i].tittleCard.toLowerCase();
+    var description = allNoticesTecnologia[i].descriptionCard.toLowerCase();
     // Verifica se a palavra digitada está contida no nome ou na descrição do objeto
     if (tittle.includes(query) || description.includes(query)) {
     // Adiciona o objeto à array de resultados
-    results.push(arrayCarrossel[i]);
+    results.push(allNoticesTecnologia[i]);
     }
     }
     // Retorna a array de resultados
@@ -87,12 +85,13 @@ function showResults(results) {
     adsSection.classList.remove ('desativado')
     containerNoticesPosAds.classList.remove ('desativado')
     botaoCarregarMais.classList.remove ('desativado')
+    
     }
     }else {
     // Cria um elemento p para informar que não há resultados
     var noResults = document.createElement("div");
     noResults.classList.add('no-results-messenger-group')
-   /* noResults.textContent = "Desculpe, não encontramos resultados para sua pesquisa.";*/
+
     noResults.innerHTML = `
     <img class = 'no-results-img' src="../assets/images/tech-pesquisa-nao-encontrada-robo.png" alt="Resultado de Pesquisa Não Encontrado.">
 
@@ -119,6 +118,7 @@ function showResults(results) {
     adsSection.classList.add ('desativado')
     containerNoticesPosAds.classList.add ('desativado')
     botaoCarregarMais.classList.add ('desativado')
+
     }
 }
 
@@ -157,5 +157,4 @@ else {
     containerNoticesPosAds.classList.remove ('desativado')
     botaoCarregarMais.classList.remove ('desativado')
 }
-});
-
+}); 

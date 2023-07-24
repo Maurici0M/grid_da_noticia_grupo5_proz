@@ -128,6 +128,7 @@ body {
 }
 
 /*Caso a pesquisa não retorne resultados*/
+
 .no-results-messenger-group {
   display: flex;
   align-items: center;
@@ -168,7 +169,6 @@ img.no-results-img {
 .search-result h3 {
   margin: 0;
 }
-
 
 /*Menu mobile*/
 
@@ -866,20 +866,8 @@ span.material-symbols-outlined.\32 {
 }
 
 
-.search-results {
-  width: 300px;
-  margin: 0 auto;
-}
-
-.search-result {
-  padding: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-.search-result h3 {
-  margin: 0;
-}
-
 .desativado {
   display: none;
 }
+
+

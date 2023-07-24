@@ -150,27 +150,4 @@ for (let index = 0; index < arrayCarrossel.length; index++) {
   selecionarClasseCarrossel.appendChild(carrosselScript);
 }
 
-// Script original do Swiper "Freemode" (desativado)
 
-/*var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  }); */
-
-function openNav() {
-  document.getElementById("side_nav").style.width = "25%";
-}
-function closeNav() {
-  document.getElementById("side_nav").style.width = "0";
-}

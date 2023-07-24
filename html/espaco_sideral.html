@@ -78,7 +78,11 @@
                     <li> <a class="nav-itens-name" href="sobre_nos.html"><i id="navbar-icons" class="fa fa-users"></i>Sobre Nós</a> </li>
                 </ul>
             </div>
-            <input type="search" name="search" id="search" placeholder="Pesquisar...">
+            
+            <div class="search-box">
+                <input type="text" name="search" id="search" placeholder="Pesquisar..." >
+               <!-- <button id="search-button" class="search-button">🔍</button> -->
+            </div>
 
             <div class="links-mobile" id="links-mobile">
                 <ul class="nav-itens">
@@ -103,6 +107,11 @@
                 Espaço Sideral: <small>Veja as principais notícias sobre os planetas, foguetes, descobertas e tudo sobre o universo.</small>
             </h1>
         </div>
+
+        <div id="search-results" class="search-results">
+            <!-- Aqui vão aparecer os resultados da busca -->
+        </div>
+
         <!--Estrutura do Carrosel-->
         <section class="container-notices">
             <div class="slide-container swiper">

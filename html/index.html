@@ -28,6 +28,8 @@
     <script src="../javascript/index/index-page-script.js" defer></script>
     <script src="../javascript/index/ads-script.js" defer></script>
     <script src="../javascript/script-menu-mobile.js" defer></script>
+    <script src="../javascript/script-menu-desktop.js" defer></script>
+    <script src="../javascript/script-search-bar.js"></script>
     <title>Grid da Notícia | Principais notícas</title>
 
 </head>
@@ -58,7 +60,7 @@
             <a class="side_nav_a" href="../html/tecnologia.html"><i id="sidebar_icons" class="fa fa-laptop-code"></i>Tecnologia</a>
             <a class="side_nav_a" href="../html/sobre_nos.html"><i id="sidebar_icons" class="fa fa-users"></i>Sobre nós</a>
         </div>
-          <span class="material-symbols-outlined 2" onclick="openNav()">menu_open </span>
+        <span class="material-symbols-outlined 2" id="menu-desktop" onclick="openNav()">menu_open </span>
             <span onclick="animacaoMenu()" id="btn-menu" class="material-symbols-outlined">
                 menu_open
             </span>
@@ -76,7 +78,12 @@
                   <li> <a class="nav-itens-name" href="sobre_nos.html"><i id="navbar-icons" class="fa fa-users"></i>Sobre Nós</a> </li>
                 </ul>
             </div>
-            <input type="search" name="search" id="search" placeholder="Pesquisar...">
+            
+
+            <div class="search-box">
+              <input type="text" name="search" id="search" placeholder="Pesquisar..." >
+             <!-- <button id="search-button" class="search-button">🔍</button> -->
+            </div>
 
             <div class="links-mobile" id="links-mobile">
                 <ul class="nav-itens">
@@ -100,6 +107,12 @@
             <h1>
                <small>Veja as principais notícias sobre Culinária, Tecnologia e nosso universo.</small>
             </h1>
+
+            <div id="search-results" class="search-results">
+            
+              <!-- Aqui vão aparecer os resultados da busca -->
+            </div>
+
         </div>
         <!--Estrutura do Carrosel-->
         <section class="container-notices">

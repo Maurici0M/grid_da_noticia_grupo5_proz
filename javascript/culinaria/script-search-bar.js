@@ -1,7 +1,5 @@
 // Barra de Pesquisa
 
-//  TROCAR O NOME 'arrayCarrossel' PELO CONJUNTO DE ARRAYS QUE A BARRA DE PESQUISA IRÁ BUSCAR RESULTADOS
-
 // Função para buscar os resultados na array
 function pesquisar(query) {
     // Converte a palavra digitada para letras minúsculas
