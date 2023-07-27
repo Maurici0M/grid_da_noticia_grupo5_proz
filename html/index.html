@@ -27,9 +27,11 @@
     <!------------------------------------>
     <script src="../javascript/index/index-page-script.js" defer></script>
     <script src="../javascript/index/ads-script.js" defer></script>
-    <script src="../javascript/script-menu-mobile.js" defer></script>
-    <script src="../javascript/script-menu-desktop.js" defer></script>
-    <script src="../javascript/script-search-bar.js"></script>
+    <script src="../javascript/index/mini-notices.js" defer></script>
+    <script src="../javascript/menu_mobile_desktop_engine/script-menu-desktop.js" defer></script>
+    <script src="../javascript/menu_mobile_desktop_engine/script-menu-mobile.js" defer></script>
+    <!--DEIXAR O SCRIPT DA BARRA DE PESQUISA SEMPRE ABAIXO DOS SCRIPT'S QUE CONTÉM AS NOTÍCIAS, CASO CONTRÁRIO, IRÁ APRESENTAR ERRO!-->
+    <script src="../javascript/search_bar_engine/script-search-bar.js" defer></script>
     <title>Grid da Notícia | Principais notícas</title>
 
 </head>
@@ -82,21 +84,17 @@
 
             <div class="search-box">
               <input type="text" name="search" id="search" placeholder="Pesquisar..." >
-             <!-- <button id="search-button" class="search-button">🔍</button> -->
             </div>
 
             <div class="links-mobile" id="links-mobile">
                 <ul class="nav-itens">
-                    <li> <a class="nav-itens-name" href="index.html"><span class="material-symbols-outlined"> house
-                            </span> Início</a> </li>
-                    <li> <a class="nav-itens-name" href="culinaria.html"> <span class="material-symbols-outlined">
-                                dinner_dining </span> Culinária</a> </li>
-                    <li> <a class="nav-itens-name" href="espaco_sideral.html"> <span class="material-symbols-outlined">
-                                rocket_launch </span> Espaço Sideral</a> </li>
-                    <li> <a class="nav-itens-name" href="tecnologia.html"> <span class="material-symbols-outlined">
-                                desktop_windows </span> Tecnologia</a> </li>
-                    <li> <a class="nav-itens-name" href="sobre_nos.html"> <span class="material-symbols-outlined">
-                                emoji_people </span> Sobre Nós</a> </li>
+                  <li> <a class="nav-itens-name" href="../html/login.html"><span class="material-symbols-outlined">account_circle</span>Login/Cadastro</a></li>
+                  <hr>
+                  <li> <a class="nav-itens-name" href="index.html"><span class="material-symbols-outlined"> house</span> Início</a> </li>
+                  <li> <a class="nav-itens-name" href="culinaria.html"> <span class="material-symbols-outlined"> dinner_dining </span> Culinária</a> </li>
+                  <li> <a class="nav-itens-name" href="espaco_sideral.html"> <span class="material-symbols-outlined">rocket_launch</span> Espaço Sideral</a> </li>
+                  <li> <a class="nav-itens-name" href="tecnologia.html"> <span class="material-symbols-outlined">computer</span> Tecnologia</a> </li>
+                  <li> <a class="nav-itens-name" href="sobre_nos.html"> <span class="material-symbols-outlined">groups</span> Sobre Nós</a> </li>
                 </ul>
             </div>
         </nav>
@@ -119,7 +117,7 @@
             <div class="slide-container swiper">
                 <div class="slide-content">
                     <div class="card-wrapper swiper-wrapper">
-                        <!--Arquivos injetados por JS-->
+                        <!--Arquivos injetados por JavaScript (index-page-script)-->
                     </div>
                 </div>
 
@@ -131,62 +129,12 @@
 
         <!--Seção da publicidade-->
         <section class="ads-section">
-            <!--  Arquivos injetados por JS - (ads-script)-->
+            <!--Arquivos injetados por JavaScript (ads-script)-->
         </section>
 
         <!--Notícias que vem depois das publicidades-->
         <section class="container_notices_pos_ads">
-
-            <a class="link-notices" target="_blank"
-                href="https://www.tecmundo.com.br/internet/265777-youtube-impede-reproducao-videos-bloqueadores-de-anuncio.htm">
-                <div class="card-container-2">
-                    <img class="img-card" src="https://tm.ibxk.com.br/2023/06/29/29105714966076.jpg?ims=1120x420" alt="not informed">
-                    <div class="card-info">
-                        <h3 class="tittle_card">
-                            YouTube impede reprodução de vídeos de quem usa bloqueadores de anúncio.
-                        </h3>
-                        <br>
-                        <p class="description_card">
-
-                        </p>
-                    </div>
-            </a>
-            </div>
-
-
-            <a class="link-notices" target="_blank"
-            href="https://guia.folha.uol.com.br/restaurantes/2023/07/sal-gastronomia-de-henrique-fogaca-vai-migrar-de-higienopolis-para-os-jardins.shtml">
-            <div class="card-container-2">
-                <img class="img-card"
-                    src="https://f.i.uol.com.br/fotografia/2023/07/10/168900531764ac2d0592b88_1689005317_3x2_md.jpg"
-                    alt="not informed">
-
-                <div class="card-info">
-                    <h3 class="tittle_card">
-                        Sal Gastronomia, de Henrique Fogaça, vai migrar de Higienópolis para os Jardins
-                    </h3>
-                    <br>
-                    <p class="description_card">
-                    </p>
-                </div>
-        </a>
-            </div>
-
-            <a class="link-notices" target="_blank"
-                href="https://revistagalileu.globo.com/ciencia/espaco/noticia/2023/07/fisico-sugere-que-universo-tem-o-dobro-da-idade-estabelecida-ate-agora.ghtml">
-                <div class="card-container-2">
-                    <img class="img-card" src="https://s2-galileu.glbimg.com/mY_AMNl08NIk-WgMvDw8H9T4GQg=/0x0:1920x904/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2023/i/g/hO3B7sSAidbElDLXOnIA/galaxy.jpg" alt="not informed">
-                    <div class="card-info">
-                        <h3 class="tittle_card">
-                            Físico sugere que universo tem o dobro da idade estabelecida até agora
-                        </h3>
-                        <br>
-                        <p class="description_card">
-
-                        </p>
-                    </div>
-            </a>
-            </div>
+          <!--Arquivos injetados por JavaScript (mini-notices)-->
         </section>
 
         <button class="btn-ver-mais">
@@ -195,67 +143,61 @@
         
     </main>
     <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col">
-              <h4>Outras páginas</h4>
-              <ul class="footer-ul">
-                <li class="footer-li"><a href="../html/index.html">Página inicial</a></li>
-                <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
-                <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
-                <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
-                <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
-              </ul>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Outras páginas</h4>
+            <ul class="footer-ul">
+              <li class="footer-li"><a href="../html/index.html">Página inicial</a></li>
+              <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
+              <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
+              <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
+              
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Conecte-se</h4>
+            <ul class="footer-ul">
+              <li class="footer-li"><a class="side_nav_a" href="../html/login.html">Login/Cadastro</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Conheça</h4>
+            <ul class="footer-ul">
+              
+              <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Nos siga!</h4>
+  
+            <div class="social-links 2">
+              <p class="name-dev-footer">Mauricio Marques</p>
+              <a href="https://github.com/Maurici0M"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/mauricio-marques-costa-994b25210/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
-            <div class="footer-col">
-              <h4>Opção 2</h4>
-              <ul class="footer-ul">
-                <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
-                <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
-                <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
-                <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
-              </ul>
+  
+            <div class="social-links">
+              <p class="name-dev-footer">Michael Paes</p>
+              <a href="https://github.com/Michaelpaes"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/michael-paes-050817200/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://www.instagram.com/michael_spaes/"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </div>
-            <div class="footer-col">
-              <h4>Opção 3</h4>
-              <ul class="footer-ul">
-                <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
-                <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
-                <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
-                <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Nos siga!</h4>
-
-              <div class="social-links 2">
-                <p class="name-dev-footer">Mauricio Marques</p>
-                <a href="https://github.com/Maurici0M"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a href="https://www.linkedin.com/in/mauricio-marques-costa-994b25210/"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-
-              <div class="social-links">
-                <p class="name-dev-footer">Michael Paes</p>
-                <a href="https://github.com/Michaelpaes"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a href="https://www.linkedin.com/in/michael-paes-050817200/"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="https://www.instagram.com/michael_spaes/"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-
-
-            </div>
+            
           </div>
         </div>
-    </footer>
+      </div>
+  </footer> 
 </body>
 
 </html>

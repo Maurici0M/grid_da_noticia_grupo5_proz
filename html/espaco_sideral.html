@@ -27,7 +27,11 @@
     <!------------------------------------>
     <script src="../javascript/espaco_sideral/espaco_sideral-page-script.js" defer></script>
     <script src="../javascript/espaco_sideral/ads-script.js" defer></script>
-    <script src="../javascript/script-menu-mobile.js" defer></script>
+    <script src="../javascript/espaco_sideral/mini-notices.js" defer></script>
+    <script src="../javascript/menu_mobile_desktop_engine/script-menu-desktop.js" defer></script>
+    <script src="../javascript/menu_mobile_desktop_engine/script-menu-mobile.js" defer></script>
+    <!--DEIXAR O SCRIPT DA BARRA DE PESQUISA SEMPRE ABAIXO DOS SCRIPT'S QUE CONTÉM AS NOTÍCIAS, CASO CONTRÁRIO, IRÁ APRESENTAR ERRO!-->
+    <script src="../javascript/search_bar_engine/script-search-bar.js" defer></script>
     <title>Grid da Notícia | Espaço Sideral</title>
 
 </head>
@@ -86,16 +90,13 @@
 
             <div class="links-mobile" id="links-mobile">
                 <ul class="nav-itens">
-                    <li> <a class="nav-itens-name" href="index.html"><span class="material-symbols-outlined"> house
-                            </span> Início</a> </li>
-                    <li> <a class="nav-itens-name" href="culinaria.html"> <span class="material-symbols-outlined">
-                                dinner_dining </span> Culinária</a> </li>
-                    <li> <a class="nav-itens-name" href="espaco_sideral.html"> <span class="material-symbols-outlined">
-                                rocket_launch </span> Espaço Sideral</a> </li>
-                    <li> <a class="nav-itens-name" href="tecnologia.html"> <span class="material-symbols-outlined">
-                                desktop_windows </span> Tecnologia</a> </li>
-                    <li> <a class="nav-itens-name" href="sobre_nos.html"> <span class="material-symbols-outlined">
-                                emoji_people </span> Sobre Nós</a> </li>
+                    <li> <a class="nav-itens-name" href="../html/login.html"><span class="material-symbols-outlined">account_circle</span>Login/Cadastro</a></li>
+                    <hr>
+                    <li> <a class="nav-itens-name" href="index.html"><span class="material-symbols-outlined"> house</span> Início</a> </li>
+                    <li> <a class="nav-itens-name" href="culinaria.html"> <span class="material-symbols-outlined"> dinner_dining </span> Culinária</a> </li>
+                    <li> <a class="nav-itens-name" href="espaco_sideral.html"> <span class="material-symbols-outlined">rocket_launch</span> Espaço Sideral</a> </li>
+                    <li> <a class="nav-itens-name" href="tecnologia.html"> <span class="material-symbols-outlined">computer</span> Tecnologia</a> </li>
+                    <li> <a class="nav-itens-name" href="sobre_nos.html"> <span class="material-symbols-outlined">groups</span> Sobre Nós</a> </li>
                 </ul>
             </div>
         </nav>
@@ -117,7 +118,7 @@
             <div class="slide-container swiper">
                 <div class="slide-content">
                     <div class="card-wrapper swiper-wrapper">
-                        <!--Arquivos injetados por JS-->
+                        <!--Arquivos injetados por JS (espaco_sideral-page-script)-->
                     </div>
                 </div>
 
@@ -129,62 +130,12 @@
 
         <!--Seção da publicidade-->
         <section class="ads-section">
-            <!--  Arquivos injetados por JS - (ads-script)-->
+            <!--Arquivos adicionados por JavaScript (ads-script)-->
         </section>
 
         <!--Notícias que vem depois das publicidades-->
         <section class="container_notices_pos_ads">
-
-            <a class="link-notices" target="_blank"
-                href="https://revistagalileu.globo.com/ciencia/espaco/noticia/2023/07/fisico-sugere-que-universo-tem-o-dobro-da-idade-estabelecida-ate-agora.ghtml">
-                <div class="card-container-2">
-                    <img class="img-card" src="https://s2-galileu.glbimg.com/mY_AMNl08NIk-WgMvDw8H9T4GQg=/0x0:1920x904/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2023/i/g/hO3B7sSAidbElDLXOnIA/galaxy.jpg" alt="not informed">
-                    <div class="card-info">
-                        <h3 class="tittle_card">
-                            Físico sugere que universo tem o dobro da idade estabelecida até agora
-                        </h3>
-                        <br>
-                        <p class="description_card">
-
-                        </p>
-                    </div>
-            </a>
-            </div>
-
-
-            <a class="link-notices" target="_blank"
-                href="https://revistagalileu.globo.com/ciencia/espaco/noticia/2023/07/entenda-os-objetivos-da-missao-espacial-indiana-chandrayaan-3-rumo-a-lua.ghtml">
-                <div class="card-container-2">
-                    <img class="img-card"
-                        src="https://s2-galileu.glbimg.com/3a7Q5SFXN_aqfSZSyXiI-Ecl7KQ=/0x0:1200x675/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2023/x/f/HfZV2mTGGpdOWsy20KoQ/missao3.jpg" alt="not informed">
-
-                    <div class="card-info">
-                        <h3 class="tittle_card">
-                            Entenda os objetivos da missão espacial indiana Chandrayaan-3 rumo à Lua
-                        </h3>
-                        <br>
-                        <p class="description_card">
-
-                        </p>
-                    </div>
-            </a>
-            </div>
-
-            <a class="link-notices" target="_blank"
-                href="https://revistagalileu.globo.com/ciencia/espaco/noticia/2023/07/james-webb-pode-ter-achado-1a-evidencia-de-estrelas-escuras-entenda.ghtml">
-                <div class="card-container-2">
-                    <img class="img-card"
-                        src="https://s2-galileu.glbimg.com/f3ENJpskGUzzjIv5GZjQpU7r0jU=/0x0:873x608/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2023/0/B/9BAaQEQx2iTO1fCBDinw/captura-de-tela-2023-07-13-133319.png" alt="not informed">
-                    <div class="card-info">
-                        <h3 class="tittle_card">
-                            James Webb pode ter achado 1ª evidência de "estrelas escuras"; entenda
-                        </h3>
-                        <p class="description_card">
-
-                        </p>
-                    </div>
-            </a>
-            </div>
+            <!--Arquivos adicionados por JavaScript (mini-notices)-->  
         </section>
 
         <button class="btn-ver-mais">
@@ -193,66 +144,61 @@
         
     </main>
     <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col">
-              <h4>Outras páginas</h4>
-              <ul class="footer-ul">
-                <li class="footer-li"><a href="../html/index.html">Página inicial</a></li>
-                <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
-                <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
-                <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
-                <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Opção 2</h4>
-              <ul class="footer-ul">
-                <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
-                <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
-                <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
-                <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Opção 3</h4>
-              <ul class="footer-ul">
-                <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
-                <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
-                <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
-                <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Nos siga!</h4>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Outras páginas</h4>
+            <ul class="footer-ul">
+              <li class="footer-li"><a href="../html/index.html">Página inicial</a></li>
+              <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
+              <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
+              <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
               
-              <div class="social-links 2">
-                <p class="name-dev-footer">Mauricio Marques</p>
-                <a href="https://github.com/Maurici0M"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a href="https://www.linkedin.com/in/mauricio-marques-costa-994b25210/"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-
-              <div class="social-links">
-                <p class="name-dev-footer">Michael Paes</p>
-                <a href="https://github.com/Michaelpaes"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a href="https://www.linkedin.com/in/michael-paes-050817200/"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="https://www.instagram.com/michael_spaes/"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Conecte-se</h4>
+            <ul class="footer-ul">
+              <li class="footer-li"><a class="side_nav_a" href="../html/login.html">Login/Cadastro</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Conheça</h4>
+            <ul class="footer-ul">
+              
+              <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Nos siga!</h4>
+  
+            <div class="social-links 2">
+              <p class="name-dev-footer">Mauricio Marques</p>
+              <a href="https://github.com/Maurici0M"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/mauricio-marques-costa-994b25210/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
+  
+            <div class="social-links">
+              <p class="name-dev-footer">Michael Paes</p>
+              <a href="https://github.com/Michaelpaes"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/michael-paes-050817200/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://www.instagram.com/michael_spaes/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            
           </div>
         </div>
-    </footer>
+      </div>
+  </footer> 
 </body>
 
 </html>

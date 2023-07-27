@@ -2,6 +2,7 @@ function openNav() {
     document.getElementById("side_nav").style.width = "25%";
     // document.getElementById("#").style.marginLeft = "#";
   
+
     const navbar = document.querySelector('.navbar-header')
     navbar.style.transition = 'all 0.9s ease'
   

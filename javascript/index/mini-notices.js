@@ -1,12 +1,12 @@
 const arrayMiniNotices = [
     {
-        linkNotice: 'https://g1.globo.com/tecnologia/noticia/2023/06/28/microsoft-teams-apresenta-instabilidade-na-manha-desta-quarta.ghtml',
+        linkNotice: 'https://guia.folha.uol.com.br/restaurantes/2023/07/sal-gastronomia-de-henrique-fogaca-vai-migrar-de-higienopolis-para-os-jardins.shtml',
 
-        cardImg: 'https://s2-g1.glbimg.com/DvpNTogu6Ig8p4oLhJP7u57iDIo=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/9/n/wNYyRtRiCzgB5gyjaSVQ/17da9a60-a709-11ed-96fd-454d269ebe8d.jfif' ,
+        cardImg: 'https://f.i.uol.com.br/fotografia/2023/07/10/168900531764ac2d0592b88_1689005317_3x2_md.jpg' ,
 
-        altImg: 'Microsoft Teams',
+        altImg: 'Foto Chef Henrique Fogaça',
 
-        tittleCard: ' Microsoft Teams apresenta instabilidade global na manhã desta quarta (28/06).',
+        tittleCard: ' Sal Gastronomia, de Henrique Fogaça, vai migrar de Higienópolis para os Jardins.',
 
         descriptionCard: '',
 
@@ -25,13 +25,13 @@ const arrayMiniNotices = [
     },
 
     {
-        linkNotice: 'https://www.tecmundo.com.br/internet/265777-youtube-impede-reproducao-videos-bloqueadores-de-anuncio.htm',
+        linkNotice: 'https://revistagalileu.globo.com/ciencia/espaco/noticia/2023/07/fisico-sugere-que-universo-tem-o-dobro-da-idade-estabelecida-ate-agora.ghtml',
 
-        cardImg: 'https://tm.ibxk.com.br/2023/06/29/29105714966076.jpg?ims=1120x420' ,
+        cardImg: 'https://s2-galileu.glbimg.com/mY_AMNl08NIk-WgMvDw8H9T4GQg=/0x0:1920x904/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2023/i/g/hO3B7sSAidbElDLXOnIA/galaxy.jpg' ,
 
-        altImg: 'Logo do YouTube',
+        altImg: 'Imagem do Universo',
 
-        tittleCard: 'YouTube impede reprodução de vídeos de quem usa bloqueadores de anúncio.',
+        tittleCard: 'Físico sugere que universo tem o dobro da idade estabelecida até agora.',
 
         descriptionCard: '',
     },
@@ -51,8 +51,7 @@ const arrayMiniNotices = [
         tittleCard: '',
         descriptionCard: '',
     },*/
-    
-    ]
+]
 
 for (let index = 0; index < arrayMiniNotices.length; index++) {
 

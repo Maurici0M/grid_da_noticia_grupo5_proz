@@ -101,6 +101,8 @@ body {
 img.no-results-img {
   border-radius: 10%;
   border: solid black 1px;
+  width: 566px;
+  height: 439px
 }
 
 .text-no-results {
@@ -287,6 +289,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     letter-spacing: -0.0625rem;
+    text-align: justify;
   }
 }
 
@@ -332,7 +335,7 @@ img.no-results-img {
 @media (max-width: 390px) {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
-    letter-spacing: -0.0525rem;
+    letter-spacing: -0.125em;
     font-size: 10px;
     font-weight: 900;
   }
@@ -359,6 +362,11 @@ img.no-results-img {
 
 .swiper-pagination-bullet-active {
   background-color: #282828;
+}
+
+.card.swiper-slide.swiper-slide-next {
+  transform: scale(1.05);
+  background-color: rgba(0, 128, 0, 0.039);
 }
 
 .slide-container {
@@ -590,7 +598,6 @@ a {
   width: 100%;
   height: 165px;
   border-radius: 12px;
-  border: solid gainsboro 2px;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }

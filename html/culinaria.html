@@ -25,10 +25,13 @@
     <!-- link do footer -->
     <script src="../assets/swiper/unpkg.com_swiper@8.1.6_swiper-bundle.min.js" defer></script>
     <!------------------------------------>
-    <script src="../javascript/script-menu-mobile.js" defer></script>
-    <script src="../javascript/script-menu-desktop.js" defer></script>
+    <script src="../javascript/menu_mobile_desktop_engine/script-menu-desktop.js" defer></script>
+    <script src="../javascript/menu_mobile_desktop_engine/script-menu-mobile.js" defer></script>
     <script src="../javascript/culinaria/culinaria-page-script.js" defer></script>
     <script src="../javascript/culinaria/ads-script.js" defer></script>
+    <script src="../javascript/culinaria/mini-notices.js" defer></script>
+    <!--DEIXAR O SCRIPT DA BARRA DE PESQUISA SEMPRE ABAIXO DOS SCRIPT'S QUE CONTÉM AS NOTÍCIAS, CASO CONTRÁRIO, IRÁ APRESENTAR ERRO!-->
+    <script src="../javascript/search_bar_engine/script-search-bar.js" defer></script>
     <title>Grid da Notícia | Culinária</title>
 
 </head>
@@ -80,21 +83,17 @@
 
             <div class="search-box">
                 <input type="text" name="search" id="search" placeholder="Pesquisar..." >
-               <!-- <button id="search-button" class="search-button">🔍</button> -->
             </div>
 
             <div class="links-mobile" id="links-mobile">
                 <ul class="nav-itens">
-                    <li> <a class="nav-itens-name" href="index.html"><span class="material-symbols-outlined"> house
-                            </span> Início</a> </li>
-                    <li> <a class="nav-itens-name" href="culinaria.html"> <span class="material-symbols-outlined">
-                                dinner_dining </span> Culinária</a> </li>
-                    <li> <a class="nav-itens-name" href="espaco_sideral.html"> <span class="material-symbols-outlined">
-                                rocket_launch </span> Espaço Sideral</a> </li>
-                    <li> <a class="nav-itens-name" href="tecnologia.html"> <span class="material-symbols-outlined">
-                                desktop_windows </span> Tecnologia</a> </li>
-                    <li> <a class="nav-itens-name" href="sobre_nos.html"> <span class="material-symbols-outlined">
-                                emoji_people </span> Sobre Nós</a> </li>
+                    <li> <a class="nav-itens-name" href="../html/login.html"><span class="material-symbols-outlined">account_circle</span>Login/Cadastro</a></li>
+                    <hr>
+                    <li> <a class="nav-itens-name" href="index.html"><span class="material-symbols-outlined"> house</span> Início</a> </li>
+                    <li> <a class="nav-itens-name" href="culinaria.html"> <span class="material-symbols-outlined"> dinner_dining </span> Culinária</a> </li>
+                    <li> <a class="nav-itens-name" href="espaco_sideral.html"> <span class="material-symbols-outlined">rocket_launch</span> Espaço Sideral</a> </li>
+                    <li> <a class="nav-itens-name" href="tecnologia.html"> <span class="material-symbols-outlined">computer</span> Tecnologia</a> </li>
+                    <li> <a class="nav-itens-name" href="sobre_nos.html"> <span class="material-symbols-outlined">groups</span> Sobre Nós</a> </li>
                 </ul>
             </div>
         </nav>
@@ -116,7 +115,7 @@
             <div class="slide-container swiper">
                 <div class="slide-content">
                     <div class="card-wrapper swiper-wrapper">
-                        <!--Arquivos injetados por JS-->
+                        <!--Arquivos injetados por JavaScript (culinaria-page-script)-->
                     </div>
                 </div>
 
@@ -128,129 +127,72 @@
 
         <!--Seção da publicidade-->
         <section class="ads-section">
-            <!--  Arquivos injetados por JS - (ads-script)-->
+            <!--Arquivos adicionados por JavaScript (ads-script)-->
         </section>
 
 
         <section class="container_notices_pos_ads">
-
-            <a class="link-notices" target="_blank"
-                href="https://guia.folha.uol.com.br/restaurantes/2023/07/galeria-cafe-inaugura-o-resto-em-sp-com-jantares-servidos-durante-a-balada.shtml">
-                <div class="card-container-2">
-                    <img class="img-card" src="https://f.i.uol.com.br/fotografia/2021/10/27/16353732136179d09ddb0df_1635373213_3x2_lg.jpg"
-                        alt="not informed">
-
-                    <div class="card-info">
-                        <h3 class="tittle_card">
-                            Galeria Café inaugura o Restô em SP, com jantares servidos durante a balada
-                        </h3>
-                        <br>
-                        <p class="description_card">
-                        </p>
-                    </div>
-            </a>
-            </div>
-
-
-            <a class="link-notices" target="_blank"
-                href="https://guia.folha.uol.com.br/restaurantes/2023/07/sal-gastronomia-de-henrique-fogaca-vai-migrar-de-higienopolis-para-os-jardins.shtml">
-                <div class="card-container-2">
-                    <img class="img-card"
-                        src="https://f.i.uol.com.br/fotografia/2023/07/10/168900531764ac2d0592b88_1689005317_3x2_md.jpg"
-                        alt="not informed">
-
-                    <div class="card-info">
-                        <h3 class="tittle_card">
-                            Sal Gastronomia, de Henrique Fogaça, vai migrar de Higienópolis para os Jardins
-                        </h3>
-                        <br>
-                        <p class="description_card">
-                        </p>
-                    </div>
-            </a>
-            </div>
-
-            <a class="link-notices" target="_blank"
-                href="https://receitas.globo.com/regionais/rpc/estudio-c/receita-facil-de-brownie-de-chocolate-g.ghtml">
-                <div class="card-container-2">
-                    <img class="img-card"
-                        src="https://s2-receitas.glbimg.com/tV0rNjf9zlBOdtUy3PkWzDEvm_4=/0x0:924x520/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/h/R/isTuAVRBundv1RAQg0BA/receita-facil-de-brownie-de-chocolate.jpg"
-                        alt="not informed">
-                    <div class="card-info">
-                        <h3 class="tittle_card">
-                            Receita fácil de brownie de chocolate não dá trabalho e é ideal para comer no café da manhã ou lanche da tarde, e ainda, impressionar!
-                        </h3>
-                        <p class="description_card">
-                        </p>
-                    </div>
-            </a>
-            </div>
+            <!--Arquivos adicionados por JavaScript (mini-notices)-->
         </section>
         <button class="btn-ver-mais">
             Carregar mais
         </button>
     </main>
     <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col">
-              <h4>Outras páginas</h4>
-              <ul class="footer-ul">
-                <li class="footer-li"><a href="../html/index.html">Página inicial</a></li>
-                <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
-                <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
-                <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
-                <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Opção 2</h4>
-              <ul class="footer-ul">
-                <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
-                <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
-                <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
-                <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Opção 3</h4>
-              <ul class="footer-ul">
-                <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
-                <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
-                <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
-                <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Nos siga!</h4>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Outras páginas</h4>
+            <ul class="footer-ul">
+              <li class="footer-li"><a href="../html/index.html">Página inicial</a></li>
+              <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
+              <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
+              <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Conecte-se</h4>
+            <ul class="footer-ul">
+              <li class="footer-li"><a class="side_nav_a" href="../html/login.html">Login/Cadastro</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Conheça</h4>
+            <ul class="footer-ul">
               
-              <div class="social-links 2">
-                <p class="name-dev-footer">Mauricio Marques</p>
-                <a href="https://github.com/Maurici0M"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a href="https://www.linkedin.com/in/mauricio-marques-costa-994b25210/"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-              </div>
-
-              <div class="social-links">
-                <p class="name-dev-footer">Michael Paes</p>
-                <a href="https://github.com/Michaelpaes"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a href="https://www.linkedin.com/in/michael-paes-050817200/"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="https://www.instagram.com/michael_spaes/"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-              </div>
-
+              <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Nos siga!</h4>
+  
+            <div class="social-links 2">
+              <p class="name-dev-footer">Mauricio Marques</p>
+              <a href="https://github.com/Maurici0M"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/mauricio-marques-costa-994b25210/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </div>
+  
+            <div class="social-links">
+              <p class="name-dev-footer">Michael Paes</p>
+              <a href="https://github.com/Michaelpaes"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/michael-paes-050817200/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://www.instagram.com/michael_spaes/"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+            
           </div>
         </div>
-    </footer>
+      </div>
+  </footer> 
 </body>
 
 </html>
