@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../assets/swiper/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
     <!------------------------------------>
     <link rel="stylesheet" href="../styles/tecnologia_style.css">
+    <link rel="stylesheet" href="../styles/search_bar_style.css">
     <!--Swiper Script (arquivos do carrosel)-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
     <!-- link do estilo dos botões do footer (redes sociais) -->
@@ -71,6 +72,7 @@
                 </span>
             <div class="logo">
                 <a href="index.html">GRID <small>da Notícia</small></a>
+                <a class="logo-mobile" href="index.html">GRID</a>
             </div>
             <div class="links">
                 <ul class="nav-itens">
@@ -80,9 +82,13 @@
                     <li> <a class="nav-itens-name" href="sobre_nos.html"><i id="navbar-icons" class="fa fa-users"></i>Sobre Nós</a> </li>
                 </ul>
             </div>
-                <div class="search-box">
-                    <input type="text" name="search" id="search" placeholder="Pesquisar..." >
-                </div>
+            <div class="search-box">
+              <input type="text" id="search" class="search-text" placeholder="Pesquisar...">
+                <a class="search-btn">
+                    <img class="loupe-blue" src="../assets/images/loupe-blue.svg" alt="" width="20" height="20">
+                    <img class="loupe-white" src="../assets/images/loupe-white.svg" alt="" width="20" height="20">
+                </a>
+            </div>
 
             <div class="links-mobile" id="links-mobile">
                 <ul class="nav-itens">
@@ -93,6 +99,7 @@
                     <li> <a class="nav-itens-name" href="espaco_sideral.html"> <span class="material-symbols-outlined">rocket_launch</span> Espaço Sideral</a> </li>
                     <li> <a class="nav-itens-name" href="tecnologia.html"> <span class="material-symbols-outlined">computer</span> Tecnologia</a> </li>
                     <li> <a class="nav-itens-name" href="sobre_nos.html"> <span class="material-symbols-outlined">groups</span> Sobre Nós</a> </li>
+                  
                 </ul>
             </div>
         </nav>
@@ -161,7 +168,7 @@
           <div class="footer-col">
             <h4>Outras páginas</h4>
             <ul class="footer-ul">
-              <li class="footer-li"><a href="../html/index.html">Página inicial</a></li>
+              <li class="footer-li"><a href="../html/index.html">Últimas Notícias</a></li>
               <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
               <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
               <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
@@ -175,7 +182,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Conheça</h4>
+            <h4>Saiba +</h4>
             <ul class="footer-ul">
               
               <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>

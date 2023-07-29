@@ -25,7 +25,7 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url(../assets/images/index-nav-background-degrade.png);
+  background-image: url(../assets/images/sobre_nos-nav-background-degrade.png);
   /*adicionar imagem da cor do NAVBAR aqui, ou mude para "background-color" e escolha uma cor.*/
   position: fixed;
   z-index: 1;
@@ -69,7 +69,7 @@ body {
 }
 
 .nav-itens-name:hover {
-  background-image: url(../assets/images/index-nav-background-degrade.png);
+  background-image: url(../assets/images/sobre_nos-nav-background-degrade.png);
   color: white;
   transition: 0.5s ease-out;
 }
@@ -78,9 +78,14 @@ body {
   text-align: center;
   border-radius: 12px;
   border: none;
-  padding: 4px 25px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+/*Efeito da cor da Lupa na barra de Pesquisa (Único para cada página!)*/
+.search-box:hover > .search-btn {
+  background: url(../assets/images/sobre_nos-nav-background-degrade.png);
+  background-size: cover;
 }
 
 /*Menu mobile*/
@@ -306,16 +311,6 @@ a {
   letter-spacing: -1.6px;
 }
 
-@media (max-width: 1290px) {
-  .container-sobre-nos {
-    flex-direction: column;
-  }
-
-  .slide-container {
-    width: 50%;
-  }
-}
-
 .img-sobre-nos > img {
   width: 40rem;
   border-radius: 15px;
@@ -335,6 +330,41 @@ a {
   margin: 0 40px;
   overflow: hidden;
   border-radius: 12px;
+}
+
+@media (max-width: 1290px) {
+  .container-sobre-nos {
+    flex-direction: column;
+  }
+
+  .slide-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .slide-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 800px) {
+  .slide-container {
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .slide-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 310px) {
+  .slide-container {
+    width: 150%;
+    margin-left: -48px
+  }
 }
 
 /**/
@@ -401,6 +431,7 @@ h1.title-apresentation-initial.sobre-nos {
   border-radius: 12px;
   /* object-fit: cover;*/
 }
+
 @media (max-width: 560px) {
   .img-card {
     object-fit: cover;
@@ -557,6 +588,7 @@ h1.title-apresentation-initial.sobre-nos {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  transition: all 0.5s ease-in-out;
 }
 
 .sidenav a {

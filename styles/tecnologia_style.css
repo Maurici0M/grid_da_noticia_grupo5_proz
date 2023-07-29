@@ -13,12 +13,6 @@ body {
   justify-content: center;
   /*-------------------------*/
 
-  /*background-image: url(../assets/images/tech-body-background-gradient-blue.jpg);*/
-  /*background-image: url(https://c4.wallpaperflare.com/wallpaper/631/332/8/gradient-minimalism-simple-blue-background-wallpaper-preview.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;*/
-
   background: rgb(30,128,195);
   background: linear-gradient(90deg, rgba(30,128,195,1) 0%, rgba(96,147,182,1) 35%, rgba(1,101,169,1) 100%);
 
@@ -89,17 +83,22 @@ body {
 
 .search-box {
   position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-
+/*
 #search {
   text-align: center;
   border-radius: 12px 0px 0px 12px;
   border: none;
   padding: 4px 25px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    padding: 0px 12px;
+    padding: 4px 15px;
     height: 20px;
+}*/
+
+/*Efeito da cor da Lupa na barra de Pesquisa (Único para cada página!)*/
+.search-box:hover > .search-btn {
+  background: #447ce7;
 }
 
 .search-input {
@@ -136,22 +135,36 @@ body {
 }
 
 img.no-results-img {
-  background-color: steelblue;
   border-radius: 10%;
-  border: solid darkblue 1px;
-  width: 566px;
-  height: 439px
+  border: solid darkblue 2px;
+  width: 500px;
+  height: 400px
 }
 
 .text-no-results {
-  width: 400px;
+  width: 350px;
   text-align: justify;
   font-family: 'Maven Pro', sans-serif;
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: -1px;
+  letter-spacing: -1.85px;
   color: white;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.26);
+}
+
+@media (max-width: 600px){
+  .no-results-messenger-group {
+    flex-direction: column-reverse;
+}
+.text-no-results {
+    letter-spacing: -1.95px;
+    width: 300px;
+}
+
+img.no-results-img{
+    width: 300px;
+    height: 300px;
+}
 }
 
 
@@ -223,11 +236,16 @@ img.no-results-img {
     display: none;
   }
 
-  .logo {
+  .logo > a {
     width: 100%;
     padding: 20px;
     text-align: center;
+    
   }
+
+ /* a.logo-mobile {
+    display: block;
+  }*/
 
   .material-symbols-outlined {
     display: block;
@@ -283,11 +301,11 @@ img.no-results-img {
   }
 }
 
-@media screen and (max-width: 565px) {
+/*@media screen and (max-width: 565px) {
   #search {
     display: none;
   }
-}
+}*/
 
 @media screen and (max-width: 440px) {
   .links-mobile {
@@ -313,7 +331,7 @@ img.no-results-img {
 
 .tittle-apresentation-initial {
   margin-top: 3.8rem;
-  text-align: justify;
+  text-align: center;
   font-family: "Maven Pro", sans-serif;
   color: white;
   padding: 16px 16px;
@@ -329,6 +347,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     letter-spacing: -0.0625rem;
+    text-align: justify;
   }
 }
 
@@ -414,18 +433,6 @@ img.no-results-img {
 .card.swiper-slide.swiper-slide-next {
   transform: scale(1.05);
 }
-/*
-.card.swiper-slide.swiper-slide-active {
-    opacity: 0.9;
-}
-
-.card.swiper-slide.swiper-slide-next {
-    opacity: 1;
-}
-
-.card.swiper-slide.swiper-slide-prev {
-    opacity: 0.7;
-} */
 
 .slide-content {
   margin: 0 40px;

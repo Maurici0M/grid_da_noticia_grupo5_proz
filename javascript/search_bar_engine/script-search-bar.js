@@ -97,7 +97,7 @@ function showResults(results) {
     noResults.classList.add('no-results-messenger-group')
 
     noResults.innerHTML = `
-    <img class = 'no-results-img' src="../assets/images/tech-pesquisa-nao-encontrada-robo.png" alt="Resultado de Pesquisa Não Encontrado.">
+    <img class = 'no-results-img' src="https://media.giphy.com/media/3b8OYv6DwPs4g/giphy.gif" alt="Resultado de Pesquisa Não Encontrado.">
 
     <div class = 'text-no-results'>
         <p>

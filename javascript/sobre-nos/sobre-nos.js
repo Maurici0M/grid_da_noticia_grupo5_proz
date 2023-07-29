@@ -6,7 +6,7 @@ var swiper = new Swiper(".slide-content", {
   fade: "true",
   gragCursor: "true",
   autoplay: {
-    delay: 6500,
+    delay: 7500,
     disableOnInteraction: false,
   },
   pagination: {
@@ -157,9 +157,4 @@ for (let index = 0; index < arrayCardsSobreNos.length; index++) {
   sectionCardsSobreNosSomos.appendChild(cardsSobreNos);
 }
 
-function openNav() {
-  document.getElementById("side_nav").style.width = "25%";
-}
-function closeNav() {
-  document.getElementById("side_nav").style.width = "0";
-}
+

@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../assets/swiper/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
   <!------------------------------------>
   <link rel="stylesheet" href="../styles/sobre_nos.css">
+  <link rel="stylesheet" href="../styles/search_bar_style.css">
   <!--Swiper Script (arquivos do carrosel)-->
   <link
       rel="stylesheet"
@@ -26,7 +27,8 @@
   <script src="../assets/swiper/unpkg.com_swiper@8.1.6_swiper-bundle.min.js" defer></script>
   <!------------------------------------>
   <script src="../javascript/sobre-nos/sobre-nos.js" defer></script>
-  <script src="../javascript/script-menu-mobile.js" defer></script>
+  <script src="../javascript/menu_mobile_desktop_engine/script-menu-mobile.js" defer></script>
+  <script src="../javascript/menu_mobile_desktop_engine/menu-desktop-sobre-nos.js" defer></script>
   <!--IO Icons JS (logos do LinkedIn e GitHub)-->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -47,7 +49,7 @@
         <a class="side_nav_a" href="../html/tecnologia.html"><i id="sidebar_icons" class="fa fa-laptop-code"></i>Tecnologia</a>
         <a class="side_nav_a" href="../html/sobre_nos.html"><i id="sidebar_icons" class="fa fa-users"></i>Sobre nós</a>
     </div>
-    <span class="material-symbols-outlined 2" onclick="openNav()">menu_open </span>
+    <span class="material-symbols-outlined 2" id="menu-desktop" onclick="openNav()">menu_open </span>
       <span onclick="animacaoMenu()" id="btn-menu" class="material-symbols-outlined">
         menu_open
       </span>
@@ -58,8 +60,9 @@
 
         <div class="logo">
             <a href="index.html">GRID <small>da Notícia</small></a>
+            <a class="logo-mobile" href="index.html">GRID</a>
         </div>
-        <div class="links">
+        <div class="links" id="links">
             <ul class="nav-itens">
               <li> <a class="nav-itens-name" href="culinaria.html"><i id="navbar-icons" class="fa fa-bowl-rice"></i>Culinária</a></li>
               <li> <a class="nav-itens-name" href="espaco_sideral.html"><i id="navbar-icons" class="fa fa-meteor"></i>Espaço Sideral</a> </li>
@@ -67,8 +70,7 @@
               <li> <a class="nav-itens-name" href="sobre_nos.html"><i id="navbar-icons" class="fa fa-users"></i>Sobre Nós</a> </li>
             </ul>
         </div>
-        <input type="search" name="search" id="search" placeholder="Pesquisar...">
-
+        
         <div class="links-mobile" id="links-mobile">
             <ul class="nav-itens">
                 <li> <a class="nav-itens-name" href="index.html"><span class="material-symbols-outlined"> house
@@ -174,6 +176,7 @@
       <img class="img-apoiadores"
         src="https://s3.amazonaws.com/joy-class/production/instances/9f0d4f4265224558b55ff9318dca95b41662057494606.png"
         alt="Foto das empresas apoiadoras do projeto">
+       <!-- <img class="img-professora" src="https://go-vegan-vert.vercel.app/assets/Juliana.e2df05c1.png" alt=""> -->
     </section>
 
     <div class="copyright">
@@ -186,7 +189,7 @@
         <div class="footer-col">
           <h4>Outras páginas</h4>
           <ul class="footer-ul">
-            <li class="footer-li"><a href="../html/index.html">Página inicial</a></li>
+            <li class="footer-li"><a href="../html/index.html">Últimas Notícias</a></li>
             <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
             <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
             <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
@@ -200,7 +203,7 @@
           </ul>
         </div>
         <div class="footer-col">
-          <h4>Conheça</h4>
+          <h4>Saiba +</h4>
           <ul class="footer-ul">
             
             <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>

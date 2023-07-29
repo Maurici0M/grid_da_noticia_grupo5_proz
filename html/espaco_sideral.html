@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../assets/swiper/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
     <!------------------------------------>
     <link rel="stylesheet" href="../styles/espaco_sideral_style.css">
+    <link rel="stylesheet" href="../styles/search_bar_style.css">
     <!--Swiper Script (arquivos do carrosel)-->
     <link
       rel="stylesheet"
@@ -73,6 +74,7 @@
                 </span>
             <div class="logo">
                 <a href="index.html">GRID <small>da Notícia</small></a>
+                <a class="logo-mobile" href="index.html">GRID</a>
             </div>
             <div class="links">
                 <ul class="nav-itens">
@@ -84,8 +86,11 @@
             </div>
             
             <div class="search-box">
-                <input type="text" name="search" id="search" placeholder="Pesquisar..." >
-               <!-- <button id="search-button" class="search-button">🔍</button> -->
+              <input type="text" id="search" class="search-text" placeholder="Pesquisar...">
+                <a class="search-btn">
+                    <img class="loupe-blue" src="../assets/images/loupe-blue.svg" alt="" width="20" height="20">
+                    <img class="loupe-white" src="../assets/images/loupe-white.svg" alt="" width="20" height="20">
+                </a>
             </div>
 
             <div class="links-mobile" id="links-mobile">
@@ -149,7 +154,7 @@
           <div class="footer-col">
             <h4>Outras páginas</h4>
             <ul class="footer-ul">
-              <li class="footer-li"><a href="../html/index.html">Página inicial</a></li>
+              <li class="footer-li"><a href="../html/index.html">Últimas Notícias</a></li>
               <li class="footer-li"><a href="../html/culinaria.html">Culinária</a></li>
               <li class="footer-li"><a href="../html/espaco_sideral.html">Espaço Sideral</a></li>
               <li class="footer-li"><a href="../html/tecnologia.html">Tecnologia</a></li>
@@ -163,7 +168,7 @@
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Conheça</h4>
+            <h4>Saiba +</h4>
             <ul class="footer-ul">
               
               <li class="footer-li"><a href="../html/sobre_nos.html">Sobre nós</a></li>
