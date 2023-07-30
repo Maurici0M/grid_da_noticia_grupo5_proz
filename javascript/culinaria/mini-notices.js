@@ -1,6 +1,6 @@
 const arrayMiniNotices = [
     {
-        linkNotice: 'https://guia.folha.uol.com.br/restaurantes/2023/07/galeria-cafe-inaugura-o-resto-em-sp-com-jantares-servidos-durante-a-balada.shtml',
+        linkNotices: 'https://guia.folha.uol.com.br/restaurantes/2023/07/galeria-cafe-inaugura-o-resto-em-sp-com-jantares-servidos-durante-a-balada.shtml',
 
         cardImg: 'https://f.i.uol.com.br/fotografia/2023/07/10/168900531764ac2d0592b88_1689005317_3x2_md.jpg' ,
 
@@ -13,7 +13,7 @@ const arrayMiniNotices = [
     },
 
     {
-        linkNotice: 'https://guia.folha.uol.com.br/restaurantes/2023/07/sal-gastronomia-de-henrique-fogaca-vai-migrar-de-higienopolis-para-os-jardins.shtml',
+        linkNotices: 'https://guia.folha.uol.com.br/restaurantes/2023/07/sal-gastronomia-de-henrique-fogaca-vai-migrar-de-higienopolis-para-os-jardins.shtml',
 
         cardImg: 'https://f.i.uol.com.br/fotografia/2023/07/10/168900531764ac2d0592b88_1689005317_3x2_md.jpg' ,
 
@@ -25,7 +25,7 @@ const arrayMiniNotices = [
     },
 
     {
-        linkNotice: 'https://receitas.globo.com/regionais/rpc/estudio-c/receita-facil-de-brownie-de-chocolate-g.ghtml',
+        linkNotices: 'https://receitas.globo.com/regionais/rpc/estudio-c/receita-facil-de-brownie-de-chocolate-g.ghtml',
 
         cardImg: 'https://s2-receitas.glbimg.com/tV0rNjf9zlBOdtUy3PkWzDEvm_4=/0x0:924x520/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/h/R/isTuAVRBundv1RAQg0BA/receita-facil-de-brownie-de-chocolate.jpg' ,
 
@@ -56,7 +56,7 @@ for (let index = 0; index < arrayMiniNotices.length; index++) {
     // manipular elemento (adicionar conteúdo ao elemento selecionado)
         
     divMiniNotices.innerHTML = `
-        <a class="link-notices" target="_blank" href="${arrayMiniNotices[index].linkNotice}">
+        <a class="link-notices" target="_blank" href="${arrayMiniNotices[index].linkNotices}">
 
             <img class="img-card" src= "${arrayMiniNotices[index].cardImg}" alt="${arrayMiniNotices[index].altImg}">
 

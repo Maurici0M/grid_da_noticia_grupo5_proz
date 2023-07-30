@@ -25,7 +25,7 @@ function pesquisar(query) {
     // Retorna a array de resultados
     return results;
     }
-
+    
 
 // Função para mostrar os resultados na página
 function showResults(results) {
@@ -162,4 +162,6 @@ else {
     botaoCarregarMais.classList.remove ('desativado')
 }
 }); 
+
+
 

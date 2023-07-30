@@ -1,6 +1,6 @@
 const arrayMiniNotices = [
     {
-        linkNotice: 'https://guia.folha.uol.com.br/restaurantes/2023/07/sal-gastronomia-de-henrique-fogaca-vai-migrar-de-higienopolis-para-os-jardins.shtml',
+        linkNotices: 'https://guia.folha.uol.com.br/restaurantes/2023/07/sal-gastronomia-de-henrique-fogaca-vai-migrar-de-higienopolis-para-os-jardins.shtml',
 
         cardImg: 'https://f.i.uol.com.br/fotografia/2023/07/10/168900531764ac2d0592b88_1689005317_3x2_md.jpg' ,
 
@@ -13,7 +13,7 @@ const arrayMiniNotices = [
     },
 
     {
-        linkNotice: 'https://g1.globo.com/tecnologia/noticia/2023/03/08/hackers-causaram-prejuizos-a-cerca-de-25-das-empresas-brasileiras-em-2022-diz-pesquisa.ghtml',
+        linkNotices: 'https://g1.globo.com/tecnologia/noticia/2023/03/08/hackers-causaram-prejuizos-a-cerca-de-25-das-empresas-brasileiras-em-2022-diz-pesquisa.ghtml',
 
         cardImg: 'https://s2-g1.glbimg.com/Vo9n1UdeaUVfSISB0rZN7l59bLA=/0x0:5568x3712/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/s/8/3lGjCjSm2rfee1HJXBfA/age20230119042.jpg' ,
 
@@ -25,7 +25,7 @@ const arrayMiniNotices = [
     },
 
     {
-        linkNotice: 'https://revistagalileu.globo.com/ciencia/espaco/noticia/2023/07/fisico-sugere-que-universo-tem-o-dobro-da-idade-estabelecida-ate-agora.ghtml',
+        linkNotices: 'https://revistagalileu.globo.com/ciencia/espaco/noticia/2023/07/fisico-sugere-que-universo-tem-o-dobro-da-idade-estabelecida-ate-agora.ghtml',
 
         cardImg: 'https://s2-galileu.glbimg.com/mY_AMNl08NIk-WgMvDw8H9T4GQg=/0x0:1920x904/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2023/i/g/hO3B7sSAidbElDLXOnIA/galaxy.jpg' ,
 
@@ -64,7 +64,7 @@ for (let index = 0; index < arrayMiniNotices.length; index++) {
     // manipular elemento (adicionar conteúdo ao elemento selecionado)
         
     divMiniNotices.innerHTML = `
-        <a class="link-notices" target="_blank" href="${arrayMiniNotices[index].linkNotice}">
+        <a class="link-notices" target="_blank" href="${arrayMiniNotices[index].linkNotices}">
 
             <img class="img-card" src= "${arrayMiniNotices[index].cardImg}" alt="${arrayMiniNotices[index].altImg}">
 

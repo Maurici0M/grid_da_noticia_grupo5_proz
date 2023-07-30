@@ -1,6 +1,6 @@
 const arrayMiniNotices = [
     {
-        linkNotice: 'https://g1.globo.com/tecnologia/noticia/2023/06/28/microsoft-teams-apresenta-instabilidade-na-manha-desta-quarta.ghtml',
+        linkNotices: 'https://g1.globo.com/tecnologia/noticia/2023/06/28/microsoft-teams-apresenta-instabilidade-na-manha-desta-quarta.ghtml',
 
         cardImg: 'https://s2-g1.glbimg.com/DvpNTogu6Ig8p4oLhJP7u57iDIo=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/9/n/wNYyRtRiCzgB5gyjaSVQ/17da9a60-a709-11ed-96fd-454d269ebe8d.jfif' ,
 
@@ -13,7 +13,7 @@ const arrayMiniNotices = [
     },
 
     {
-        linkNotice: 'https://g1.globo.com/tecnologia/noticia/2023/03/08/hackers-causaram-prejuizos-a-cerca-de-25-das-empresas-brasileiras-em-2022-diz-pesquisa.ghtml',
+        linkNotices: 'https://g1.globo.com/tecnologia/noticia/2023/03/08/hackers-causaram-prejuizos-a-cerca-de-25-das-empresas-brasileiras-em-2022-diz-pesquisa.ghtml',
 
         cardImg: 'https://s2-g1.glbimg.com/Vo9n1UdeaUVfSISB0rZN7l59bLA=/0x0:5568x3712/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/s/8/3lGjCjSm2rfee1HJXBfA/age20230119042.jpg' ,
 
@@ -25,7 +25,7 @@ const arrayMiniNotices = [
     },
 
     {
-        linkNotice: 'https://www.tecmundo.com.br/internet/265777-youtube-impede-reproducao-videos-bloqueadores-de-anuncio.htm',
+        linkNotices: 'https://www.tecmundo.com.br/internet/265777-youtube-impede-reproducao-videos-bloqueadores-de-anuncio.htm',
 
         cardImg: 'https://tm.ibxk.com.br/2023/06/29/29105714966076.jpg?ims=1120x420' ,
 
@@ -65,7 +65,7 @@ for (let index = 0; index < arrayMiniNotices.length; index++) {
     // manipular elemento (adicionar conteúdo ao elemento selecionado)
         
     divMiniNotices.innerHTML = `
-        <a class="link-notices" target="_blank" href="${arrayMiniNotices[index].linkNotice}">
+        <a class="link-notices" target="_blank" href="${arrayMiniNotices[index].linkNotices}">
 
             <img class="img-card" src= "${arrayMiniNotices[index].cardImg}" alt="${arrayMiniNotices[index].altImg}">
 
