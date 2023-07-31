@@ -36,13 +36,13 @@ const arrayMiniNotices = [
         descriptionCard: '',
     },
 
-    {
+  /*  {
         linkNotices: 'https://olhardigital.com.br/2020/11/03/noticias/pesquisadores-dizem-que-o-google-usa-recaptcha-para-captar-dados/',
         cardImg: 'https://proxy.olhardigital.com.br/wp-content/uploads/2020/11/20201103064551.jpg',
         altImg: 'Imagem da verificação: "Não sou um robô"',
         tittleCard: 'Pesquisadores dizem que o Google usa reCAPTCHA para coletar dados.',
         descriptionCard: '',
-    },
+    },*/
 
     /*  {
         linkNotices: '',

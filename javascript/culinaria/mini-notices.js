@@ -2,7 +2,7 @@ const arrayMiniNotices = [
     {
         linkNotices: 'https://guia.folha.uol.com.br/restaurantes/2023/07/galeria-cafe-inaugura-o-resto-em-sp-com-jantares-servidos-durante-a-balada.shtml',
 
-        cardImg: 'https://f.i.uol.com.br/fotografia/2023/07/10/168900531764ac2d0592b88_1689005317_3x2_md.jpg' ,
+        cardImg: 'https://f.i.uol.com.br/fotografia/2021/10/27/16353732136179d09ddb0df_1635373213_3x2_lg.jpg' ,
 
         altImg: 'not informed',
 

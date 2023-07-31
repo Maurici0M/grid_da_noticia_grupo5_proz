@@ -90,8 +90,8 @@
       flex-direction: column-reverse;
   }
   .text-no-results {
-      letter-spacing: -1.95px;
-      width: 300px;
+    letter-spacing: -0.9px;
+    width: 340px;
   }
   
   img.no-results-img{

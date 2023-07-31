@@ -16,8 +16,10 @@ function pesquisar(query) {
     // Converte o nome e a descrição do objeto para letras minúsculas
     var tittle = allNoticesPage[i].tittleCard.toLowerCase();
     var description = allNoticesPage[i].descriptionCard.toLowerCase();
-    // Verifica se a palavra digitada está contida no nome ou na descrição do objeto
-    if (tittle.includes(query) || description.includes(query)) {
+    var linkNotices = allNoticesPage[i].linkNotices.toLowerCase();
+    var linkImg = allNoticesPage[i].cardImg.toLowerCase();
+    // Verifica se a palavra digitada está contida no nome, na descrição, ou no link do objeto
+    if (tittle.includes(query) || description.includes(query) || linkNotices.includes(query) || linkImg.includes(query)) {
     // Adiciona o objeto à array de resultados
     results.push(allNoticesPage[i]);
     }
@@ -101,11 +103,11 @@ function showResults(results) {
 
     <div class = 'text-no-results'>
         <p>
-            Desculpe, não conseguimos obter resultados para sua pesquisa.
+            Desculpe, não conseguimos obter resultados para:  <strong style = "color: salmon; font-weight: normal; overflow: hidden;"> "${searchInput.value}"</strong>.
         </p>
         <br>
         <p>
-            Você pode tentar pesquisar novamente, ver as principais notícias desta página, ou navegar por nossos outros temas disponíveis.
+            Você pode tentar pesquisar novamente, ver as principais notícias desta página, ou navegar por nossos outros temas disponíveis acessando o menu.
         </p>
     </div>
     `
@@ -137,6 +139,7 @@ searchInput.addEventListener("keyup", function() {
 // Obtém o valor da barra de pesquisa
 var query = searchInput.value;
 // Verifica se o valor não está vazio
+
 
 if (query) {
 // Busca os resultados na array de dados

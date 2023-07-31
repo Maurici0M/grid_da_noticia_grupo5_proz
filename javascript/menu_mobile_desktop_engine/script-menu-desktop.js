@@ -8,7 +8,7 @@ function openNav() {
     navbar.style.transition = 'all 0.9s ease'
   
     const body = document.querySelector('body')
-    body.style.marginLeft = '21rem'
+    body.style.marginLeft = '20.2rem'
     body.style.transition = 'all 0.5s ease-in-out'
   
     const menuDesktop1 = document.querySelector('#menu-desktop')
