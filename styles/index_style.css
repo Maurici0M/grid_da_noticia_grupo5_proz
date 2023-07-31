@@ -643,11 +643,11 @@ main {
   z-index: 2;
   top: 0;
   left: 0;
-  background: rgb(166, 166, 166);
+  background: rgb(140, 82, 255);
   background: linear-gradient(
     90deg,
-    rgba(166, 166, 166, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
+    rgba(140, 82, 255, 1) 23%,
+    rgba(255, 145, 77, 1) 100%
   );
   overflow-x: hidden;
   transition: 0.5s ease-in-out;
@@ -659,7 +659,7 @@ main {
   text-decoration: none;
   font-size: 1.5em;
   font-family: "Maven pro", sans-serif;
-  color: #000000;
+  color: #fff;
   display: block;
   transition: 0.3s;
   display: flex;
