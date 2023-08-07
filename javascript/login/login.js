@@ -20,6 +20,17 @@ function clearInputError(inputElement) {
   ).textContent = "";
 }
 
+function confereSenha() {
+  const password = document.querySelector("input[name=password]");
+  const confirm = document.querySelector("input[name=confirm]");
+
+  if (confirm.value === password.value) {
+    confirm.setCustomValidity("");
+  } else {
+    confirm.setCustomValidity("Senhas não conferem");
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.querySelector("#login");
   const creatAccountForm = document.querySelector("#createAccount");
@@ -58,8 +69,31 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    inputElement.addEventListener("input", (e) => {
-      clearInputError(inputElement);
+    document.querySelectorAll(".form_input").forEach((inputElement) => {
+      inputElement.addEventListener("blur", (e) => {
+        if (
+          e.target.id === "signupEmail" &&
+          e.target.value.search("@") == -1 &&
+          e.target.value.search(" ") == -1 &&
+          e.target.value.search(".") != -1
+        ) {
+          setInputError(inputElement, "Digite um endereço de email válido.");
+        }
+      });
+      document.querySelectorAll(".form_input").forEach((inputElement) => {
+        inputElement.addEventListener("blur", (e) => {
+          if (
+            e.target.id === "signupPassword" &&
+            e.target.value.length > 0 &&
+            e.target.value.length < 8
+          ) {
+            setInputError(
+              inputElement,
+              "Sua senha deve conter no mínimo 8 caracteres."
+            );
+          }
+        });
+      });
     });
   });
 });
