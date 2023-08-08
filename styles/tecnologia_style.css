@@ -50,7 +50,7 @@ img.no-results-img {
 /*Fim dos arquivos do NAVBAR*/
 
 .tittle-apresentation-initial {
-  background-color: #0000ff12;
+  background-color: #0000ff00;
 }
 
 @media (max-width: 975px) {
@@ -174,14 +174,49 @@ p.ads-text {
   background: linear-gradient(90deg, rgba(22,12,189,1) 0%, rgba(96,147,182,1) 30%, rgba(0,137,164,1) 100%);
   
   background: #6495ed1c;
+
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
+
+
+/*
 .videos-section {
   background: rgb(22,12,189);
   background: linear-gradient(90deg, rgba(22,12,189,1) 0%, rgba(96,147,182,1) 30%, rgba(0,137,164,1) 100%);
-  
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}*/
   /*box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;*/
+
+  
+
+.videos-section {
+  background: linear-gradient(270deg, #507b99, #6093b6, #188ad7);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
 }
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
 
 /*notícias pós parte dos videos*/
 

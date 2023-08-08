@@ -12,6 +12,17 @@ let array_conteudo_extra = [
         iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/RabLnvRhO8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     },
 
+    {
+        iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/SeDXen3LqrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    },
+
+    {
+        iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/_pn_5iexYs8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    },
+
+    {
+        iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/WD8K_hMAfIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+    },
     
 ]
 

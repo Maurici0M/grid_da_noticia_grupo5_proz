@@ -1,7 +1,28 @@
 /*inserção da imagem de fundo que cobre todo o conteúdo do site*/
 
 body {
-background-color: aliceblue;
+  background: linear-gradient(270deg, #6093b6, #dbe6e4, #e4d7f5);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 59s ease infinite;
+  -moz-animation: AnimationName 59s ease infinite;
+  animation: AnimationName 59s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 /*Modificações do cabeçalho (arquivos do NAVBAR)*/
@@ -53,13 +74,13 @@ img.no-results-img {
 /*Fim dos arquivos do NAVBAR*/
 
 .tittle-apresentation-initial {
-  background-color: whitesmoke;
+  background-color: #9470db12;
 }
 
 @media (max-width: 975px) {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
-    
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
     text-align: center;
   }
 }
@@ -178,10 +199,11 @@ p.ads-text {
 
 .tittle-apresentation-initial.videos {
   background-color: #d7aeed0f;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 .videos-section {
-  background: whitesmoke;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 
 /*notícias pós parte da publicidade "ads"*/

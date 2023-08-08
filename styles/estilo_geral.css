@@ -522,9 +522,9 @@
     iframe {
       width: 300px;
     }
-    .audio-spotify {
+    /*.audio-spotify {
       width: 300px;
-    }
+    }*/
   }
   
   @media (max-width: 790px) {
@@ -533,7 +533,7 @@
     }
     .audio-spotify {
       margin-top: 25px;
-      width: 205px;
+      /*width: 205px;*/
     }
   }
   
@@ -541,31 +541,31 @@
     iframe {
       width: 350px;
     }
-    .audio-spotify {
+    /*.audio-spotify {
       margin-top: 25px;
       width: 350px;
-    }
+    }*/
   }
   
   @media (max-width: 785px) {
     iframe {
       width: 250px;
     }
-    .audio-spotify {
+    /*.audio-spotify {
       margin-top: 25px;
       width: 250px;
-    }
+    }*/
   }
   
   @media (max-width: 605px) {
     iframe {
       width: 85%;
     }
-    .audio-spotify {
+    /*.audio-spotify {
       margin-top: 25px;
       width: 85%;
       height: 235px;
-    }
+    }*/
     .videos-section {
       padding: 12px;
     }
