@@ -48,7 +48,7 @@ var swiper = new Swiper(".slide-content", {
         prevEl: ".swiper-button-prev"
     },
     autoplay: {
-        delay: 7530,
+        delay: 657530,
         disableOnInteraction: false
     }, 
 

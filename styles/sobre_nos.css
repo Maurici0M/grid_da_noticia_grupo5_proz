@@ -98,13 +98,20 @@ body {
   width: 40%;
   height: 0;
   /* background-color: #00000051; */
-  background-image: url(../assets/images/index-nav-background-degrade.png);
+  /*background-image: url(../assets/images/sobre_nos-nav-background-degrade.png);
   background-size: cover;
-  background-position: center;
+  background-position: center center;*/
   visibility: hidden;
   transition: 0.5s;
   overflow: hidden;
   border-radius: 0 25px;
+
+  background: rgb(140, 82, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(140, 82, 255, 1) 23%,
+    rgba(255, 145, 77, 1) 100%
+  );
 }
 
 .links-mobile .nav-itens {
