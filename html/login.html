@@ -93,18 +93,24 @@
           <div class="form_input_group">
             <input
               type="password"
+              name="password"
+              id="signupPassword"
               class="form_input"
               autofocus
               placeholder="Senha"
+              required onchange="confereSenha();"
             />
             <div class="form_input-error-message"></div>
           </div>
           <div class="form_input_group">
             <input
               type="password"
+              name="confirm"
+              id="signupPassword2"
               class="form_input"
               autofocus
               placeholder="Confirmar senha"
+              required onchange="confereSenha();"
             />
             <div class="form_input-error-message"></div>
           </div>
