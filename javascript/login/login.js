@@ -20,79 +20,100 @@ function clearInputError(inputElement) {
   ).textContent = "";
 }
 
-function confereSenha() {
-  const password = document.querySelector("input[name=password]");
-  const confirm = document.querySelector("input[name=confirm]");
-
-  if (confirm.value === password.value) {
-    confirm.setCustomValidity("");
-  } else {
-    confirm.setCustomValidity("Senhas não conferem");
-  }
+function usuariotamanho() {
+  const usuario = document.querySelector("input[name=usuario]");
+  if (usuario.value.length >= 7) {
+    usuario.setCustomValidity("");
+  } else
+    usuario.setCustomValidity(
+      "O nome de usuário deve possuir ao menos 7 caracteres."
+    );
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const loginForm = document.querySelector("#login");
-  const creatAccountForm = document.querySelector("#createAccount");
+document.querySelectorAll(".form_input").forEach((inputElement) => {
+  inputElement.addEventListener("blur", (e) => {
+    if (
+      e.target.id === "signupEmail" &&
+      e.target.value.search("@") == -1 &&
+      e.target.value.search(" ") == -1 &&
+      e.target.value.search(".") != -1
+    ) {
+      // setInputError(inputElement, "Digite um endereço de email válido.");
+    }
+  });
 
-  document
-    .querySelector("#linkCreateAccount")
-    .addEventListener("click", (e) => {
+  function confereSenha() {
+    const password = document.querySelector("input[name=password]");
+    const confirm = document.querySelector("input[name=confirm]");
+
+    if (confirm.value === password.value) {
+      confirm.setCustomValidity("");
+    } else {
+      confirm.setCustomValidity("Senhas não conferem");
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.querySelector("#login");
+    const creatAccountForm = document.querySelector("#createAccount");
+
+    document
+      .querySelector("#linkCreateAccount")
+      .addEventListener("click", (e) => {
+        e.preventDefault();
+        loginForm.classList.add("form_hidden");
+        creatAccountForm.classList.remove("form_hidden");
+      });
+
+    document.querySelector("#linkLogin").addEventListener("click", (e) => {
       e.preventDefault();
-      loginForm.classList.add("form_hidden");
-      creatAccountForm.classList.remove("form_hidden");
+      loginForm.classList.remove("form_hidden");
+      creatAccountForm.classList.add("form_hidden");
     });
 
-  document.querySelector("#linkLogin").addEventListener("click", (e) => {
-    e.preventDefault();
-    loginForm.classList.remove("form_hidden");
-    creatAccountForm.classList.add("form_hidden");
-  });
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault();
 
-  loginForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    setFormMessage(loginForm, "error", "Nome de usuário ou senha incorretos");
-  });
-
-  document.querySelectorAll(".form_input").forEach((inputElement) => {
-    inputElement.addEventListener("blur", (e) => {
-      if (
-        e.target.id === "signupUsername" &&
-        e.target.value.length > 0 &&
-        e.target.value.length < 7
-      ) {
-        setInputError(
-          inputElement,
-          "O nome de usuário deve possuir ao menos 7 caracteres."
-        );
-      }
+      setFormMessage(loginForm, "error", "Nome de usuário ou senha incorretos");
     });
 
+    // document.querySelectorAll(".form_input").forEach((inputElement) => {
+    //   inputElement.addEventListener("blur", (e) => {
+    //     if (
+    //       e.target.id === "signupUsername" &&
+    //       e.target.value.length > 0 &&
+    //       e.target.value.length < 7
+    //     ) {
+    //       setInputError(
+    //         inputElement,
+    //         "O nome de usuário deve possuir ao menos 7 caracteres."
+    //       );
+    //     }
+    // });
+
+    // document.querySelectorAll(".form_input").forEach((inputElement) => {
+    //   inputElement.addEventListener("blur", (e) => {
+    //     if (
+    //       e.target.id === "signupEmail" &&
+    //       e.target.value.search("@") == -1 &&
+    //       e.target.value.search(" ") == -1 &&
+    //       e.target.value.search(".") != -1
+    //     ) {
+    //       // setInputError(inputElement, "Digite um endereço de email válido.");
+    //     }
+    //   });
     document.querySelectorAll(".form_input").forEach((inputElement) => {
       inputElement.addEventListener("blur", (e) => {
         if (
-          e.target.id === "signupEmail" &&
-          e.target.value.search("@") == -1 &&
-          e.target.value.search(" ") == -1 &&
-          e.target.value.search(".") != -1
+          e.target.id === "signupPassword" &&
+          e.target.value.length > 0 &&
+          e.target.value.length < 8
         ) {
-          setInputError(inputElement, "Digite um endereço de email válido.");
+          setInputError(
+            inputElement,
+            "Sua senha deve conter no mínimo 8 caracteres."
+          );
         }
-      });
-      document.querySelectorAll(".form_input").forEach((inputElement) => {
-        inputElement.addEventListener("blur", (e) => {
-          if (
-            e.target.id === "signupPassword" &&
-            e.target.value.length > 0 &&
-            e.target.value.length < 8
-          ) {
-            setInputError(
-              inputElement,
-              "Sua senha deve conter no mínimo 8 caracteres."
-            );
-          }
-        });
       });
     });
   });

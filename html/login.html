@@ -69,10 +69,12 @@
          <div class="form_input_group">
           <input
             type="text"
+            name="usuario"
             id="signupUsername"
             class="form_input"
             autofocus
             placeholder="Nome de usuário"
+            required onchange="usuariotamanho();"
           />
           <div class="form_input-error-message">
             <!-- Essa é uma mensagem de erro -->
@@ -98,7 +100,7 @@
               class="form_input"
               autofocus
               placeholder="Senha"
-              required onchange="confereSenha();"
+              required on="confereSenha();"
             />
             <div class="form_input-error-message"></div>
           </div>
