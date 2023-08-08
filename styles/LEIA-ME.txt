@@ -1,4 +1,9 @@
 
+
+O arquivo "estilo_geral.css" é para realizar alterações em todas as páginas (exceto a sobre nós), então, caso seja alterar a cor de uma só página em específico, utilize o arquivo CSS com o nome próprio da página que deseja alterar, agora, se for uma alteração geral, que será aplicadada em todas as páginas da mesma forma, utilize o arquivo "estilo_geral.css"!
+
+
+
 Link dos dois modelos de fonte (letras) padrão utilizadas (já estão adicionadas em todas as páginas, mas, em caso de erro, podem adicioná-las através dos links abaixo | Copiar e colar esse link na tag "HEAD" do HTML):
 
     <link rel="preconnect" href="https://fonts.googleapis.com">

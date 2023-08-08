@@ -13,7 +13,10 @@
     <!--Swiper CSS (arquivos do carrosel)-->
     <link rel="stylesheet" href="../assets/swiper/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
     <!------------------------------------>
+    <!--Sempre deixar o estílo CSS geral acima do estílo próprio da página. Em caso de conflitos, valerá o estilo próprio da página-->
+    <link rel="stylesheet" href="../styles/estilo_geral.css">
     <link rel="stylesheet" href="../styles/tecnologia_style.css">
+    
     <link rel="stylesheet" href="../styles/search_bar_style.css">
     <!--Swiper Script (arquivos do carrosel)-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
@@ -27,6 +30,7 @@
     <script src="../javascript/menu_mobile_desktop_engine/script-menu-desktop.js" defer></script>
     <script src="../javascript/menu_mobile_desktop_engine/script-menu-mobile.js" defer></script>
     <script src="../javascript/tecnologia/mini-notices.js" defer></script>
+    <script src="../javascript/tecnologia/extra-content.js" defer></script>
     <!--DEIXAR O SCRIPT DA BARRA DE PESQUISA SEMPRE ABAIXO DOS SCRIPT'S QUE CONTÉM AS NOTÍCIAS, CASO CONTRÁRIO, IRÁ APRESENTAR ERRO!-->
     <script src="../javascript/search_bar_engine/script-search-bar.js" defer></script>
     <title>Grid da Notícia | Tecnologia</title>
@@ -72,7 +76,7 @@
                 </span>
             <div class="logo">
                 <a href="index.html">GRID <small>da Notícia</small></a>
-                <a class="logo-mobile" href="index.html">GRID</a>
+                <a class="logo-mobile" href="index.html">GRID <small>da Notícia</small> </a>
             </div>
             <div class="links">
                 <ul class="nav-itens">
@@ -135,23 +139,12 @@
         </section>
 
         <div class="tittle-apresentation-initial videos">
-            <h3>(Versão Testes-Beta) - Conteúdos que podem te interessar:</h3>
+            <h3>Conteúdos extras que podem te interessar:</h3>
         </div>
+
         <section class="videos-section">
-          <iframe width="400" height="215" src="https://www.youtube.com/embed/4qrOkLEJL9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-          <iframe width="400" height="215" src="https://www.youtube.com/embed/nj22l1gIll8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-          <iframe width="400" height="215" src="https://www.youtube.com/embed/OInv_HGQlZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-            <iframe class="audio-spotify" style="border-radius:12px" src="https://open.spotify.com/embed/show/2Id2Jat8aamHRVUUzhOGRD?utm_source=generator" width="300" height="215" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <iframe class="audio-spotify" style="border-radius:12px" src="https://open.spotify.com/embed/show/2ibU1kkoyIDIfCjkUC2Qxk?utm_source=generator" width="300" height="215" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-            <iframe class="audio-spotify" style="border-radius:12px" src="https://open.spotify.com/embed/episode/0gf7K6pUjof4QaH7IgKEkO?utm_source=generator" width="300" height="215" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            
-        </section> 
+          <!--  Arquivos injetados por JS - (extra-content)-->
+        </section>
 
         <!--Notícias que vem depois das publicidades-->
         <section class="container_notices_pos_ads">

@@ -13,6 +13,8 @@
     <!--Swiper CSS (arquivos do carrosel)-->
     <link rel="stylesheet" href="../assets/swiper/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
     <!------------------------------------>
+    <!--Sempre deixar o estílo CSS geral acima do estílo próprio da página. Em caso de conflitos, valerá o estilo próprio da página-->
+    <link rel="stylesheet" href="../styles/estilo_geral.css">
     <link rel="stylesheet" href="../styles/culinaria_style.css">
     <link rel="stylesheet" href="../styles/search_bar_style.css">
     <!--Swiper Script (arquivos do carrosel)-->
@@ -31,6 +33,7 @@
     <script src="../javascript/culinaria/culinaria-page-script.js" defer></script>
     <script src="../javascript/culinaria/ads-script.js" defer></script>
     <script src="../javascript/culinaria/mini-notices.js" defer></script>
+    <script src="../javascript/culinaria/extra-content.js" defer></script>
     <!--DEIXAR O SCRIPT DA BARRA DE PESQUISA SEMPRE ABAIXO DOS SCRIPT'S QUE CONTÉM AS NOTÍCIAS, CASO CONTRÁRIO, IRÁ APRESENTAR ERRO!-->
     <script src="../javascript/search_bar_engine/script-search-bar.js" defer></script>
     <title>Grid da Notícia | Culinária</title>
@@ -135,6 +138,14 @@
         <section class="ads-section">
             <!--Arquivos adicionados por JavaScript (ads-script)-->
         </section>
+
+        <div class="tittle-apresentation-initial videos">
+          <h3>Conteúdos extras que podem te interessar:</h3>
+      </div>
+
+      <section class="videos-section">
+        <!--  Arquivos injetados por JS - (extra-content)-->
+      </section>
 
 
         <section class="container_notices_pos_ads">

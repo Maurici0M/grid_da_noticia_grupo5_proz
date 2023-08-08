@@ -13,7 +13,10 @@
     <!--Swiper CSS (arquivos do carrosel)-->
     <link rel="stylesheet" href="../assets/swiper/unpkg.com_swiper@8.1.6_swiper-bundle.min.css">
     <!------------------------------------>
+    <!--Sempre deixar o estílo CSS geral acima do estílo próprio da página. Em caso de conflitos, valerá o estilo próprio da página-->
+    <link rel="stylesheet" href="../styles/estilo_geral.css">
     <link rel="stylesheet" href="../styles/espaco_sideral_style.css">
+    
     <link rel="stylesheet" href="../styles/search_bar_style.css">
     <!--Swiper Script (arquivos do carrosel)-->
     <link
@@ -29,6 +32,7 @@
     <script src="../javascript/espaco_sideral/espaco_sideral-page-script.js" defer></script>
     <script src="../javascript/espaco_sideral/ads-script.js" defer></script>
     <script src="../javascript/espaco_sideral/mini-notices.js" defer></script>
+    <script src="../javascript/espaco_sideral/extra-content.js" defer></script>
     <script src="../javascript/menu_mobile_desktop_engine/script-menu-desktop.js" defer></script>
     <script src="../javascript/menu_mobile_desktop_engine/script-menu-mobile.js" defer></script>
     <!--DEIXAR O SCRIPT DA BARRA DE PESQUISA SEMPRE ABAIXO DOS SCRIPT'S QUE CONTÉM AS NOTÍCIAS, CASO CONTRÁRIO, IRÁ APRESENTAR ERRO!-->
@@ -137,6 +141,14 @@
         <section class="ads-section">
             <!--Arquivos adicionados por JavaScript (ads-script)-->
         </section>
+
+        <div class="tittle-apresentation-initial videos">
+          <h3>Conteúdos extras que podem te interessar:</h3>
+      </div>
+
+      <section class="videos-section">
+        <!--  Arquivos injetados por JS - (extra-content)-->
+      </section>
 
         <!--Notícias que vem depois das publicidades-->
         <section class="container_notices_pos_ads">
