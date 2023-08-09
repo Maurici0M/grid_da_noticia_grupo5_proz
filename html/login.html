@@ -83,10 +83,13 @@
          <div class="form_input_group">
             <input
               type="email"
+              name="email"
               id="signupEmail"
               class="form_input"
               autofocus
               placeholder="Endereço de e-mail"
+              required onchange="emailcorreto();"
+
             />
             <div class="form_input-error-message">
               <!-- Essa é uma mensagem de erro -->
