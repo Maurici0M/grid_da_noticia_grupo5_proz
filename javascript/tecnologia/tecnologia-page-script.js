@@ -48,7 +48,7 @@ var swiper = new Swiper(".slide-content", {
         prevEl: ".swiper-button-prev"
     },
     autoplay: {
-        delay: 657530,
+        delay: 7340,
         disableOnInteraction: false
     }, 
 
@@ -73,6 +73,14 @@ var swiper = new Swiper(".slide-content", {
 //Arquivos de alimentação do carrosel - Notícias que são mostradas
 
 const arrayCarrossel = [
+
+    {
+        linkNotices: 'https://oglobo.globo.com/economia/tecnologia/noticia/2023/08/14/rede-social-x-antigo-twitter-comeca-a-pagar-usuarios-por-engajamento-veja-como-funciona.ghtml',
+        cardImg: 'https://s2.glbimg.com/T-e12lOa2Ii68iiumjt9NnFsfYM=/0x0:1872x1249/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/R/B/jMmTimRz6qCnwmSuaBeg/103850098-files-this-illustration-photo-shows-the-new-twitter-logo-rebranded-as-x-l-and-the-old.jpg',
+        altImgCard: 'Logo do Twitter X',
+        tittleCard: 'Rede social X, antigo Twitter, começa a pagar usuários por engajamento; veja como funciona.',
+        descriptionCard: 'Para receber o repasse, é preciso ser assinante do serviço X Premium. Elon Musk não deixou claro como é feito o cálculo da remuneração, nem qual é a periodicidade do pagamento.',
+    },
 
     {
         linkNotices: 'https://g1.globo.com/tecnologia/noticia/2023/07/13/bard-o-chatgpt-do-google-e-lancado-no-brasil-veja-como-funciona.ghtml',

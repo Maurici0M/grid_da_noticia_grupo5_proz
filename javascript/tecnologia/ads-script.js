@@ -1,19 +1,21 @@
 const arrayAdsTecnologiaPage = [
+
     {
-        imgAds: 'https://news.microsoft.com/wp-content/uploads/2018/01/MCW_MICRO_GIF-1_v3.gif' ,
+        imgAds: 'https://media.tenor.com/uTGE6zSoSs8AAAAC/future-gaming.gif' ,
+
+        altImg: 'Publicidade',
+
+        adsText: 'Publicidade',
+    },
+    
+    {
+        imgAds: 'https://i.gifer.com/embedded/download/LoBm.gif' ,
 
         altImg: 'Publicidade',
 
         adsText: 'Publicidade',
     },
 
-    {
-        imgAds: 'https://nintendo-switch-br.s3.us-east-2.amazonaws.com/3-MODOS-EM-UM-BANNER.jpg' ,
-
-        altImg: 'Publicidade',
-
-        adsText: 'Publicidade',
-    },
     ]
 
 for (let index = 0; index < arrayAdsTecnologiaPage.length; index++) {

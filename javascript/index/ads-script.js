@@ -1,3 +1,7 @@
+
+// Publicidade desativada para a página inicial!
+//Caso ative, retirar no CSS o display 'none'
+
 const arrayAdsTecnologiaPage = [
   {
     imgAds:

@@ -37,7 +37,11 @@ img.no-results-img {
 }
 
 .text-no-results {
-  color: black;
+  color: rgb(255, 255, 255);
+    background-color: cadetblue;
+    padding: 12px;
+    border-radius: 15px;
+    border: solid green;
 }
 
 /*Caso a pesquisa tenha resultados*/
@@ -168,6 +172,41 @@ p.ads-text {
 }
 
 /*notícias pós parte da publicidade "ads"*/
+
+.tittle-apresentation-initial.videos {
+background: rgba(0, 128, 0, 0.068);
+background-color: #00ff7f0d;
+
+box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.videos-section {
+  background: linear-gradient(270deg, #8dc191, #7eca8b, #c7ddcb);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
 
 
 .card-container-2 {

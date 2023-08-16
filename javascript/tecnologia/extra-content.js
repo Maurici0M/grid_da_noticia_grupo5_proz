@@ -13,7 +13,7 @@ let array_conteudo_extra = [
     },
 
     {
-        iframe: '<iframe class="audio-spotify" style="border-radius:12px" src="https://open.spotify.com/embed/show/2Id2Jat8aamHRVUUzhOGRD?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
+        iframe: '<iframe class="audio-spotify" style="border-radius:12px" src="https://open.spotify.com/embed/episode/7oDlx29ZWyRappuvjMcCbW?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
     },
 
     {

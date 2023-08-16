@@ -16,6 +16,15 @@
     background-size: cover;
     background-position: center;
 }
+
+[vw] [vw-access-button] .access-button {
+  width: 43px !important;
+  float: right;
+  border-radius: 36%;
+  border: solid #fff 2px;
+  /* border: solid black; */
+  /* border-radius: 12px; */
+}
   
   /*Modificações do cabeçalho (arquivos do NAVBAR)*/
   
@@ -129,13 +138,24 @@
   }
   
   .text-no-results {
-    width: 420px;
+    max-width: 420px;
     text-align: initial;
     font-family: 'Maven Pro', sans-serif;
     font-size: 20px;
     font-weight: 500;
     
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.26);
+  }
+
+  strong{
+    max-width: 100%;
+    
+
+    overflow: hidden;
+    text-overflow: elslipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   }
 
   /*Caso a pesquisa tenha resultados*/
@@ -257,6 +277,10 @@
     .links-mobile {
       width: 25%;
     }
+
+    .videos-yt {
+      margin-top: 25px;
+  }
   
   }
   
@@ -688,13 +712,37 @@
     cursor: pointer;
     transition: all 0.4s ease-out;
     margin-bottom: 45px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   }
+
   
   .btn-ver-mais:hover {
     transform: translateY(-5px);
-    background-color: #fffffff0;
-  }
-  
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background: linear-gradient(270deg, #9dc1d2, #f6f9f9);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 17s ease infinite;
+    -moz-animation: AnimationName 17s ease infinite;
+    animation: AnimationName 17s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
   /*Menu Desktop*/
   .sidenav {
     height: 100%;

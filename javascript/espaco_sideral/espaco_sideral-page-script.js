@@ -12,7 +12,7 @@ var swiper = new Swiper(".slide-content", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 7500,
+    delay: 7340,
     disableOnInteraction: false,
   },
 

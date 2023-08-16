@@ -44,11 +44,15 @@ body {
 /*Caso a pesquisa não retorne resultados*/
 
 img.no-results-img {
-  border: solid black 2px;
+  border: solid #FFF 2px;
 }
 
 .text-no-results {
-  color: black;
+  color: rgb(255, 255, 255);
+    background-color: teal;
+    padding: 12px;
+    border-radius: 15px;
+    border: solid;
 }
 
 /*Caso a pesquisa tenha resultados*/
@@ -161,7 +165,8 @@ img.no-results-img {
 
 .card {
   background-color: ghostwhite;
-  border: solid blueviolet 2px;
+  border: solid steelblue 2px;
+  
 }
 
 @media (max-width: 660px) {
@@ -183,8 +188,7 @@ img.no-results-img {
 /*parte da publicidade*/
 
 .ads-section {
-  background-color: whitesmoke;
-
+  display: none;
 }
 
 .img-ads {
@@ -198,19 +202,41 @@ p.ads-text {
 /*Vídeos*/
 
 .tittle-apresentation-initial.videos {
-  background-color: #d7aeed0f;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .videos-section {
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  background: linear-gradient(270deg, #dabcdf, #baa2d5, #6093b6);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 50s ease infinite;
+  -moz-animation: AnimationName 50s ease infinite;
+  animation: AnimationName 50s ease infinite;
+
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 /*notícias pós parte da publicidade "ads"*/
 
 .card-container-2 {
     background-color: ghostwhite;
-  border: solid blueviolet 1.5px;
+  border: solid steelblue 1.5px;
 }
 
 

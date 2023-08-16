@@ -12,7 +12,7 @@ var swiper = new Swiper(".slide-content", {
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
-    delay: 7500,
+    delay: 7340,
     disableOnInteraction: false,
   },
 
@@ -59,15 +59,11 @@ const arrayCarrossel = [
   },
 
   {
-    linkNotices:
-      "https://www.hardware.com.br/noticias/2023-06/marvel-e-criticada-por-usar-inteligencia-artificial-para-criar-abertura-de-serie.html",
-    cardImg:
-      "https://www.hardware.com.br/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-22-at-11.11.20.jpeg",
-    altImgCard: "Imagem da nova série Marvel: Invasão Secreta",
-    tittleCard:
-      "Marvel é criticada por usar inteligência artificial para criar abertura de série.",
-    descriptionCard:
-      "A controvérsia surgiu após a revelação de que a Marvel usou IA para criar a sequência de abertura de sua nova série, “Invasão Secreta”.",
+    linkNotices: 'https://g1.globo.com/tecnologia/noticia/2023/07/13/bard-o-chatgpt-do-google-e-lancado-no-brasil-veja-como-funciona.ghtml',
+        cardImg: 'https://googlediscovery.com/wp-content/uploads/bard-2-800x500.jpg',
+        altImgCard: 'Logo do Google Bard',
+        tittleCard: 'Bard, o "ChatGPT do Google", é lançado no Brasil; veja como funciona.',
+        descriptionCard: 'O Bard, ferramenta de inteligência artificial do Google, foi lançado nesta quinta-feira (13) no Brasil. O serviço, que funciona como o ChatGPT, é gratuito e chega ao país pouco mais de três meses após ser lançado nos Estados Unidos e no Reino Unido.',
   },
 
   {

@@ -103,7 +103,7 @@ function showResults(results) {
 
     <div class = 'text-no-results'>
         <p>
-            Desculpe, não conseguimos obter resultados para:  <strong style = "color: salmon; font-weight: normal; overflow: hidden;"> "${searchInput.value}"</strong>.
+            Desculpe, não conseguimos obter resultados para:  <strong style = "color: salmon; font-weight: normal; overflow: hidden;"> "${searchInput.value}"</strong>
         </p>
         <br>
         <p>
@@ -119,12 +119,17 @@ function showResults(results) {
     let adsSection = document.querySelector('.ads-section')
     let containerNoticesPosAds = document.querySelector('.container_notices_pos_ads')
     let botaoCarregarMais = document.querySelector('.btn-ver-mais')
+    let footer = document.querySelector('.footer')
+    /*let videosSection = document.querySelector(".videos-section")
+    let tituloVideos = document.querySelector('.tittle-apresentation-initial videos')*/
 
     htmlCarrossel.classList.add ('desativado')
     adsSection.classList.add ('desativado')
     containerNoticesPosAds.classList.add ('desativado')
     botaoCarregarMais.classList.add ('desativado')
-
+    footer.style.marginTop = 0
+    /*videosSection.classList.add('desativado')
+    tituloVideos.classList.add('desativado')*/
     }
 }
 
@@ -158,11 +163,15 @@ else {
     let adsSection = document.querySelector('.ads-section')
     let containerNoticesPosAds = document.querySelector('.container_notices_pos_ads')
     let botaoCarregarMais = document.querySelector('.btn-ver-mais')
+    /*let videosSection = document.querySelector(".videos-section")
+    let tituloVideos = document.querySelector('.tittle-apresentation-initial videos')*/
 
     htmlCarrossel.classList.remove ('desativado')
     adsSection.classList.remove ('desativado')
     containerNoticesPosAds.classList.remove ('desativado')
     botaoCarregarMais.classList.remove ('desativado')
+    /*videosSection.classList.remove('desativado')
+    tituloVideos.classList.remove('desativado')*/
 }
 }); 
 

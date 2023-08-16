@@ -12,6 +12,18 @@ let array_conteudo_extra = [
         iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/GojhqNlJO1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
     },
 
+    {
+        iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/E9oKEJ1pXPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    },
+
+    {
+        iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/WuQgyR3agT0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    },
+
+    {
+        iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/cgxS2nQzVW0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    }
+
 ]
 
 for (let index = 0; index < array_conteudo_extra.length; index++) {
