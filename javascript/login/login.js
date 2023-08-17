@@ -14,47 +14,13 @@ function setInputError(inputElement, message) {
 }
 
 function clearInputError(inputElement) {
-  inputElement.classList.remove("form_Input_error");
+  inputElement.classList.remove("form_input_error");
   inputElement.parentElement.querySelector(
     ".form_input-error-message"
   ).textContent = "";
 }
 
-// function usuariotamanho() {
-//   const usuario = document.querySelector("input[name=usuario]");
-//   if (usuario.value.length >= 7) {
-//     usuario.setCustomValidity("");
-//   } else
-//     usuario.setCustomValidity(
-//       "O nome de usuário deve possuir ao menos 7 caracteres."
-//     );
-// }
-
-// function emailcorreto() {
-//   const email = document.querySelector("input[name=email]");
-//   if (email.value.search("@") == -1) {
-//     email.setCustomValidity(
-//       "Você esqueceu de adicionar um @ em seu endereço de email."
-//     );
-//   }
-//   if (email.value.search("") == -1) {
-//     email.setCustomValidity("Adicione um endereço de email");
-//   }
-//   if (email.value.search(".") == -1) {
-//     email.setCustomValidity("Adicione um endereço de email válido");
-//   }
-// }
-
-// function confereSenha() {
-//   const password = document.querySelector("input[name=password]");
-//   const confirm = document.querySelector("input[name=confirm]");
-
-//   if (confirm.value === password.value) {
-//     confirm.setCustomValidity("");
-//   } else {
-//     confirm.setCustomValidity("Senhas não conferem");
-//   }
-// }
+// setFormMessage(loginform, "success", "You're loggein in!");
 
 document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.querySelector("#login");
@@ -77,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loginForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    setFormMessage(loginForm, "error", "Nome de usuário ou senha incorretos");
+    setFormMessage(loginForm, "error", "Usuário ou senha inválidos");
   });
 
   document.querySelectorAll(".form_input").forEach((inputElement) => {
@@ -89,41 +55,54 @@ document.addEventListener("DOMContentLoaded", () => {
       ) {
         setInputError(
           inputElement,
-          "O nome de usuário deve possuir ao menos 7 caracteres."
+          "O nome de usuário deve ter ao menos 7 caracteres"
         );
       }
     });
+    inputElement.addEventListener("input", (e) => {
+      clearInputError(inputElement);
+    });
+  });
+  document.querySelectorAll(".form_input").forEach((inputElement) => {
+    inputElement.addEventListener("blur", (e) => {
+      if (
+        e.target.id === "signupEmail" &&
+        e.target.value !== /^\S+@\S+\.\S+$/
+      ) {
+        setInputError(inputElement, "Digite um endereço de E-mail válido");
+      }
+    });
+    inputElement.addEventListener("input", (e) => {
+      clearInputError(inputElement);
+    });
+  });
 
-    document.querySelectorAll(".form_input").forEach((inputElement) => {
-      inputElement.addEventListener("blur", (e) => {
-        if (e.target.id === "signupEmail") {
-          setInputError(inputElement, "Digite um endereço de email válido.");
-        }
-      });
-      document.querySelectorAll(".form_input").forEach((inputElement) => {
-        inputElement.addEventListener("blur", (e) => {
-          if (
-            e.target.id === "signupPassword" &&
-            e.target.value.length > 0 &&
-            e.target.value.length < 8
-          ) {
-            setInputError(
-              inputElement,
-              "Sua senha deve conter no mínimo 8 caracteres."
-            );
-          }
-          document.querySelectorAll(".form_input").forEach((inputElement) => {
-            inputElement.addEventListener("blur", (e) => {
-              if (
-                ((e.target.id === "signupPassword") != e.target.id) ===
-                "signupPassword2"
-              ) {
-                setInputError(inputElement, "Senhas não conferem.");
-              }
-            });
-          });
-        });
-      });
+  document.querySelectorAll(".form_input").forEach((inputElement) => {
+    inputElement.addEventListener("blur", (e) => {
+      if (
+        e.target.id === "signupPassword" &&
+        e.target.value.length > 0 &&
+        e.target.value.length < 8
+      ) {
+        setInputError(inputElement, "Sua senha deve ter ao menos 8 caracteres");
+      }
+    });
+    inputElement.addEventListener("input", (e) => {
+      clearInputError(inputElement);
+    });
+  });
+
+  document.querySelectorAll(".form_input").forEach((inputElement) => {
+    inputElement.addEventListener("blur", (e) => {
+      if (
+        e.target.id === "confirmPassword" &&
+        e.target.value !== "signupPassword"
+      ) {
+        setInputError(inputElement, "As senhas não coincidem");
+      }
+    });
+    inputElement.addEventListener("input", (e) => {
+      clearInputError(inputElement);
     });
   });
 });
