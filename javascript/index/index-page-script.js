@@ -58,15 +58,7 @@ const arrayCarrossel = [
       "Imagem feita pelo ex-astronauta Jack Fischer a partir da Estação Espacial Internacional (ISS) mostra a beleza da Lagoa dos Barros, no litoral gaúcho.",
   },
 
-  {
-    linkNotices: 'https://g1.globo.com/tecnologia/noticia/2023/07/13/bard-o-chatgpt-do-google-e-lancado-no-brasil-veja-como-funciona.ghtml',
-        cardImg: 'https://googlediscovery.com/wp-content/uploads/bard-2-800x500.jpg',
-        altImgCard: 'Logo do Google Bard',
-        tittleCard: 'Bard, o "ChatGPT do Google", é lançado no Brasil; veja como funciona.',
-        descriptionCard: 'O Bard, ferramenta de inteligência artificial do Google, foi lançado nesta quinta-feira (13) no Brasil. O serviço, que funciona como o ChatGPT, é gratuito e chega ao país pouco mais de três meses após ser lançado nos Estados Unidos e no Reino Unido.',
-  },
-
-  {
+{
     linkNotices:
       "https://receitas.globo.com/receitas-da-tv/mais-voce/pudim-de-leite-condensado-4d514bb052e0b252bc00e85a.ghtml",
     cardImg:
@@ -78,13 +70,32 @@ const arrayCarrossel = [
   },
 
   {
+    linkNotices: 'https://g1.globo.com/tecnologia/noticia/2023/07/13/bard-o-chatgpt-do-google-e-lancado-no-brasil-veja-como-funciona.ghtml',
+        cardImg: 'https://googlediscovery.com/wp-content/uploads/bard-2-800x500.jpg',
+        altImgCard: 'Logo do Google Bard',
+        tittleCard: 'Bard, o "ChatGPT do Google", é lançado no Brasil; veja como funciona.',
+        descriptionCard: 'O Bard, ferramenta de inteligência artificial do Google, foi lançado nesta quinta-feira (13) no Brasil. O serviço, que funciona como o ChatGPT, é gratuito e chega ao país pouco mais de três meses após ser lançado nos Estados Unidos e no Reino Unido.',
+  },
+
+  {
+    linkNotices:
+      "https://spacetoday.com.br/o-legado-do-helicoptero-ingenuity-em-marte/",
+    cardImg:
+      "https://spacetoday.com.br/wp-content/uploads/2023/05/ingenuity.jpg",
+    altImgCard: "Imagem do Helicóptero Ingenuity",
+    tittleCard: "O Legado do Helicóptero Ingenuity Em Marte.",
+    descriptionCard:
+      "Em 19 de abril de 2021, um pequeno helicóptero chamado Ingenuity fez história ao realizar o primeiro voo motorizado e controlado em outro planeta.",
+  },
+
+  {
     linkNotices:
       "https://guia.folha.uol.com.br/restaurantes/2023/07/inspirada-em-barbie-doceria-pikurruchas-em-sp-anuncia-doces-e-drinques-cor-de-rosa.shtml",
     cardImg:
       "https://f.i.uol.com.br/fotografia/2023/07/14/168935808464b18f049419d_1689358084_3x2_lg.jpg",
     altImgCard: "Imagem da doceria Pikurrucha's",
     tittleCard:
-      "Inspirada em 'Barbie', doceria Pikurrucha's, em SP, anuncia doces e drinques cor-de-rosa",
+      "Inspirada em 'Barbie', doceria Pikurrucha's, em SP, anuncia doces e drinques cor-de-rosa.",
     descriptionCard:
       "Pioneira no conceito do espaço instagramável, a confeitaria decidiu ampliar o ambiente cor-de-rosa que dialoga com a boneca para seu cardápio, oferecendo opções como um café rosa com brigadeiro branco e pipoca doce.",
   },
@@ -103,14 +114,27 @@ const arrayCarrossel = [
 
   {
     linkNotices:
-      "https://spacetoday.com.br/o-legado-do-helicoptero-ingenuity-em-marte/",
+      "https://revistagalileu.globo.com/ciencia/espaco/noticia/2023/07/entenda-a-foto-comemorativa-do-primeiro-ano-de-atividade-do-james-webb.ghtml",
     cardImg:
-      "https://spacetoday.com.br/wp-content/uploads/2023/05/ingenuity.jpg",
-    altImgCard: "Imagem do Helicóptero Ingenuity",
-    tittleCard: "O Legado do Helicóptero Ingenuity Em Marte",
+      "https://s2-galileu.glbimg.com/HsNsFP9yQHqpGx87m0WOKyxrIm4=/0x0:1280x1199/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_fde5cd494fb04473a83fa5fd57ad4542/internal_photos/bs/2023/p/o/YgiPfLRHOm0m7L3lJquw/weic2316a.jpg",
+    altImgCard: "Imagem da nebulosa",
+    tittleCard:
+      "Entenda a foto comemorativa do primeiro ano de atividade do James Webb.",
     descriptionCard:
-      "Em 19 de abril de 2021, um pequeno helicóptero chamado Ingenuity fez história ao realizar o primeiro voo motorizado e controlado em outro planeta.",
+      "Nova imagem apresenta a região de formação estelar mais próxima da Terra, no complexo de nuvens Rho Ophiuchi.",
   },
+
+  {
+    linkNotices:
+      "https://receitas.globo.com/blog/alimentacao-e-saude/tapioca-engorda-conheca-mitos-e-verdades-do-alimento.ghtml",
+    cardImg:
+      "https://s2-receitas.glbimg.com/LNr5zJu-Fo1pY5TZjk2iCEOS2PE=/0x0:5184x3456/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2022/B/J/TwmuA3QfaNQTXLzLwETQ/rapioca-recheada-com-morango.jpg",
+    altImgCard: "Imagem de uma tapioca",
+    tittleCard: "Tapioca engorda? Conheça mitos e verdades do alimento.",
+    descriptionCard:
+      "A tapioca ganhou destaque em muitas receitas e virou parte do cardápio de quem busca uma alimentação mais saudável. Feita da massa da mandioca, ela também é consumida por quem pratica exercícios físicos, já que funciona como pré e pós-treino.",
+  },
+
 ];
 
 for (let index = 0; index < arrayCarrossel.length; index++) {

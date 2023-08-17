@@ -5,11 +5,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background: rgb(217,252,213);
-  background: linear-gradient(90deg, rgba(217,252,213,1) 0%, rgba(218,238,217,1) 46%, rgba(214,231,201,1) 100%);
-
-  background: rgb(206,228,197);
-background: linear-gradient(0deg, rgba(206,228,197,1) 0%, rgba(218,235,210,1) 100%);
+  background: #2e8b576b;
 }
 
 /*Modificações do cabeçalho (arquivos do NAVBAR)*/
@@ -140,7 +136,7 @@ img.no-results-img {
 }
 
 .card {
-  border: solid green 2px;
+  border: solid teal 2px;
   background-color: mintcream;
 }
 
@@ -210,7 +206,7 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
 
 
 .card-container-2 {
-  border: solid green 1px;
+  border: solid teal 1px;
   background-color: #dcd9d9e8;
   
 }
