@@ -67,10 +67,15 @@ document.addEventListener("DOMContentLoaded", () => {
     inputElement.addEventListener("blur", (e) => {
       if (
         e.target.id === "signupEmail" &&
-        e.target.value !== /^\S+@\S+\.\S+$/
+        /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+          e.target.value
+        ) === false
       ) {
         setInputError(inputElement, "Digite um endereço de E-mail válido");
       }
+    });
+    inputElement.addEventListener("input", (e) => {
+      clearInputError(inputElement);
     });
     inputElement.addEventListener("input", (e) => {
       clearInputError(inputElement);
