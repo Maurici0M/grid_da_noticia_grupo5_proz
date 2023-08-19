@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
     inputElement.addEventListener("blur", (e) => {
       if (
         e.target.id === "confirmPassword" &&
-        e.target.value !== "signupPassword"
+        e.target.value !== document.getElementById("signupPassword").value
       ) {
         setInputError(inputElement, "As senhas não coincidem");
       }
