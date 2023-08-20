@@ -11,6 +11,7 @@ function setInputError(inputElement, message) {
   inputElement.parentElement.querySelector(
     ".form_input-error-message"
   ).textContent = message;
+  
 }
 
 function clearInputError(inputElement) {
@@ -18,6 +19,7 @@ function clearInputError(inputElement) {
   inputElement.parentElement.querySelector(
     ".form_input-error-message"
   ).textContent = "";
+  
 }
 
 // setFormMessage(loginform, "success", "You're loggein in!");
@@ -32,6 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       e.preventDefault();
       loginForm.classList.add("form_hidden");
       creatAccountForm.classList.remove("form_hidden");
+      
     });
 
   document.querySelector("#linkLogin").addEventListener("click", (e) => {
@@ -58,13 +61,14 @@ document.addEventListener("DOMContentLoaded", () => {
           "O nome de usuário deve ter ao menos 7 caracteres"
         );
       }
+      
     });
     inputElement.addEventListener("input", (e) => {
       clearInputError(inputElement);
     });
   });
   document.querySelectorAll(".form_input").forEach((inputElement) => {
-    inputElement.addEventListener("blur", (e) => {
+    inputElement.addEventListener("keyup", (e) => {
       if (
         e.target.id === "signupEmail" &&
         /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
@@ -72,28 +76,44 @@ document.addEventListener("DOMContentLoaded", () => {
         ) === false
       ) {
         setInputError(inputElement, "Digite um endereço de E-mail válido");
+
+        //Modificado
+       /* let botaoContinuar = document.getElementById('botaocontinuar')
+        botaoContinuar.classList.add('desativado')*/
       }
     });
     inputElement.addEventListener("input", (e) => {
       clearInputError(inputElement);
+
+      //Modificado
+      /*let botaoContinuar = document.getElementById('botaocontinuar')
+        botaoContinuar.classList.remove('desativado')*/
     });
-    inputElement.addEventListener("input", (e) => {
+   /* inputElement.addEventListener("input", (e) => {
       clearInputError(inputElement);
-    });
+    });*/
   });
 
   document.querySelectorAll(".form_input").forEach((inputElement) => {
-    inputElement.addEventListener("blur", (e) => {
+    inputElement.addEventListener("click", (e) => {
       if (
         e.target.id === "signupPassword" &&
         e.target.value.length > 0 &&
         e.target.value.length < 8
       ) {
         setInputError(inputElement, "Sua senha deve ter ao menos 8 caracteres");
+
+        //Modificado
+        /*let botaoContinuar = document.getElementById('botaocontinuar')
+        botaoContinuar.classList.add('desativado')*/
       }
     });
     inputElement.addEventListener("input", (e) => {
       clearInputError(inputElement);
+
+      //Modificado
+      /*let botaoContinuar = document.getElementById('botaocontinuar')
+        botaoContinuar.classList.remove('desativado')*/
     });
   });
 
@@ -104,10 +124,18 @@ document.addEventListener("DOMContentLoaded", () => {
         e.target.value !== document.getElementById("signupPassword").value
       ) {
         setInputError(inputElement, "As senhas não coincidem");
+
+        //Modificado
+        let botaoContinuar = document.getElementById('botaocontinuar')
+        botaoContinuar.classList.add('desativado')
       }
     });
     inputElement.addEventListener("input", (e) => {
       clearInputError(inputElement);
+      
+      //Modificado
+      let botaoContinuar = document.getElementById('botaocontinuar')
+        botaoContinuar.classList.remove('desativado')
     });
   });
 });

@@ -137,3 +137,7 @@ body {
 .form_link:hover {
   text-decoration: underline;
 }
+
+.desativado {
+  display: none;
+}
