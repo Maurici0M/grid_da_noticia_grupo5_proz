@@ -1,3 +1,6 @@
+const creatAccountForm = document.querySelector("#createAccount");
+const loginForm = document.querySelector("#login");
+
 function setFormMessage(formElement, type, message) {
   const messageElement = formElement.querySelector(".form_message");
 
@@ -20,6 +23,60 @@ function clearInputError(inputElement) {
   ).textContent = "";
 }
 
+creatAccountForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const usernameInput = document.querySelector("#signupUsername");
+  const emailInput = document.querySelector("#signupEmail");
+  const passwordInput = document.querySelector("#signupPassword");
+  const confirmPasswordInput = document.querySelector("#confirmPassword");
+
+  let isValid = true;
+  if (usernameInput.value.length < 7) {
+    setInputError(
+      usernameInput,
+      "O nome de usuário deve ter ao menos 7 caracteres"
+    );
+    isValid = false;
+  }
+  if (
+    !/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+      emailInput.value
+    )
+  ) {
+    setInputError(emailInput, "Digite um endereço de E-mail válido");
+    isValid = false;
+  }
+  if (passwordInput.value.length < 8) {
+    setInputError(passwordInput, "Sua senha deve ter ao menos 8 caracteres");
+    isValid = false;
+  }
+  if (confirmPasswordInput.value !== passwordInput.value) {
+    setInputError(confirmPasswordInput, "As senhas não coincidem");
+    isValid = false;
+  }
+
+  // If all inputs are valid, submit the form
+  if (isValid) {
+    // Submit
+
+    usernameInput.value = "";
+    emailInput.value = "";
+    passwordInput.value = "";
+    confirmPasswordInput.value = "";
+
+    // voltar para a página de login
+    creatAccountForm.classList.add("form_hidden");
+    loginForm.classList.remove("form_hidden");
+  } else {
+    setFormMessage(
+      creatAccountForm,
+      "error",
+      "Preencha todos os campos corretamente"
+    );
+  }
+});
+
 // setFormMessage(loginform, "success", "You're loggein in!");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -29,13 +86,13 @@ document.addEventListener("DOMContentLoaded", () => {
   document
     .querySelector("#linkCreateAccount")
     .addEventListener("click", (e) => {
-      e.preventDefault();
       loginForm.classList.add("form_hidden");
       creatAccountForm.classList.remove("form_hidden");
+
+      setFormMessage(creatAccountForm, "error", "");
     });
 
   document.querySelector("#linkLogin").addEventListener("click", (e) => {
-    e.preventDefault();
     loginForm.classList.remove("form_hidden");
     creatAccountForm.classList.add("form_hidden");
   });
@@ -44,6 +101,16 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
 
     setFormMessage(loginForm, "error", "Usuário ou senha inválidos");
+  });
+
+  creatAccountForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    setFormMessage(
+      creatAccountForm,
+      "error",
+      "Preencha todos os campos corretamente"
+    );
   });
 
   document.querySelectorAll(".form_input").forEach((inputElement) => {
