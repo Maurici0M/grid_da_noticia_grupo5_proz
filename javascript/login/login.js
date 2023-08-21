@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
   document.querySelectorAll(".form_input").forEach((inputElement) => {
-    inputElement.addEventListener("keyup", (e) => {
+    inputElement.addEventListener("blur", (e) => {
       if (
         e.target.id === "signupEmail" &&
         /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
@@ -78,24 +78,21 @@ document.addEventListener("DOMContentLoaded", () => {
         setInputError(inputElement, "Digite um endereço de E-mail válido");
 
         //Modificado
-       /* let botaoContinuar = document.getElementById('botaocontinuar')
-        botaoContinuar.classList.add('desativado')*/
+        let botaoContinuar = document.getElementById('botaocontinuar')
+        botaoContinuar.classList.add('desativado')
       }
     });
     inputElement.addEventListener("input", (e) => {
       clearInputError(inputElement);
 
       //Modificado
-      /*let botaoContinuar = document.getElementById('botaocontinuar')
-        botaoContinuar.classList.remove('desativado')*/
+      let botaoContinuar = document.getElementById('botaocontinuar')
+        botaoContinuar.classList.remove('desativado')
     });
-   /* inputElement.addEventListener("input", (e) => {
-      clearInputError(inputElement);
-    });*/
   });
-
+  
   document.querySelectorAll(".form_input").forEach((inputElement) => {
-    inputElement.addEventListener("click", (e) => {
+    inputElement.addEventListener("blur", (e) => {
       if (
         e.target.id === "signupPassword" &&
         e.target.value.length > 0 &&
@@ -104,16 +101,16 @@ document.addEventListener("DOMContentLoaded", () => {
         setInputError(inputElement, "Sua senha deve ter ao menos 8 caracteres");
 
         //Modificado
-        /*let botaoContinuar = document.getElementById('botaocontinuar')
-        botaoContinuar.classList.add('desativado')*/
+        let botaoContinuar = document.getElementById('botaocontinuar')
+        botaoContinuar.classList.add('desativado')
       }
     });
     inputElement.addEventListener("input", (e) => {
       clearInputError(inputElement);
 
       //Modificado
-      /*let botaoContinuar = document.getElementById('botaocontinuar')
-        botaoContinuar.classList.remove('desativado')*/
+      let botaoContinuar = document.getElementById('botaocontinuar')
+        botaoContinuar.classList.remove('desativado')
     });
   });
 
