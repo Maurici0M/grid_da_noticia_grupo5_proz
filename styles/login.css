@@ -31,6 +31,13 @@ body {
   background: #fff;
 }
 
+@media (max-width: 600px) {
+  .container {
+    width: 80%; /* Ajusta a largura do retângulo */
+    font-size: 0.8rem; /* Ajusta o tamanho da fonte */
+  }
+}
+
 .container,
 .form_input,
 .form_button {
@@ -140,4 +147,24 @@ body {
 
 .desativado {
   display: none;
+}
+
+#return_btn {
+  position: fixed;
+  width: 10%;
+  top: 2vh;
+  left: 2vw;
+  background: #fff;
+  color: #000;
+  margin: 1rem 0rem;
+}
+
+@media (max-width: 600px) {
+  #return_btn {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+  }
 }
