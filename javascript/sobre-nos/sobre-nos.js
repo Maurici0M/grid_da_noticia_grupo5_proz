@@ -101,7 +101,7 @@ selecionarDivTextoSobreNos.appendChild(textoSobreNos);
 
 const arrayCardsSobreNos = [
   {
-    img: "https://www.valuehost.com.br/blog/wp-content/uploads/2019/02/274034-erro-de-http-wordpress-como-corrigir.jpg",
+    img: "../assets/images/adaptaveis_card_sobre_nos.png",
     altImg: "",
     titleCard: "Adaptáveis:",
     descriptionCard:
