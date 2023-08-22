@@ -59,6 +59,7 @@ img.no-results-img {
 
 .tittle-apresentation-initial {
   background: #7080903d;
+  text-align: justify;
 }
 
 @media (max-width: 975px) {
@@ -171,6 +172,8 @@ p.ads-text {
 
 .tittle-apresentation-initial.videos {
   background-color: #7f7b7b;
+
+  text-align: center;
   
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
@@ -215,19 +218,21 @@ p.ads-text {
   background-color: #dcdcdc;
 }
 
+/*sidebar lateral*/
 
-.sidenav {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(80, 80, 80, 1) 100%,
-    rgba(255, 255, 255, 1) 100%,
-    rgba(40, 40, 40, 1) 100%
-  );
+nav.menu-lateral {
+  background: radial-gradient(circle at -4% -12.9%, rgb(74, 98, 110) 0.3%, rgb(30, 33, 48) 90.2%);
 
+  box-shadow: 3px 0 0 darkgray;
 }
 
-.sidenav .side_nav_a:hover {
-  background-color: #505050;
+ul li.ativo {
+  background-color: rgba(169, 169, 169, 0.753);
+  border-radius: 50px 0px 0px 50px;
+  
+}
+
+ul li.item-menu:hover {
+  background-color: darkgrey;
+  border-radius: 50px 0px 0px 50px;
 }

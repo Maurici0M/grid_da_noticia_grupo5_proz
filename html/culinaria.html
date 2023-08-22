@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../styles/estilo_geral.css">
     <link rel="stylesheet" href="../styles/culinaria_style.css">
     <link rel="stylesheet" href="../styles/search_bar_style.css">
+    <link rel="stylesheet" href="../styles/sidebar_lateral.css">
     <!--Swiper Script (arquivos do carrosel)-->
     <link
       rel="stylesheet"
@@ -34,6 +35,7 @@
     <script src="../javascript/culinaria/ads-script.js" defer></script>
     <script src="../javascript/culinaria/mini-notices.js" defer></script>
     <script src="../javascript/culinaria/extra-content.js" defer></script>
+    <script src="../javascript/menu_mobile_desktop_engine/sidebar_lateral.js"defer></script>
     <!--DEIXAR O SCRIPT DA BARRA DE PESQUISA SEMPRE ABAIXO DOS SCRIPT'S QUE CONTÉM AS NOTÍCIAS, CASO CONTRÁRIO, IRÁ APRESENTAR ERRO!-->
     <script src="../javascript/search_bar_engine/script-search-bar.js" defer></script>
     <title>Grid da Notícia | Culinária</title>
@@ -55,37 +57,65 @@
     <!--Componente de Acessibilidade VLibras-->
 
     <header>
-        <nav class="navbar-header">
-            <div id="side_nav" class="sidenav"> 
-                <a class="closebtn" onclick="closeNav()"><i class="fa fa-xmark"></i></a>
-                <a class="side_nav_a" href="../html/login.html"><i id="sidebar_icons" class="fa-solid fa-user"></i>Login/Cadastro</a>
-                <hr>
-                <a class="side_nav_a" href="../html/index.html"><i id="sidebar_icons" class="fa-solid fa-house"></i>Últimas notícias</a>
-                <a class="side_nav_a" href="../html/culinaria.html"><i id="sidebar_icons" class="fa fa-bowl-rice"></i>Culinaria</a>
-                <a class="side_nav_a" href="../html/espaco_sideral.html"><i id="sidebar_icons" class="fa fa-meteor"></i>Espaço Sideral</a>
-                <a class="side_nav_a" href="../html/tecnologia.html"><i id="sidebar_icons" class="fa fa-laptop-code"></i>Tecnologia</a>
-                <a class="side_nav_a" href="../html/sobre_nos.html"><i id="sidebar_icons" class="fa fa-users"></i>Sobre nós</a>
-            </div>
-            <span class="material-symbols-outlined 2" id="menu-desktop" onclick="openNav()">menu_open </span>
-            <span onclick="animacaoMenu()" id="btn-menu" class="material-symbols-outlined">
-                menu_open
-            </span>
-            <span onclick="animacaoMenu()" class="material-symbols-outlined" id="btn-menu-close">
-                cancel
-                </span>
-            <div class="logo">
-                <a href="index.html">GRID <small>da Notícia</small></a>
-                <a class="logo-mobile" href="index.html">GRID</a>
-            </div>
-            <div class="links">
-                <ul class="nav-itens">
-                    <li> <a class="nav-itens-name" href="culinaria.html"><i id="navbar-icons" class="fa fa-bowl-rice"></i>Culinária</a></li>
-                    <li> <a class="nav-itens-name" href="espaco_sideral.html"><i id="navbar-icons" class="fa fa-meteor"></i>Espaço Sideral</a> </li>
-                    <li> <a class="nav-itens-name" href="tecnologia.html"><i id="navbar-icons" class="fa fa-laptop-code"></i>Tecnologia</a> </li>
-                    <li> <a class="nav-itens-name" href="sobre_nos.html"><i id="navbar-icons" class="fa fa-users"></i>Sobre Nós</a> </li>
-                </ul>
-            </div>
+      <nav class="menu-lateral">
 
+        <div class="btn-expandir">
+            <span class="material-symbols-outlined" id="btn-menu">menu_open</span>
+        </div> <!--BTN expandir-->
+
+        <ul>
+            <li class="item-menu">
+                <a href="../html/login.html">
+                    <span class="icon"> <i class="fa-regular fa-circle-user"></i> </span>
+                    <span class="txt-link">Login & Cadastro</span>
+                </a>
+            </li>
+            
+            <li class="item-menu">
+                <a href="../html/index.html">
+                    <span class="icon"> <i class="fa-solid fa-house"></i> </span>
+                    <span class="txt-link">Últimas Notícias</span>
+                </a>
+            </li>
+            <li class="item-menu ativo">
+                <a href="../html/culinaria.html">
+                    <span class="icon"> <i class="fa fa-bowl-rice"></i> </span>
+                    <span class="txt-link">Culinária</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../html/espaco_sideral.html">
+                    <span class="icon"><i class="fa fa-meteor"></i> </span>
+                    <span class="txt-link">Espaço Sideral</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../html/tecnologia.html">
+                    <span class="icon"> <i class="fa fa-laptop-code"></i> </span>
+                    <span class="txt-link">Tecnologia</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="../html/sobre_nos.html">
+                    <span class="icon"> <i class="fa fa-users"></i> </span>
+                    <span class="txt-link"> Sobre Nós</span>
+                </a>
+            </li>
+            
+        </ul>
+
+    </nav> <!--Menu Lateral-->
+        <nav class="navbar-header">
+          
+          <span onclick="animacaoMenu()" id="btn-menu-mobile" class="material-symbols-outlined">
+            menu_open
+          </span>
+            
+            <div class="logo">
+              <a href="index.html">GRID <small>da Notícia</small></a>
+              <a class="logo-mobile" href="index.html">GRID</a>
+          </div>
+            
             <div class="search-box">
               <input type="text" id="search" class="search-text" placeholder="Pesquisar...">
                 <a class="search-btn">
@@ -96,13 +126,13 @@
 
             <div class="links-mobile" id="links-mobile">
                 <ul class="nav-itens">
-                    <li> <a class="nav-itens-name" href="../html/login.html"><span class="material-symbols-outlined">account_circle</span>Login/Cadastro</a></li>
-                    <hr>
-                    <li> <a class="nav-itens-name" href="index.html"><span class="material-symbols-outlined"> house</span> Início</a> </li>
-                    <li> <a class="nav-itens-name" href="culinaria.html"> <span class="material-symbols-outlined"> dinner_dining </span> Culinária</a> </li>
-                    <li> <a class="nav-itens-name" href="espaco_sideral.html"> <span class="material-symbols-outlined">rocket_launch</span> Espaço Sideral</a> </li>
-                    <li> <a class="nav-itens-name" href="tecnologia.html"> <span class="material-symbols-outlined">computer</span> Tecnologia</a> </li>
-                    <li> <a class="nav-itens-name" href="sobre_nos.html"> <span class="material-symbols-outlined">groups</span> Sobre Nós</a> </li>
+                  <li> <a class="nav-itens-name" href="../html/login.html"><span class="material-symbols-outlined">account_circle</span>Login/Cadastro</a></li>
+                  <hr>
+                  <li> <a class="nav-itens-name" href="index.html"><span class="material-symbols-outlined"> house</span> Início</a> </li>
+                  <li> <a class="nav-itens-name" href="culinaria.html"> <span class="material-symbols-outlined"> dinner_dining </span> Culinária</a> </li>
+                  <li> <a class="nav-itens-name" href="espaco_sideral.html"> <span class="material-symbols-outlined">rocket_launch</span> Espaço Sideral</a> </li>
+                  <li> <a class="nav-itens-name" href="tecnologia.html"> <span class="material-symbols-outlined">computer</span> Tecnologia</a> </li>
+                  <li> <a class="nav-itens-name" href="sobre_nos.html"> <span class="material-symbols-outlined">groups</span> Sobre Nós</a> </li>
                 </ul>
             </div>
         </nav>

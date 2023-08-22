@@ -1,13 +1,14 @@
 const menuDiv = document.querySelector(".links-mobile");
-const btnAnimacao = document.querySelector("#btn-menu");
+const btnAnimacao = document.querySelector("#btn-menu-mobile");
 const btnClose = document.querySelector("#btn-menu-close");
 
 menuDiv.addEventListener("click", animacaoMenu);
 
 function animacaoMenu() {
   menuDiv.classList.toggle("abrir");
-  btnAnimacao.classList.toggle("ativo");
+  btnAnimacao.classList.toggle("click-botao-menu-mobile");
   btnClose.classList.toggle("ativo");
+  
 }
 /*
 function openNav() {

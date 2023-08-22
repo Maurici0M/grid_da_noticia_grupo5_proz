@@ -31,7 +31,7 @@ const arrayMiniNotices = [
 
         altImg: '',
 
-        tittleCard: 'Receita fácil de brownie de chocolate não dá trabalho e é ideal para comer no café da manhã ou lanche da tarde, e ainda, impressionar!',
+        tittleCard: 'Receita fácil de brownie de chocolate não dá trabalho e é ideal para comer no café da manhã!',
 
         descriptionCard: '',
     },

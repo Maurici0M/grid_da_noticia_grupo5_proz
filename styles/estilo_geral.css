@@ -44,10 +44,10 @@
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
       rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   }
-  
+  /*
   .material-symbols-outlined {
     display: none;
-  }
+  }*/
   
   .logo > a {
     font-weight: 900;
@@ -55,6 +55,8 @@
     text-decoration: none;
     text-shadow: -2px 0px 2px rgba(0, 0, 0, 1);
     color: #fff;
+
+    margin-left: 10rem;
   }
   
   .nav-itens {
@@ -91,6 +93,9 @@
     position: relative;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
       rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+
+      margin-left: 15rem;
   }
   
   
@@ -208,18 +213,35 @@
   #btn-menu {
     color: white;
   }
+
+  #btn-menu-mobile {
+    display: none;
+    
+  }
   
   #btn-menu-close {
     display: none;
     transition: all 0.5s ease-in-out;
   }
+
   
-  .ativo {
+  /*.ativo {
     display: block;
     transform: rotate(90deg);
     color: #fff;
     transition: all 0.5s ease-in-out;
+  }*/
+
+  
+  
+  .click-botao-menu-mobile {
+    display: block;
+    transform: rotate(180deg);
+    color: #fff;
+    transition: all 0.5s ease-in-out;
   }
+  
+  
   
   @media screen and (max-width: 1030px) {
     .links {
@@ -231,6 +253,16 @@
       padding: 20px;
       text-align: center;
       
+    }
+
+    #btn-menu {
+      display: block;
+    }
+
+    #btn-menu-mobile{
+      display: block;
+      color: #fff;
+      text-shadow: rgb(0 0 0 / 61%) 3px 3px 6px;
     }
 
     .material-symbols-outlined {
@@ -289,6 +321,7 @@
     .links-mobile {
       width: 46%;
     }
+    
   }
   
   @media screen and (max-width: 440px) {
@@ -304,7 +337,7 @@
   
     .logo > a {
       font-weight: 900;
-      font-size: 20px;
+      font-size: 23px;
       text-decoration: none;
       text-shadow: -2px 0px 2px rgba(0, 0, 0, 1);
       color: white;
@@ -442,7 +475,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
   }
   
@@ -667,6 +700,13 @@
   
   .container_notices_pos_ads > .card-container-2 .card-info > .tittle_card {
     padding: 10px 5px;
+    /*limitar o texto que parece no card*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    
   }
   
   @media (max-width: 500px) {
@@ -695,6 +735,7 @@
   /*Para deixar o botão alinhado no meio*/
   main {
     text-align: center;
+    margin-left: 70px;
   }
   
   /*Estilos do botão*/
@@ -744,7 +785,7 @@
 }
 
   /*Menu Desktop*/
-  .sidenav {
+ /* .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -796,8 +837,9 @@
     transform: rotate(-180deg);
     color: #fff;
     transition: all 0.5s ease-in-out;
-  }
+  }*/
 
+  /*
 @media (max-width: 1030px) {
     .side_nav_btn {
     display: none;
@@ -806,7 +848,7 @@
 span.material-symbols-outlined.\32 {
     display: none;
 }
-}
+}*/
 
 #navbar-icons {
     padding-right: 10px;
@@ -819,4 +861,81 @@ span.material-symbols-outlined.\32 {
 
 .desativado {
     display: none;
+}
+
+#home:hover {
+  background: rgb(140, 82, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(140, 82, 255, 1) 23%,
+    rgba(255, 145, 77, 1) 100%
+  );
+}
+
+#culinaria:hover {
+  background: rgb(0, 151, 178);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 151, 178, 1) 0%,
+    rgba(126, 217, 87, 1) 100%
+  );
+}
+
+#tech:hover {
+  background-color: #3f6ea3;
+}
+
+#space:hover {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(80, 80, 80, 1) 100%,
+    rgba(255, 255, 255, 1) 100%,
+    rgba(40, 40, 40, 1) 100%
+  );
+}
+
+#aboutus:hover {
+  background: rgb(140, 82, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(140, 82, 255, 1) 23%,
+    rgba(255, 145, 77, 1) 100%
+  );
+}
+
+#login:hover {
+  background: #009579;
+}
+
+.footer {
+  margin-left: 15px;
+}
+
+@media (max-width: 1030px) {
+  nav.menu-lateral {
+    display: none;
+  }
+  main {
+    margin-left: 0;
+  }
+
+  .logo > a {
+    margin-left: 10rem;
+  }
+
+  .search-box {
+    margin: 0;
+  }
+
+  .footer {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 980px) {
+  .logo > a {
+    margin-left: 0rem;
+  }
 }

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:wght@700;800&family=Poppins&display=swap');
+
+/*font-family: 'Maven Pro', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;*/
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+
+nav.menu-lateral {
+    width: 70px;
+    height: 100%;
+
+    /*background-color: #3EECAC;
+    background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);*/
+
+
+   /* padding: 40px 0 40px 1%;*/
+   padding-top: 40px;
+
+    /*box-shadow: 3px 0 0 teal;*/
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    transition: all 0.5s ease-in-out;
+    z-index: 2;
+}
+
+nav.menu-lateral.expandir {
+    width: 25%;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+    transition: all 0.8s ease-in-out;
+    margin-top: -22px;
+
+    text-shadow: rgb(0 0 0 / 61%) 3px 3px 6px;
+}
+
+.btn-expandir > span:hover{
+    transform: rotate(-180deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-expandir > span {
+    color: #fff;
+    cursor: pointer;
+    font-size: 45px;
+    transition: all 0.5s ease-in-out;
+}
+
+ul {
+    height: 100%;
+    list-style: none;
+}
+
+ul li.item-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+/*ul li.ativo {
+    background-color: rgba(139, 0, 139, 0.87);
+    border-radius: 50px 0px 0px 50px;
+    
+}
+
+ul li.item-menu:hover {
+    background-color: darkmagenta;
+    border-radius: 50px 0px 0px 50px;
+}*/
+
+li.item-menu {
+    padding: 0px 15px;
+    margin-bottom: 12px;
+}
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    
+    line-height: 30px;
+    white-space: nowrap;
+
+    
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: all 0.8s ease-in-out;
+    opacity: 0;
+    font-weight: 900;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.26);
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon i {
+    font-size: 30px;
+    text-shadow: rgb(0 0 0 / 61%) 3px 3px 6px;
+}
+
+
+

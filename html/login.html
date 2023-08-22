@@ -4,14 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login-cadastro</title>
+
+    <link rel="stylesheet" href="../styles/sidebar_lateral.css">
+    <link rel="stylesheet" href="../styles/estilo_geral.css">
     <link rel="stylesheet" href="../styles/login.css" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+
     <script src="../javascript/login/login.js" defer></script>
+    <script src="../javascript/menu_mobile_desktop_engine/sidebar_lateral.js"defer></script>
   </head>
   <body>
     <div vw class="enabled">
@@ -24,6 +40,85 @@
     <script>
       new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+
+<header>
+  <!--<nav class="menu-lateral">
+
+    <div class="btn-expandir">
+        <span class="material-symbols-outlined" id="btn-menu">menu_open</span>
+    </div> BTN expandir-->
+
+  <!--  <ul>
+        <li class="item-menu">
+            <a href="../html/login.html">
+                <span class="icon"> <i class="fa-regular fa-circle-user"></i> </span>
+                <span class="txt-link">Login & Cadastro</span>
+            </a>
+        </li>
+        
+        <li class="item-menu">
+            <a href="../html/index.html">
+                <span class="icon"> <i class="fa-solid fa-house"></i> </span>
+                <span class="txt-link">Últimas Notícias</span>
+            </a>
+        </li>
+        <li class="item-menu ativo">
+            <a href="../html/culinaria.html">
+                <span class="icon"> <i class="fa fa-bowl-rice"></i> </span>
+                <span class="txt-link">Culinária</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="../html/espaco_sideral.html">
+                <span class="icon"><i class="fa fa-meteor"></i> </span>
+                <span class="txt-link">Espaço Sideral</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="../html/tecnologia.html">
+                <span class="icon"> <i class="fa fa-laptop-code"></i> </span>
+                <span class="txt-link">Tecnologia</span>
+            </a>
+        </li>
+        <li class="item-menu">
+            <a href="../html/sobre_nos.html">
+                <span class="icon"> <i class="fa fa-users"></i> </span>
+                <span class="txt-link"> Sobre Nós</span>
+            </a>
+        </li>
+        
+    </ul>
+
+</nav> --><!--Menu Lateral-->
+   <!-- <nav class="navbar-header">
+
+        <div class="logo">
+          <a href="index.html">GRID <small>da Notícia</small></a>
+          <a class="logo-mobile" href="index.html">GRID</a>
+      </div>
+        
+        <div class="search-box">
+          <input type="text" id="search" class="search-text" placeholder="Pesquisar...">
+            <a class="search-btn">
+                <img class="loupe-blue" src="../assets/images/loupe-blue.svg" alt="" width="20" height="20">
+                <img class="loupe-white" src="../assets/images/loupe-white.svg" alt="" width="20" height="20">
+            </a>
+        </div>
+
+        <div class="links-mobile" id="links-mobile">
+            <ul class="nav-itens">
+              <li> <a class="nav-itens-name" href="../html/login.html"><span class="material-symbols-outlined">account_circle</span>Login/Cadastro</a></li>
+              <hr>
+              <li> <a class="nav-itens-name" href="index.html"><span class="material-symbols-outlined"> house</span> Início</a> </li>
+              <li> <a class="nav-itens-name" href="culinaria.html"> <span class="material-symbols-outlined"> dinner_dining </span> Culinária</a> </li>
+              <li> <a class="nav-itens-name" href="espaco_sideral.html"> <span class="material-symbols-outlined">rocket_launch</span> Espaço Sideral</a> </li>
+              <li> <a class="nav-itens-name" href="tecnologia.html"> <span class="material-symbols-outlined">computer</span> Tecnologia</a> </li>
+              <li> <a class="nav-itens-name" href="sobre_nos.html"> <span class="material-symbols-outlined">groups</span> Sobre Nós</a> </li>
+            </ul>
+        </div>
+    </nav>
+</header>-->
+
 
     <div class="container">
       <form class="form" id="login">
