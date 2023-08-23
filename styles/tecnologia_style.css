@@ -58,7 +58,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     
-    text-align: justify;
+    text-align: initial;
   }
 }
 
@@ -105,7 +105,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     
-    font-size: 0.7em;
+    font-size: 0.75em;
     font-weight: 900;
   }
 }

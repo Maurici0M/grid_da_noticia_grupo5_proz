@@ -85,14 +85,14 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    text-align: center;
+    text-align: initial;
   }
 }
 
 @media (max-width: 620px) {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
-    text-align: justify;
+    
     font-size: 0.8em;
   }
 }

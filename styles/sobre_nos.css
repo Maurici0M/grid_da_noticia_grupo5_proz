@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&family=Montserrat:wght@700;800&family=Poppins&display=swap');
+
+/*
+font-family: 'Maven Pro', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +22,19 @@ body {
   background-size: cover;
   background-position: center;
   background-color: aliceblue;
+}
+
+[vw] [vw-access-button] .access-button {
+  width: 43px !important;
+  float: right;
+  border-radius: 36%;
+  border: solid #fff 2px;
+  /* border: solid black; */
+  /* border-radius: 12px; */
+}
+
+main {
+  margin-left: 70px;
 }
 
 .navbar-header {
@@ -33,9 +54,7 @@ body {
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.material-symbols-outlined {
-  display: none;
-}
+
 
 .logo > a {
   font-weight: 900;
@@ -124,24 +143,16 @@ body {
 .links-mobile .nav-itens-name {
   display: block;
   padding: 10px 30px;
-  gap: 45px;
+  gap: 25px;
 }
 
 #btn-menu {
   color: white;
-  transition: all 0.5s ease-in-out;
 }
 
-.mobile-menu {
-  cursor: pointer;
+#btn-menu-mobile {
   display: none;
-}
-
-.mobile-menu div {
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
-  margin: 5px;
+  
 }
 
 #btn-menu-close {
@@ -149,9 +160,9 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.ativo {
+.click-botao-menu-mobile {
   display: block;
-  transform: rotate(90deg);
+  transform: rotate(180deg);
   color: #fff;
   transition: all 0.5s ease-in-out;
 }
@@ -166,6 +177,21 @@ body {
     padding: 20px;
     text-align: center;
   }
+
+  #btn-menu {
+    display: block;
+  }
+
+  #btn-menu-mobile{
+    display: block;
+    color: #fff;
+    text-shadow: rgb(0 0 0 / 61%) 3px 3px 6px;
+    font-size: 35px;
+  }
+
+  span.icon {
+    font-size: 17px;
+}
 
   .material-symbols-outlined {
     display: block;
@@ -277,6 +303,12 @@ body {
 .texto-sobre-nos {
   font-size: 20px;
   font-family: "Maven Pro", sans-serif;
+}
+
+p {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
 }
 
 @media (max-width: 745px) {
@@ -669,4 +701,56 @@ span.material-symbols-outlined.\32:hover {
 }
 #sidebar_icons {
   padding-right: 10px;
+}
+
+.footer {
+  margin-left: 15px;
+}
+
+@media (max-width: 1030px) {
+  nav.menu-lateral {
+    display: none;
+  }
+  
+  main {
+    margin-left: 0;
+  }
+
+  .logo > a {
+    margin-left: 10rem;
+  }
+
+  .search-box {
+    margin: 0;
+  }
+
+  .footer {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 980px) {
+  .logo > a {
+    margin-left: 0rem;
+  }
+}
+
+/*sidebar lateral*/
+
+nav.menu-lateral {
+  background-color: #3EECAC;
+  background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+
+  box-shadow: 3px 0 0 darkmagenta;
+}
+
+ul li.ativo {
+  background-color: rgba(139, 0, 139, 0.87);
+  border-radius: 50px 0px 0px 50px;
+  
+}
+
+ul li.item-menu:hover {
+  background-color: darkmagenta;
+  border-radius: 50px 0px 0px 50px;
 }

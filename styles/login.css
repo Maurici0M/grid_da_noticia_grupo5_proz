@@ -21,6 +21,15 @@ body {
   ); */
 }
 
+[vw] [vw-access-button] .access-button {
+  width: 43px !important;
+  float: right;
+  border-radius: 36%;
+  border: solid #fff 2px;
+  /* border: solid black; */
+  /* border-radius: 12px; */
+}
+
 .container {
   width: 400px;
   max-width: 400px;
@@ -157,6 +166,7 @@ body {
   background: #fff;
   color: #000;
   margin: 1rem 0rem;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (max-width: 600px) {
@@ -167,4 +177,35 @@ body {
     transform: translateX(-50%);
     width: 50%;
   }
+}
+
+#return_btn:hover {
+  background: linear-gradient(270deg, #6093b6, #dbe6e4, #e4d7f5);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 59s ease infinite;
+  -moz-animation: AnimationName 59s ease infinite;
+  animation: AnimationName 59s ease infinite;
+
+  color: white;
+  text-shadow: rgb(0 0 0 / 61%) 3px 3px 6px;
+  transition: all 0.5s ease-in-out;
+
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
