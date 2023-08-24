@@ -101,7 +101,7 @@ selecionarDivTextoSobreNos.appendChild(textoSobreNos);
 
 const arrayCardsSobreNos = [
   {
-    img: "../assets/images/adaptaveis_card_sobre_nos.png",
+    img: "../assets/images/sobre_nos_img_adaptaveis_card_sobre_nos.png",
     altImg: "",
     titleCard: "Adaptáveis:",
     descriptionCard:
@@ -109,9 +109,9 @@ const arrayCardsSobreNos = [
   },
 
   {
-    img: "https://strati.com.br/wp-content/uploads/2021/12/32-topo-seguranca-da-informacao.jpg",
+    img: "../assets/images/sobre_nos_img_seguranca_card_sobre_nos.gif",
     altImg: "",
-    titleCard: "Seguro:",
+    titleCard: "Seguros:",
     descriptionCard:
       'O Grid da Notícia é <strong>seguro</strong>, exatamente por prezar pela seriedade e credibilidade do que por "clicks". <br> <br> Até nossos parceiros publicitários passam por um rigoroso processo de aprovação, para poderem anunciar conosco, assim como, as notícias que são divulgadas em nossas páginas.',
   },
@@ -119,7 +119,7 @@ const arrayCardsSobreNos = [
   {
     img: "https://tribox.com.br/wp-content/uploads/2018/01/capa-ok.jpg",
     altImg: "",
-    titleCard: "Acessivel:",
+    titleCard: "Acessíveis:",
     descriptionCard:
       'De nada adianta apoiarmos a causa de mais <strong>acessibilidade</strong>, se não fizermos a nossa parte. <br> <br> Por isso, sentimos orgulho de contar com o plug-in de acessibilidade <strong> <a href="https://www.gov.br/governodigital/pt-br/vlibras" target="_blank" rel="noopener noreferrer">VLibras</a></strong> em nosso site.',
   },
