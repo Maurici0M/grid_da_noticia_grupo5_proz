@@ -85,8 +85,12 @@ ul li.item-menu:hover {
 }*/
 
 li.item-menu {
-    padding: 0px 15px;
+    /*padding: 0px 15px;*/
     margin-bottom: 12px;
+}
+
+li.item-menu span.icon {
+    margin: 0 15px;
 }
 
 ul li.item-menu a{
