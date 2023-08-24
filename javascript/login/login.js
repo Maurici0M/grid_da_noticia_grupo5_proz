@@ -95,6 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector("#linkLogin").addEventListener("click", (e) => {
     loginForm.classList.remove("form_hidden");
     creatAccountForm.classList.add("form_hidden");
+
+    loginForm.reset();
+    setFormMessage(loginForm, "error", "");
+    document.querySelectorAll(".form_input").forEach(clearInputError);
   });
 
   loginForm.addEventListener("submit", (e) => {
