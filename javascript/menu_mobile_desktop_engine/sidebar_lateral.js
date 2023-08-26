@@ -33,6 +33,12 @@ btnMenu.addEventListener('click', function(){
     const body = document.querySelector('body')
         body.style.marginLeft = '20.2rem'
         body.style.transition = 'all 0.45s ease-in-out'
+    
+    let logo = document.querySelector('.logo > a')
+    logo.style.marginLeft = '-10rem'
+
+    let barraPesquisa = document.querySelector('.search-box')
+    barraPesquisa.style.marginLeft = '-25rem'
 
     let main = document.querySelector('main')
         main.style.marginLeft = '10px'
@@ -75,6 +81,12 @@ btnMenu.addEventListener('click', function(){
 
         const body = document.querySelector('body')
         body.style.marginLeft = ''
+
+        let logo = document.querySelector('.logo > a') 
+        logo.style.marginLeft = '10rem'
+
+        let barraPesquisa = document.querySelector('.search-box')
+        barraPesquisa.style.marginLeft = ''
         
     
         let main = document.querySelector('main')

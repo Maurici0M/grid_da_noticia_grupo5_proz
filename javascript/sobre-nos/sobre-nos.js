@@ -48,7 +48,7 @@ for (let index = 0; index < arrayMiniCarrossel.length; index++) {
 
   // Manipular elemento
   carrosselScript.innerHTML = `
-        <a href="${arrayMiniCarrossel[index].href}">
+        <a target="_blank" href="${arrayMiniCarrossel[index].href}">
             <img class="img-card" src="${arrayMiniCarrossel[index].cardImg}" alt="not informed">
         </a>
     `;
@@ -65,7 +65,7 @@ for (let index = 0; index < arrayMiniCarrossel.length; index++) {
 const arrayTextoSobreNos = [
   {
     primeiroParagrafo:
-      'O <a target="_blank" href="index.html"><strong class="nome-jornal-grifado">Grid da Notícia</strong></a> é um site indexador de notícias, desenvolvido por estudantes de tecnologia, que tem o objetivo de trazer as principais informações sobre: <a href="culinaria.html">Culinária</a>, <a href="espaco_sideral.html">Espaço Sideral</a> e <a href="tecnologia.html">Tecnologia</a>.',
+      'O <a target="_blank" href="index.html"><strong class="nome-jornal-grifado">Grid da Notícia</strong></a> é um site indexador de notícias, desenvolvido por estudantes de tecnologia, que tem o objetivo de trazer as principais informações sobre: <a target="_blank" href="culinaria.html">Culinária</a>, <a target="_blank" href="espaco_sideral.html">Espaço Sideral</a> e <a target="_blank" href="tecnologia.html">Tecnologia</a>.',
   },
 
   {
