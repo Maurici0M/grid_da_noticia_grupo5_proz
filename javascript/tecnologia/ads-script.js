@@ -1,7 +1,7 @@
 const arrayAdsTecnologiaPage = [
 
     {
-        imgAds: 'https://media.tenor.com/uTGE6zSoSs8AAAAC/future-gaming.gif' ,
+        imgAds: './assets/images/ads/ads_tecnologia1.gif' ,
 
         altImg: 'Publicidade',
 
@@ -9,7 +9,7 @@ const arrayAdsTecnologiaPage = [
     },
     
     {
-        imgAds: 'https://i.gifer.com/embedded/download/LoBm.gif' ,
+        imgAds: './assets/images/ads/ads_espaco_sideral2.gif' ,
 
         altImg: 'Publicidade',
 

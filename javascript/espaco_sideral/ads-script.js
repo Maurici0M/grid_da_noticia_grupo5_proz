@@ -1,6 +1,6 @@
 const arrayAdsTecnologiaPage = [
   {
-    imgAds: "https://usagif.com/wp-content/uploads/gif/outerspace-6.gif.webp",
+    imgAds: "./assets/images/ads/ads_espaco_sideral1.gif",
 
     altImg: "Publicidade",
 
@@ -9,7 +9,7 @@ const arrayAdsTecnologiaPage = [
 
   {
     imgAds:
-      "https://usagif.com/wp-content/uploads/gif/outerspace-53.gif.webp",
+      "./assets/images/ads/ads_espaco_sideral2.gif",
 
     altImg: "Publicidade",
 

@@ -1,4 +1,4 @@
-<h1 align='center'>Olá! Bem vid@ ao Grid <small>da Notícia</small>!</h1>
+<h1 align='center'>🔎 Saiba + Sobre o projeto!</h1>
 
 <p align='justify'>Este é um site desenvolvido por dois estudantes, o <a target="_blank" href='https://www.linkedin.com/in/mauricio-marques-costa-994b25210/'>Mauricio</a> e o <a target="_blank" href='https://www.linkedin.com/in/michael-paes-050817200/'>Michael</a> que tiveram o seu primeiro contato com a programação, durante um programa de capacitação à tecnologia com foco em front-end, oferecido por uma parceria entre <a href='https://pages.prozeducacao.com.br/proz-tecnologia'> PROZ, AMAZON, PORTAL TECH e META</a>. 🤝</p> 
 
