@@ -82,13 +82,26 @@ const arrayCarrossel = [
 
   {
     linkNotices:
-      "https://receitas.globo.com/receitas-da-tv/mais-voce/pudim-de-leite-condensado-4d514bb052e0b252bc00e85a.ghtml",
+      "https://www.gov.br/turismo/pt-br/assuntos/noticias/sabores-do-brasil-culinaria-brasileira-e-um-dos-principais-impulsionadores-do-turismo",
     cardImg:
-      "https://s2-receitas.glbimg.com/z2JiB6nwO_XITDhQksL2uiAhic0=/0x0:984x765/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2020/D/m/r8XAmWTcuRAzTRMBJZ1A/pudim-de-leite-condensado.jpg",
-    altImgCard: "Imagem de um pudim de leite condensado",
-    tittleCard: "Pudim de leite condensado.",
+      "https://www.gov.br/turismo/pt-br/assuntos/noticias/sabores-do-brasil-culinaria-brasileira-e-um-dos-principais-impulsionadores-do-turismo/PortalMTur.png/@@images/2f30bc58-6dbb-4a38-8d06-8dc2ced1dc78.png",
+    altImgCard: "Foto de comidas brasileiras",
+    tittleCard:
+      'Sabores do Brasil: culinária brasileira é um dos principais impulsionadores do turismo.',
     descriptionCard:
-      "Veja como fazer o pudim de leite condensado tradicional, que leva apenas 4 ingredientes: açúcar, leite condensado, leite e ovos. Ana Maria Braga ensina o passo a passo desta sobremesa tipicamente brasileira que vai encantar sua família.",
+      "Quatro cidades brasileiras integram a Rede Brasileira de Cidades Criativas da Unesco na categoria gastronômica e revelam ser um destaque em combinação de sabores únicos do país.",
+  },
+
+  {
+    linkNotices:
+      "https://guia.folha.uol.com.br/restaurantes/2023/07/inspirada-em-barbie-doceria-pikurruchas-em-sp-anuncia-doces-e-drinques-cor-de-rosa.shtml",
+    cardImg:
+      "https://f.i.uol.com.br/fotografia/2023/07/14/168935808464b18f049419d_1689358084_3x2_lg.jpg",
+    altImgCard: "Imagem da doceria Pikurrucha's",
+    tittleCard:
+      "Inspirada em 'Barbie', doceria Pikurrucha's, em SP, anuncia doces e drinques cor-de-rosa.",
+    descriptionCard:
+      "Pioneira no conceito do espaço instagramável, a confeitaria decidiu ampliar o ambiente cor-de-rosa que dialoga com a boneca para seu cardápio, oferecendo opções como um café rosa com brigadeiro branco e pipoca doce.",
   },
 
   {
@@ -103,15 +116,26 @@ const arrayCarrossel = [
 
   {
     linkNotices:
-      "https://guia.folha.uol.com.br/restaurantes/2023/07/inspirada-em-barbie-doceria-pikurruchas-em-sp-anuncia-doces-e-drinques-cor-de-rosa.shtml",
+      "https://receitas.globo.com/receitas-da-tv/mais-voce/pudim-de-leite-condensado-4d514bb052e0b252bc00e85a.ghtml",
     cardImg:
-      "https://f.i.uol.com.br/fotografia/2023/07/14/168935808464b18f049419d_1689358084_3x2_lg.jpg",
-    altImgCard: "Imagem da doceria Pikurrucha's",
-    tittleCard:
-      "Inspirada em 'Barbie', doceria Pikurrucha's, em SP, anuncia doces e drinques cor-de-rosa.",
+      "https://s2-receitas.glbimg.com/z2JiB6nwO_XITDhQksL2uiAhic0=/0x0:984x765/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2020/D/m/r8XAmWTcuRAzTRMBJZ1A/pudim-de-leite-condensado.jpg",
+    altImgCard: "Imagem de um pudim de leite condensado",
+    tittleCard: "Pudim de leite condensado.",
     descriptionCard:
-      "Pioneira no conceito do espaço instagramável, a confeitaria decidiu ampliar o ambiente cor-de-rosa que dialoga com a boneca para seu cardápio, oferecendo opções como um café rosa com brigadeiro branco e pipoca doce.",
+      "Veja como fazer o pudim de leite condensado tradicional, que leva apenas 4 ingredientes: açúcar, leite condensado, leite e ovos. Ana Maria Braga ensina o passo a passo desta sobremesa tipicamente brasileira que vai encantar sua família.",
   },
+
+  {
+    linkNotices:
+      "https://www.gov.br/turismo/pt-br/assuntos/noticias/a-arte-e-o-sabor-das-cachacas-brasileiras-que-conquistam-o-brasil-e-o-mundo",
+    cardImg:
+      "https://www.gov.br/turismo/pt-br/assuntos/noticias/a-arte-e-o-sabor-das-cachacas-brasileiras-que-conquistam-o-brasil-e-o-mundo/PortalMTur1.png/@@images/0c711d59-9dc5-44cf-8b03-6689da228745.png",
+    altImgCard: "Imagem de bebidas alcoólicas brasileras",
+    tittleCard: "A arte e o sabor das cachaças brasileiras que conquistam o Brasil e o mundo.",
+    descriptionCard:
+      "No Dia Nacional de uma das bebidas mais populares no Brasil, conheça produtos nacionais premiados e reconhecidos.",
+  },
+ 
 ];
 
 for (let index = 0; index < arrayCarrossel.length; index++) {

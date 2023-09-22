@@ -42,22 +42,22 @@ const arrayMiniNotices = [
     tittleCard:
       "Galeria Café inaugura o Restô em SP, com jantares servidos durante a balada.",
 
-    descriptionCard: "",
+    descriptionCard: "Clique e saiba mais!",
   },
 
   {
     linkNotices:
-      "https://guia.folha.uol.com.br/restaurantes/2023/07/sal-gastronomia-de-henrique-fogaca-vai-migrar-de-higienopolis-para-os-jardins.shtml",
+      "https://catracalivre.com.br/gastronomia/festival-sabores-do-brasil-celebra-a-culinaria-nacional-nos-hoteis-do-all-accor/",
 
     cardImg:
-      "https://f.i.uol.com.br/fotografia/2023/07/10/168900531764ac2d0592b88_1689005317_3x2_md.jpg",
+      "https://catracalivre.com.br/wp-content/uploads/2023/09/sabores-do-brasil-accor-910x513.jpg",
 
     altImg: "",
 
     tittleCard:
-      "Sal Gastronomia, de Henrique Fogaça, vai migrar de Higienópolis para os Jardins.",
+      "''Festival Sabores do Brasil'' celebra a culinária nacional nos hotéis do ALL ACCOR.",
 
-    descriptionCard: "Clique e saiba mais",
+    descriptionCard: "Clique e saiba mais!",
   },
 
   {
@@ -74,7 +74,7 @@ const arrayMiniNotices = [
 
         tittleCard: 'Receita fácil de brownie de chocolate não dá trabalho e é ideal para comer no café da manhã!',
 
-        descriptionCard: '',
+        descriptionCard: 'Clique e saiba mais!',
     },
 
   /*  {

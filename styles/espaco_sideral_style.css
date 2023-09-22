@@ -59,7 +59,7 @@ img.no-results-img {
 
 .tittle-apresentation-initial {
   background: #7080903d;
-  text-align: justify;
+  text-align: initial;
 }
 
 @media (max-width: 975px) {
@@ -73,7 +73,7 @@ img.no-results-img {
 @media (max-width: 620px) {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
-    
+    text-align: initial;
     font-size: 0.8em;
   }
 }
@@ -81,8 +81,6 @@ img.no-results-img {
 @media (max-width: 520px) {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
-    
-    font-size: 0.7em;
   }
 }
 
@@ -90,7 +88,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     
-    font-size: 12px;
+    
   }
 }
 

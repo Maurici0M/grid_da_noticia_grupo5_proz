@@ -36,6 +36,18 @@ var swiper = new Swiper(".slide-content", {
 const arrayCarrossel = [
   {
     linkNotices:
+      "https://revistadecinema.com.br/2023/06/o-espaco-sideral-e-o-cinema-uma-historia-de-amor/",
+    cardImg:
+      "https://revistadecinema.com.br/wp-content/uploads/2023/06/photo-1518364538800-6bae3c2ea0f2-800x445.jpeg",
+    altImgCard: "Imagem de foguetes espaciais",
+    tittleCard:
+      "O espaço sideral e o cinema, uma história de amor.",
+    descriptionCard:
+      "Os homens sonham e o cinema realiza. E não existe sonho mais recorrente do que as estrelas. A relação da humanidade com os astros é antiga, começou nos tempos das cavernas...",
+  },
+
+  {
+    linkNotices:
       "https://spacetoday.com.br/inteligencia-artificial-no-estudo-do-campo-magnetico-solar/",
     cardImg:
       "https://spacetoday.com.br/wp-content/uploads/2023/07/ia_campo_magnetico_sol_01.jpg",

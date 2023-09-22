@@ -24,7 +24,7 @@ body {
 [vw] [vw-access-button] .access-button {
   width: 43px !important;
   float: right;
-  border-radius: 36%;
+  /*border-radius: 36%;*/
   border: solid #fff 2px;
   /* border: solid black; */
   /* border-radius: 12px; */

@@ -27,8 +27,8 @@ body {
 [vw] [vw-access-button] .access-button {
   width: 43px !important;
   float: right;
-  border-radius: 36%;
-  border: solid #fff 2px;
+  /*border-radius: 36%;*/
+  border: solid #282828 2px;
   /* border: solid black; */
   /* border-radius: 12px; */
 }
@@ -315,6 +315,13 @@ p {
   .texto-sobre-nos {
     font-size: 16px;
     margin-top: 25px;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 300px) {
+  .texto-sobre-nos {
+    text-align: initial;
   }
 }
 

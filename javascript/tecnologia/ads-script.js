@@ -24,7 +24,7 @@ for (let index = 0; index < arrayAdsTecnologiaPage.length; index++) {
     let divADS = document.createElement('div')
 
     // a div criada recebeu uma classe
-    divADS.className = 'ads-group'
+    divADS.className = 'ads-grupo'
 
     // manipular elemento (adicionar conteúdo ao elemento selecionado)
     divADS.innerHTML = `
@@ -35,6 +35,6 @@ for (let index = 0; index < arrayAdsTecnologiaPage.length; index++) {
     `
 
     // adicionar elemento na página
-    let capturarElemento = document.querySelector('.ads-section')
+    let capturarElemento = document.querySelector('.ads-initial')
         capturarElemento.appendChild(divADS)
 }

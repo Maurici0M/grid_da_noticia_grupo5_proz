@@ -109,7 +109,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
@@ -132,7 +132,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     font-weight: 900;
-    font-size: 0.95em;
+    font-size: 1em;
   }
 
 }
@@ -177,6 +177,7 @@ img.no-results-img {
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
+    
   }
 }
 
@@ -187,7 +188,7 @@ img.no-results-img {
 
 /*parte da publicidade*/
 
-.ads-section {
+.ads-initial {
   display: none;
 }
 

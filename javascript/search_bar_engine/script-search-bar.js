@@ -83,7 +83,7 @@ function showResults(results) {
 
     //reativando as páginas do site
     let htmlCarrossel = document.querySelector('.container-notices')
-    let adsSection = document.querySelector('.ads-section')
+    let adsSection = document.querySelector('.ads-initial')
     let containerNoticesPosAds = document.querySelector('.container_notices_pos_ads')
     let botaoCarregarMais = document.querySelector('.btn-ver-mais')
 
@@ -116,7 +116,7 @@ function showResults(results) {
 
     //desativando as páginas do site
     let htmlCarrossel = document.querySelector('.container-notices')
-    let adsSection = document.querySelector('.ads-section')
+    let adsSection = document.querySelector('.ads-initial')
     let containerNoticesPosAds = document.querySelector('.container_notices_pos_ads')
     let botaoCarregarMais = document.querySelector('.btn-ver-mais')
     let footer = document.querySelector('.footer')
@@ -160,7 +160,7 @@ else {
 
     //Reativando o site caso o usuário exclua os dados do input selecionando-os e depois deletando de uma só vez
     let htmlCarrossel = document.querySelector('.container-notices')
-    let adsSection = document.querySelector('.ads-section')
+    let adsSection = document.querySelector('.ads-initial')
     let containerNoticesPosAds = document.querySelector('.container_notices_pos_ads')
     let botaoCarregarMais = document.querySelector('.btn-ver-mais')
     /*let videosSection = document.querySelector(".videos-section")

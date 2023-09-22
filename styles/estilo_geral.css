@@ -20,7 +20,7 @@
 [vw] [vw-access-button] .access-button {
   width: 43px !important;
   float: right;
-  border-radius: 36%;
+  /*border-radius: 36%;*/
   border: solid #fff 2px;
   /* border: solid black; */
   /* border-radius: 12px; */
@@ -408,41 +408,6 @@
 .card:hover {
   transform: scale(1.03);
 }
-
-    @media (max-width: 660px) {
-    .card {
-      margin: 0;
-      height: auto;
-      box-shadow: none;
-    }
-
-    .card:hover {
-      transform: none;
-    }
-  
-    /*limitará a quantidade de caracteres que o card exibirá em no máximo 5 linhas*/
-    .description_card {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      display: -webkit-box;
-      -webkit-line-clamp: 5;
-      -webkit-box-orient: vertical;
-    }
-    .swiper-navBtn {
-      display: none;
-    }
-  }
-  
-  @media (max-width: 300px) {
-    .card {
-      height: auto;
-      text-align: justify;
-      letter-spacing: -1.2px;
-    }
-    .swiper-navBtn {
-      display: none;
-    }
-  }
   
   .card-image {
     width: 100%;
@@ -471,7 +436,7 @@
   
   .description_card {
     padding: 0px 11px;
-    color: #282828;
+    color: #333333;
     font-size: 16px;
     font-weight: 500;
     text-align: justify;
@@ -485,14 +450,51 @@
     -webkit-box-orient: vertical;
     
   }
+
+  @media (max-width: 660px) {
+    .card {
+      margin: 0;
+      height: auto;
+      box-shadow: none;
+    }
+
+    .card:hover {
+      transform: none;
+    }
+  
+    /*limitará a quantidade de caracteres que o card exibirá em no máximo 5 linhas*/
+    .description_card {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+      font-weight: 450;
+      font-size: 17px;
+    }
+    .swiper-navBtn {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 300px) {
+    .card {
+      height: auto;
+      text-align: justify;
+      letter-spacing: -1.2px;
+    }
+    .swiper-navBtn {
+      display: none;
+    }
+  }
   
   /*parte da publicidade*/
   
-  .ads-group {
+  .ads-grupo {
     padding: 0 20px;
   }
   
-  .ads-section {
+  .ads-initial {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -521,21 +523,21 @@
   @media (max-width: 560px) {
     .img-ads {
       width: 450px;
-      height: auto;
+      height: 225px;
     }
   }
   
   @media (max-width: 440px) {
     .img-ads {
       width: 300px;
-      height: auto;
+      height: 150px;
     }
   }
   
   @media (max-width: 300px) {
     .img-ads {
       width: 250px;
-      height: auto;
+      height: 150px;
     }
   }
   
@@ -706,7 +708,7 @@
   }
   
   .container_notices_pos_ads > .card-container-2 .card-info > .tittle_card {
-    padding: 10px 5px;
+    padding: 1px 5px;
     /*limitar o texto que parece no card*/
     overflow: hidden;
     text-overflow: ellipsis;
