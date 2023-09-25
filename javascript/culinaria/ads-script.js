@@ -30,7 +30,7 @@ for (let index = 0; index < arrayAdsTecnologiaPage.length; index++) {
   divADS.innerHTML = `
             <a class = "link-ads" target="_blank" href="">
                 <img class="img-ads" src="${arrayAdsTecnologiaPage[index].imgAds}" alt="${arrayAdsTecnologiaPage[index].altImg}">
-                <p class="ads-text">${arrayAdsTecnologiaPage[index].adsText}</p>
+                <p class="text-ads">${arrayAdsTecnologiaPage[index].adsText}</p>
             </a>
         `;
 
