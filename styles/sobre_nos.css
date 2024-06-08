@@ -290,7 +290,7 @@ main {
 
 @media (max-width: 745px) {
   .tittle-apresentation-initial {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -599,11 +599,17 @@ h1.title-apresentation-initial.sobre-nos {
 
 @media (max-width: 745px) {
   .texto-pre-rodape {
-    text-align: justify;
+    text-align: initial;
     letter-spacing: -0.9px;
   }
   .agradecimentos > p {
     letter-spacing: -1.1px;
+  }
+}
+
+@media(max-width: 500px){
+  .agradecimentos>p {
+    text-align: justify;
   }
 }
 
