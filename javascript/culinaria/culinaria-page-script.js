@@ -34,6 +34,7 @@ var swiper = new Swiper(".slide-content", {
 //Arquivos de alimentação do carrosel - Notícias que são mostradas
 
 const arrayCarrossel = [
+  
   {
     linkNotices:
       "https://metropolitanafm.com.br/televisao/chef-erick-jacquin-fala-o-que-nao-devia-e-expoe-preferencia-por-outro-programa-muito-melhor",
@@ -44,6 +45,18 @@ const arrayCarrossel = [
       'Chef Erick Jacquin fala o que não devia e expõe preferência por outro programa: "Muito melhor".',
     descriptionCard:
       "Erick Jacquin, um dos jurados do MasterChef Brasil, revelou quais são seus programas favoritos na televisão. Em entrevista, o cozinheiro disse que sente falta de ter um espaço próprio na telinha.",
+  },
+
+  {
+    linkNotices:
+      "https://www.gov.br/turismo/pt-br/assuntos/noticias/sabores-do-brasil-culinaria-brasileira-e-um-dos-principais-impulsionadores-do-turismo",
+    cardImg:
+      "https://www.gov.br/turismo/pt-br/assuntos/noticias/sabores-do-brasil-culinaria-brasileira-e-um-dos-principais-impulsionadores-do-turismo/PortalMTur.png/@@images/2f30bc58-6dbb-4a38-8d06-8dc2ced1dc78.png",
+    altImgCard: "Foto de comidas brasileiras",
+    tittleCard:
+      'Sabores do Brasil: culinária brasileira é um dos principais impulsionadores do turismo.',
+    descriptionCard:
+      "Quatro cidades brasileiras integram a Rede Brasileira de Cidades Criativas da Unesco na categoria gastronômica e revelam ser um destaque em combinação de sabores únicos do país.",
   },
 
   {
@@ -80,17 +93,6 @@ const arrayCarrossel = [
       "O bolo de cenoura é uma opção simples e prática para o café da manhã, lanche da tarde ou para uma ocasião especial com famílias e amigos. Essa receita é feita no liquidificador e fica pronta em menos de 1 hora.",
   },
 
-  {
-    linkNotices:
-      "https://www.gov.br/turismo/pt-br/assuntos/noticias/sabores-do-brasil-culinaria-brasileira-e-um-dos-principais-impulsionadores-do-turismo",
-    cardImg:
-      "https://www.gov.br/turismo/pt-br/assuntos/noticias/sabores-do-brasil-culinaria-brasileira-e-um-dos-principais-impulsionadores-do-turismo/PortalMTur.png/@@images/2f30bc58-6dbb-4a38-8d06-8dc2ced1dc78.png",
-    altImgCard: "Foto de comidas brasileiras",
-    tittleCard:
-      'Sabores do Brasil: culinária brasileira é um dos principais impulsionadores do turismo.',
-    descriptionCard:
-      "Quatro cidades brasileiras integram a Rede Brasileira de Cidades Criativas da Unesco na categoria gastronômica e revelam ser um destaque em combinação de sabores únicos do país.",
-  },
 
   {
     linkNotices:

@@ -1,27 +1,19 @@
 let array_conteudo_extra = [
 
     {
-        iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/GVZdFjkycRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/pZkDkBrMr5U?si=NqxvbU2a1Y3an56U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+    },
+
+    {
+        iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/tCbJdxHDeMA?si=r2k8UGLi7Gea69AD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>'
+    },
+
+    {
+        iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/D9BQyF--_8k?si=WtRkHo0qnW4dyuWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     },
 
     {
         iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/HAQ77n4753w?si=zuJ56ejTr-ljJ9y5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-    },
-
-    {
-        iframe: '<iframe width="400" height="215" src="https://www.youtube.com/embed/3Ngx1BEo6A8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-    },
-
-    {
-        iframe: '<iframe class="audio-spotify" style="border-radius:12px" src="https://open.spotify.com/embed/show/5CdVMvrMgnEBuZz68Yu5yi?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
-    },
-
-    {
-        iframe: '<iframe class="audio-spotify" style="border-radius:12px" src="https://open.spotify.com/embed/album/7qzIGWDklpzFGQ3vnwZlsd?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
-    },
-
-    {
-        iframe: '<iframe class="audio-spotify" style="border-radius:12px" src="https://open.spotify.com/embed/show/79m3vLsMq9e5KfrpOxAXP3?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
     }
 
 ]

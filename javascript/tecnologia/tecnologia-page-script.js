@@ -124,7 +124,7 @@ const arrayCarrossel = [
 
     {
         linkNotices: 'https://www.gov.br/governodigital/pt-br/vlibras/',
-        cardImg: 'https://www.gov.br/governodigital/pt-br/vlibras/imagens/avatar.png',
+        cardImg: '../assets/images/Suite_Vlibras_imagem.png',
         altImgCard: 'Avatares do VLibras: Guga, Ícaro e Hozana',
         tittleCard: 'VLibras - Tradução automática para tornar a Web mais acessível.',
         descriptionCard: 'As aplicações da Suíte VLibras permitem que pessoas surdas acessem conteúdo multimídia em sua língua natural de comunicação, o que contribui para com a acessibilidade de computadores, dispositivos móveis e páginas Web.'
@@ -160,7 +160,7 @@ const arrayCarrossel = [
         altImgCard: 'Imagem de Julian Assange - Criador do Wikileaks',
         tittleCard: 'O que é o WikiLeaks? Saiba mais sobre o site criado por Julian Assange.',
         descriptionCard: 'O WikiLeaks é uma organização que divulga na internet documentos confidenciais obtidos de empresas e agências governamentais do mundo todo. Segundo o ativista, os processos aos quais ele responde têm a ver, principalmente, com o papel do WikiLeaks na divulgação de arquivos secretos de países e corporações.',
-    },
+    }
 
 ]
 

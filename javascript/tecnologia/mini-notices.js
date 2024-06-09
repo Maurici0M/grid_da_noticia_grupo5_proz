@@ -1,12 +1,12 @@
 const arrayMiniNotices = [
     {
-        linkNotices: 'https://g1.globo.com/tecnologia/noticia/2023/06/28/microsoft-teams-apresenta-instabilidade-na-manha-desta-quarta.ghtml',
+        linkNotices: 'https://www.poder360.com.br/poder-tech/elon-musk-ira-depor-a-comissao-de-valores-sobre-compra-do-twitter/',
 
-        cardImg: 'https://s2-g1.glbimg.com/DvpNTogu6Ig8p4oLhJP7u57iDIo=/0x0:1200x800/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/9/n/wNYyRtRiCzgB5gyjaSVQ/17da9a60-a709-11ed-96fd-454d269ebe8d.jfif' ,
+        cardImg: 'https://static.poder360.com.br/2024/02/elon-musk-848x477.jpeg' ,
 
-        altImg: 'Microsoft Teams',
+        altImg: 'Elon Musk',
 
-        tittleCard: ' Microsoft Teams apresenta instabilidade global na manhã desta quarta (28/06).',
+        tittleCard: ' Elon Musk irá depor à Comissão de Valores sobre compra do Twitter.',
 
         descriptionCard: '',
 
