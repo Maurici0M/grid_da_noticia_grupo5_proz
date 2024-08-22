@@ -87,7 +87,7 @@ img.no-results-img {
 @media (max-width: 450px) {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
-    
+    font-size: 0.7349em;
     
   }
 }
@@ -113,6 +113,19 @@ img.no-results-img {
     text-align: initial;
     font-weight: 900;
   }
+}
+
+  @media (max-width: 375px) {
+    .tittle-apresentation-initial {
+      font-size: 0.7749em;
+    }
+  }
+
+    @media (max-width: 350px) {
+      .tittle-apresentation-initial {
+        font-size: 0.7em;
+      }
+
 }
 
 /*Estilos do Carrosel*/
@@ -143,6 +156,25 @@ img.no-results-img {
 .card:hover {
   transform: scale(1.03);
   background-color: #dcdcdc;
+}
+
+@media (max-width: 1405px) {
+  /*limitará a quantidade de caracteres que o card exibirá em no máximo 5 linhas*/
+.description_card {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.tittle_card{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
 }
 
 @media (max-width: 660px) {

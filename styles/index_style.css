@@ -101,7 +101,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 }
 
@@ -109,7 +109,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     
-    font-size: 13px;
+    /*font-size: 13px;*/
   }
 }
 
@@ -132,7 +132,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     font-weight: 900;
-    font-size: 1em;
+   /* font-size: 1em;*/
   }
 
 }
@@ -167,6 +167,25 @@ img.no-results-img {
   background-color: ghostwhite;
   border: solid steelblue 2px;
   
+}
+
+@media (max-width: 1405px) {
+  /*limitará a quantidade de caracteres que o card exibirá em no máximo 5 linhas*/
+.description_card {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.tittle_card{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
 }
 
 @media (max-width: 660px) {

@@ -1,71 +1,42 @@
-// Carrosel - Código de funcionamento(destivado)
-/*var swiper = new Swiper(".slide-content", {
-    slidesPerView: 3,
-    spaceBetween: 20,
-    centeredSlides: true,
-    fade: 'true',
-    gragCursor: 'true',
+// Carrosel - Código de funcionamento
+
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    rewind: true,
     autoplay: {
-        delay: 7500,
+        delay: 7800,
         disableOnInteraction: false
     },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        dynamicBullets: true
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
+        dynamicBullets: true,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+  },
 
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        
-        660: {
-            slidesPerView: 2,
-        },
+  breakpoints: {
+      0: {
+          slidesPerView: 1,
+      },
 
-        950: {
-            slidesPerView: 3,
-        }
-    }
+      700: {
+          slidesPerView: '2',
+      },
+      
+      900: {
+          slidesPerView: '3',
+      },
 
-});  */
+      1295: {
+        slidesPerView: '4',
+      },
 
-var swiper = new Swiper(".slide-content", {
-    slidesPerView: "auto",
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
-    autoplay: {
-        delay: 7340,
-        disableOnInteraction: false
-    }, 
-
-    breakpoints: {
-        0: {
-            slidesPerView: 1,
-        },
-        
-        660: {
-            slidesPerView: 'auto',
-        },
-
-        950: {
-            slidesPerView: 'auto',
-        }
-    }
-
+  }
+   
   });
 
 
@@ -75,11 +46,11 @@ var swiper = new Swiper(".slide-content", {
 const arrayCarrossel = [
 
     {
-        linkNotices: 'https://oglobo.globo.com/economia/tecnologia/noticia/2023/08/14/rede-social-x-antigo-twitter-comeca-a-pagar-usuarios-por-engajamento-veja-como-funciona.ghtml',
-        cardImg: 'https://s2.glbimg.com/T-e12lOa2Ii68iiumjt9NnFsfYM=/0x0:1872x1249/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2023/R/B/jMmTimRz6qCnwmSuaBeg/103850098-files-this-illustration-photo-shows-the-new-twitter-logo-rebranded-as-x-l-and-the-old.jpg',
+        linkNotices: 'https://www.tudocelular.com/android/noticias/n225049/x-twitter-anuncia-fim-operacoes-no-brasil.html',
+        cardImg: 'https://t2.tudocdn.net/677192?w=646&h=284',
         altImgCard: 'Logo do Twitter X',
-        tittleCard: 'Rede social X, antigo Twitter, começa a pagar usuários por engajamento; veja como funciona.',
-        descriptionCard: 'Para receber o repasse, é preciso ser assinante do serviço X Premium. Elon Musk não deixou claro como é feito o cálculo da remuneração, nem qual é a periodicidade do pagamento.',
+        tittleCard: 'X (Twitter) anuncia encerramento das operações no Brasil, mas seguirá disponível aos usuários.',
+        descriptionCard: 'O X (Twitter) comunicou o fim das suas atividades oficiais no Brasil. A decisão vem após a rede social de Elon Musk se negar a cumprir uma decisão judicial do Supremo Tribunal Federal (STF).',
     },
 
     {
@@ -160,11 +131,28 @@ const arrayCarrossel = [
         altImgCard: 'Imagem de Julian Assange - Criador do Wikileaks',
         tittleCard: 'O que é o WikiLeaks? Saiba mais sobre o site criado por Julian Assange.',
         descriptionCard: 'O WikiLeaks é uma organização que divulga na internet documentos confidenciais obtidos de empresas e agências governamentais do mundo todo. Segundo o ativista, os processos aos quais ele responde têm a ver, principalmente, com o papel do WikiLeaks na divulgação de arquivos secretos de países e corporações.',
-    }
+    },
+
+    {
+        linkNotices: 'https://agenciabrasil.ebc.com.br/geral/noticia/2024-07/entenda-falha-no-sistema-da-crowdstrike-que-causou-apagao-cibernetico',
+        cardImg: 'https://imagens.ebc.com.br/JuyJu4pOSOAky0SReX3dQQGkWw4=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2022-05-06t162338z_1_lynxnpei450rz_rtroptp_4_data-global-bis.jpg?itok=OTPN2eAC',
+        altImgCard: 'Teclado de computador iluminado por código cibernético',
+        tittleCard: 'Entenda falha no sistema da CrowdStrike que causou apagão cibernético.',
+        descriptionCard: 'Uma falha na atualização de conteúdo relacionada ao sensor de segurança CrowdStrike Falcon, que serve para detectar possíveis invasões de hackers, foi a causa do ataque cibernético desta sexta-feira (19), que deixou milhares de empresas e pessoas em todo o mundo sem acesso a sistemas operacionais, especialmente o Windows, da Microsoft.',
+    },
+
+    {
+        linkNotices: 'https://pages.prozeducacao.com.br/proz-tecnologia',
+        cardImg: 'https://s3.amazonaws.com/joy-class/production/instances/12de7cca531c4dbdb6e42c937f21c1a81703272239039.png',
+        altImgCard: 'Logo Portal Tech - Proz, Amazon e Meta',
+        tittleCard: 'Capacitação Gratuita em Introdução à Programação.',
+        descriptionCard: 'O Portal Tech é um programa criado pela AWS, em duas fases, para abrir um portal de acesso ao conhecimento sobre algumas das tecnologias que mais crescem no mundo: a computação em nuvem, o metaverso e o marketing digital.',
+    },
 
 ]
 
-for (let index = 0; index < arrayCarrossel.length; index++) {
+
+/*for (let index = 0; index < arrayCarrossel.length; index++) {
     // Criar elemento
     let carrosselScript = document.createElement('div')
     
@@ -198,5 +186,5 @@ carrosselScript.className = 'card swiper-slide'
 
     let selecionarClasseCarrossel = document.querySelector('.card-wrapper')
     selecionarClasseCarrossel.appendChild(carrosselScript)
-    /*console.log(selecionarClasseCarrossel.innerText)*/
-}
+    
+}*/

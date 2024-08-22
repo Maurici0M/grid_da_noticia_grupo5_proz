@@ -81,7 +81,7 @@ img.no-results-img {
 @media (max-width: 450px) {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
-    font-size: 0.9em;
+    font-size: 0.749em;
     
   }
 }
@@ -105,14 +105,29 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     
-    /*font-size: 0.75em;*/
+    font-size: 0.70em;
     font-weight: 900;
   }
 }
 
+@media (max-width: 370px) {
+  .tittle-apresentation-initial {
+    font-size: 0.67124em;
+    
+  }
+}
+
+
 @media (max-width: 300px) {
   .tittle-apresentation-initial {
     font-size: 0.62em;
+    text-align: initial;
+  }
+}
+
+@media (max-width: 350px) {
+  .tittle-apresentation-initial {
+    font-size: 0.6199em;
     text-align: initial;
   }
 }
@@ -156,6 +171,27 @@ img.no-results-img {
     -webkit-box-orient: vertical;
   }
 }
+
+@media (max-width: 1405px) {
+  /*limitará a quantidade de caracteres que o card exibirá em no máximo 5 linhas*/
+.description_card {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.tittle_card{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+}
+
+
 
 /*parte da publicidade*/
 

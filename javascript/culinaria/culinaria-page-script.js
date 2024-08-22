@@ -1,34 +1,41 @@
 // Carrosel - Código de funcionamento
 var swiper = new Swiper(".slide-content", {
-  slidesPerView: "auto",
+  slidesPerView: 4,
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  rewind: true,
   autoplay: {
-    delay: 7340,
-    disableOnInteraction: false,
+      delay: 7800,
+      disableOnInteraction: false
   },
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+},
+navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+},
 
-  breakpoints: {
+breakpoints: {
     0: {
-      slidesPerView: 1,
+        slidesPerView: 1,
     },
 
-    660: {
-      slidesPerView: "auto",
+    700: {
+        slidesPerView: '2',
+    },
+    
+    900: {
+        slidesPerView: '3',
     },
 
-    950: {
-      slidesPerView: "auto",
+    1295: {
+      slidesPerView: '4',
     },
-  },
+
+}
+ 
 });
 
 //Arquivos de alimentação do carrosel - Notícias que são mostradas
@@ -61,14 +68,14 @@ const arrayCarrossel = [
 
   {
     linkNotices:
-      "https://metropolitanafm.com.br/televisao/realities/masterchef/masterchef-brasil-2023-confira-o-que-rolou-no-episodio-de-estreia",
+      "https://www.otempo.com.br/entretenimento/2024/8/20/band-renova-producao-do--masterchef--para-2025--saiba-detalhes",
     cardImg:
-      "https://metropolitanafm.com.br/wp-content/uploads/2023/05/IMG-Estreia-MasterChef-Brasil-2023-600x338.jpg",
+      "https://www.otempo.com.br/adobe/dynamicmedia/deliver/dm-aid--1e7db789-e61b-4fcb-957b-9034cc0878d2/entretenimento-henrique-foga-a--helena-rizzo--ana-paula-padr-o-e-erick-jacquin-1716398874.jpg?quality=90&width=1200&preferwebp=true",
     altImgCard: "Imagem dos jurados do Master Chef",
     tittleCard:
-      "MasterChef Brasil 2023: Confira o que rolou no episódio de estreia!",
+      "Band renova produção do MasterChef para 2025; saiba detalhes.",
     descriptionCard:
-      "O primeiro episódio desta temporada revisitou o primeiro episódio do reality show culinário, há 10 anos. E, trouxe 90 candidatos para participar da primeira etapa seletiva, que definiu quem entra oficialmente na disputa culinária.",
+      "A Band já acertou com a Endemol Shine Brasil a produção de novas temporadas do MasterChef, um de seus principais programas, para 2025. Inicialmente, a edição de amadores está confirmada.",
   },
 
   {
@@ -92,7 +99,6 @@ const arrayCarrossel = [
     descriptionCard:
       "O bolo de cenoura é uma opção simples e prática para o café da manhã, lanche da tarde ou para uma ocasião especial com famílias e amigos. Essa receita é feita no liquidificador e fica pronta em menos de 1 hora.",
   },
-
 
   {
     linkNotices:
@@ -140,6 +146,7 @@ const arrayCarrossel = [
  
 ];
 
+/*
 for (let index = 0; index < arrayCarrossel.length; index++) {
   // Criar elemento
   let carrosselScript = document.createElement("div");
@@ -175,5 +182,5 @@ for (let index = 0; index < arrayCarrossel.length; index++) {
 
   selecionarClasseCarrossel.appendChild(carrosselScript);
 }
-
+*/
 

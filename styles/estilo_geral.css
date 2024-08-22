@@ -381,6 +381,7 @@
   .slide-content {
     margin: 0 40px;
     overflow: hidden;
+    padding-bottom: 20px;
   }
   
   .link-notices {
@@ -393,15 +394,13 @@
     height: 430px;
 
    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;*/
-    margin: 1rem;
+    
     font-family: "Maven Pro", sans-serif;
     cursor: pointer;
     transition: all 0.3s ease-out;
     gap: 1rem;
 
     border-radius: 15px;
-
-    margin: 1rem;
 
 }
 
@@ -423,7 +422,6 @@
     border-radius: 12px 12px 0px 0px;
   }
   
-  
   .tittle_card {
     font-size: 18px;
     font-weight: 900;
@@ -431,7 +429,7 @@
     text-align: initial;
     color: #282828;
     /*  padding-top: 10px;*/
-    padding: 10px 11px;
+    padding: 10px 10px 0px 11px;
   }
   
   .description_card {
@@ -867,7 +865,6 @@ span.material-symbols-outlined.\32 {
     padding-right: 10px;
 }
 
-
 .desativado {
     display: none;
 }
@@ -922,6 +919,11 @@ span.material-symbols-outlined.\32 {
   margin-left: 15px;
 }
 
+@media (max-width: 1280px) {
+  .footer {
+    margin-left: 10;
+  }
+}
 @media (max-width: 1030px) {
   nav.menu-lateral {
     display: none;

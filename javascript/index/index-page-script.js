@@ -1,34 +1,41 @@
 // Carrosel - Código de funcionamento
 var swiper = new Swiper(".slide-content", {
-  slidesPerView: "auto",
+  slidesPerView: 4,
   spaceBetween: 30,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+  rewind: true,
   autoplay: {
-    delay: 7340,
-    disableOnInteraction: false,
+      delay: 7800,
+      disableOnInteraction: false
   },
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+},
+navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+},
 
-  breakpoints: {
+breakpoints: {
     0: {
-      slidesPerView: 1,
+        slidesPerView: 1,
     },
 
-    660: {
-      slidesPerView: "auto",
+    700: {
+        slidesPerView: '2',
+    },
+    
+    900: {
+        slidesPerView: '3',
     },
 
-    950: {
-      slidesPerView: "auto",
+    1295: {
+      slidesPerView: '4',
     },
-  },
+
+}
+ 
 });
 
 //Arquivos de alimentação do carrosel - Notícias que são mostradas
@@ -137,6 +144,7 @@ const arrayCarrossel = [
 
 ];
 
+/*
 for (let index = 0; index < arrayCarrossel.length; index++) {
   // Criar elemento
   let carrosselScript = document.createElement("div");
@@ -171,7 +179,7 @@ for (let index = 0; index < arrayCarrossel.length; index++) {
   let selecionarClasseCarrossel = document.querySelector(".card-wrapper");
 
   selecionarClasseCarrossel.appendChild(carrosselScript);
-}
+}*/
 
 function openNav() {
   document.getElementById("side_nav").style.width = "25%";

@@ -64,7 +64,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     
-    text-align: justify;
+    text-align: initial;
   }
 }
 
@@ -88,7 +88,7 @@ img.no-results-img {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
     
-    font-size: 12px;
+    /*font-size: 12px;*/
   }
 }
 
@@ -110,7 +110,7 @@ img.no-results-img {
 @media (max-width: 390px) {
   .tittle-apresentation-initial {
     line-height: 2.25rem;
-    letter-spacing: -0.3px;
+    /*letter-spacing: -0.3px;*/
     font-weight: 900;
     text-align: initial;
   }
@@ -144,6 +144,25 @@ img.no-results-img {
 
 .card:hover {
   background-color: #e1ffe5;
+}
+
+@media (max-width: 1405px) {
+  /*limitará a quantidade de caracteres que o card exibirá em no máximo 5 linhas*/
+.description_card {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.tittle_card{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
 }
 
 

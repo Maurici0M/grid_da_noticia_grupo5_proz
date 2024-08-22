@@ -41,10 +41,10 @@ btnMenu.addEventListener('click', function(){
     barraPesquisa.style.marginLeft = '-25rem'
 
     let main = document.querySelector('main')
-        main.style.marginLeft = '10px'
+        main.style.marginLeft = '0px'
 
     let footer = document.querySelector ('.footer')
-    footer.style.marginLeft = '15px'
+    footer.style.marginLeft = '0px'
         /*main.style.transition = 'all 0.5s ease-in-out'*/
 
     /*const setasCarrossel = document.querySelector('.swiper-button-prev')
