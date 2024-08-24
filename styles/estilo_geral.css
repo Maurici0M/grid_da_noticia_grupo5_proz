@@ -519,8 +519,19 @@
   }
   
   @media (max-width: 560px) {
+    .ads-grupo {
+      margin-bottom: 25px;
+  }
+
     .img-ads {
       width: 450px;
+      height: 225px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .img-ads {
+      width: 370px;
       height: 225px;
     }
   }
@@ -919,10 +930,15 @@ span.material-symbols-outlined.\32 {
   margin-left: 15px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1300px) {
   .footer {
-    margin-left: 10;
-  }
+    margin-left: 5%;
+  } 
+}
+@media (max-width: 1230px) {
+  .footer {
+    margin-left: 6%;
+  } 
 }
 @media (max-width: 1030px) {
   nav.menu-lateral {

@@ -143,7 +143,7 @@ const arrayCarrossel = [
 
     {
         linkNotices: 'https://pages.prozeducacao.com.br/proz-tecnologia',
-        cardImg: 'https://s3.amazonaws.com/joy-class/production/instances/12de7cca531c4dbdb6e42c937f21c1a81703272239039.png',
+        cardImg: 'https://s3.sa-east-1.amazonaws.com/proz-joy-class/production/instances/12de7cca531c4dbdb6e42c937f21c1a81703272239039.png',
         altImgCard: 'Logo Portal Tech - Proz, Amazon e Meta',
         tittleCard: 'Capacitação Gratuita em Introdução à Programação.',
         descriptionCard: 'O Portal Tech é um programa criado pela AWS, em duas fases, para abrir um portal de acesso ao conhecimento sobre algumas das tecnologias que mais crescem no mundo: a computação em nuvem, o metaverso e o marketing digital.',

@@ -554,6 +554,7 @@ h1.title-apresentation-initial.sobre-nos {
   font-family: "Maven Pro", sans-serif;
   display: flex;
   /* padding: 3rem;*/
+  padding-bottom: 15px;
   text-align: center;
   gap: 15%;
   justify-content: center;
@@ -591,6 +592,8 @@ h1.title-apresentation-initial.sobre-nos {
   font-size: 16px;
   padding-top: 4rem;
   text-align: center;
+  margin-bottom: -75px;
+  border-top: solid blueviolet 2px;
 }
 
 .agradecimentos > p {
@@ -614,7 +617,7 @@ h1.title-apresentation-initial.sobre-nos {
 }
 
 .img-apoiadores {
-  padding-top: 45px;
+  margin-top: -85px;
 }
 
 .img-professora {
@@ -735,6 +738,7 @@ span.material-symbols-outlined.\32:hover {
   }
 }
 
+
 #navbar-icons {
   padding-right: 10px;
 }
@@ -743,8 +747,12 @@ span.material-symbols-outlined.\32:hover {
 }
 
 .footer {
-  margin-left: 15px;
+  margin-left: 0;
+  border-top: solid blueviolet 2px;
 }
+
+
+
 
 @media (max-width: 1030px) {
   nav.menu-lateral {
